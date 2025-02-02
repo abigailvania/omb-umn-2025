@@ -1,9 +1,31 @@
 import React from "react";
 
+import Acara from "../../images/logo-divisi/Ring_Arutala.png"
+
+import Dokumentasi from "../../images/logo-divisi/Ring_Arunika.png"
+
+import Perlengkapan from "../../images/logo-divisi/Ring_Bharana.png"
+
+import Konsumsi from "../../images/logo-divisi/Ring_Kayana.png"
+
+import Desain from "../../images/logo-divisi/Ring_Rekha.png"
+
+import Pr from "../../images/logo-divisi/Ring_Wistara.png"
+
+import Website from "../../images/logo-divisi/Ring_Samhita.png"
+
+import Pic from "../../images/logo-divisi/Ring_Gyana.png"
+
+import Keamanan from "../../images/logo-divisi/Ring_Abhiseva.png"
+
+import Bph from "../../images/logo-divisi/Ring_Naratama.png"
+
+import Medis from "../../images/logo-divisi/Ring_Sadina.png"
+
 const ContentDivisi = [
     {
         logoImg: Acara,
-        name: "Arutala",
+        name: "ARUTALA",
         nama: "Acara",
         logo: "Demung",
         arti: "Ambisi yang Tinggi",
@@ -12,7 +34,7 @@ const ContentDivisi = [
     },
     {
         logoImg: Dokumentasi,
-        name: "Arunika",
+        name: "ARUNIKA",
         nama: "Dokumentasi",
         logo: "Atowo",
         arti: "Cahaya Pagi",
@@ -21,7 +43,7 @@ const ContentDivisi = [
     },
     {
         logoImg: Perlengkapan,
-        name: "Bharana",
+        name: "BHARANA",
         nama: "Perlengkapan",
         logo: "Bende",
         arti: "Pemeliharaan dan Penyediaan",
@@ -30,7 +52,7 @@ const ContentDivisi = [
     },
     {
         logoImg: Konsumsi,
-        name: "Kayana",
+        name: "KAYANA",
         nama: "Konsumsi",
         logo: "Dambus",
         arti: "Dermawan",
@@ -39,7 +61,7 @@ const ContentDivisi = [
     },
     {
         logoImg: Desain,
-        name: "Rekha",
+        name: "REKHA",
         nama: "Desain",
         logo: "Serune Kalee",
         arti: "Bintang yang Cantik",
@@ -47,8 +69,8 @@ const ContentDivisi = [
         tugas: "Rekha bertugas untuk menyusun seluruh keperluan desain OMB UMN 2025 agar memiliki nilai estetika yang tinggi, unik serta mampu menjadi sarana penyampaian informasi yang efektif sesuai dengan nilai-nilai OMB UMN 2025.",
     },
     {
-        logoImg: PublicRelations,
-        name: "Wistara",
+        logoImg: Pr,
+        name: "WISTARA",
         nama: "Public Relations",
         logo: "Kompang",
         arti: "Jelas dan Pandai Bicara",
