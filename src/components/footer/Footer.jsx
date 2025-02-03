@@ -26,7 +26,9 @@ function Footer() {
                 <div className="ContactFooter">
 
                 </div>
-
+                <div className="CRFooter">
+                    <p>© OMB UMN 2025</p>
+                </div>
             </div>
         </>
     )
