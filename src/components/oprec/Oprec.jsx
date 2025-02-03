@@ -1,5 +1,15 @@
 import React from "react";
 
+import ContentDivisi from "./ContentDivisi";
+
+const DivisiCard = ({ divisi }) => {
+    return (
+        <>
+            <img src={divisi.logoImg} alt={divisi.name} />
+        </>
+    )
+}
+
 function Oprec() {
     return (
         <>
@@ -21,6 +31,11 @@ function Oprec() {
                     <h1>Divisi</h1>
                     <h6>Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!</h6>
                     <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
+                </div>
+                <div className="DivisiSection">
+                    {ContentDivisi.map((divisi, index) => (
+                        <DivisiCard key={index} divisi={divisi} />
+                    ))}
                 </div>
             </section>
         </>
