@@ -1,118 +1,44 @@
 .apaituomb_section {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    padding: 3rem 2rem;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.apaituomb_slider {
+    overflow: hidden;
+    width: 600px; // Sesuaikan dengan kebutuhan
+    max-width: 100%;
     position: relative;
-    background-color: #ffffff;
+    border: 2px solid #1E40AF;
+    border-radius: 10px;
+}
 
-    @media (max-width: 768px) {
-        flex-direction: column;
-        text-align: center;
-    }
+.apaituomb_slider_inner {
+    display: flex;
+    width: 300%; // Menyesuaikan jumlah gambar
+    transition: transform 0.7s ease-in-out;
+}
 
-    .apaituomb_supergrafis {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 35%;
-        opacity: 0.3;
-        z-index: -1;
-    }
+.apaituomb_image {
+    width: 100%;
+    object-fit: cover;
+    padding: 5px;
+}
 
-    .apaituomb_image {
-        flex: 1;
-        display: flex;
-        overflow: hidden;
-        width: 380px;
-        height: 230px;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        position: relative;
+.apaituomb_content {
+    text-align: center;
+    margin-top: 20px;
+}
 
-        .slider {
-            display: flex;
-            width: 400%;
-            height: 100%;
-            transition: transform 0.8s ease-in-out;
+.apaituomb_content h1 {
+    font-size: 24px;
+    color: #333;
+}
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                flex-shrink: 0;
-                opacity: 0;
-                transition: opacity 0.5s ease-in-out;
-            }
-
-            img.active {
-                opacity: 1;
-            }
-        }
-    }
-
-    .apaituomb_content {
-        flex: 1;
-        max-width: 500px;
-
-        .apaituomb_title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 1rem;
-
-            img {
-                width: 40px;
-                height: 40px;
-            }
-
-            h1 {
-                font-size: 2rem;
-                font-weight: bold;
-                color: #4504AA;
-            }
-        }
-
-        p {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.6;
-
-            a {
-                color: #4504AA;
-                font-weight: bold;
-                text-decoration: none;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        .cta_button {
-            margin-top: 1.5rem;
-            background-color: #4504AA;
-            color: white;
-            font-size: 1rem;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-
-            img {
-                width: 18px;
-                height: 18px;
-            }
-
-            &:hover {
-                background-color: #31027A;
-                transform: translateY(-3px);
-            }
-        }
-    }
+.apaituomb_content p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
 }
