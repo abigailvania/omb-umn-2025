@@ -17,13 +17,12 @@
 
 .apaituomb_slider_inner {
     display: flex;
-    width: calc(500px * 3); /* Lebar disesuaikan agar hanya 1 gambar tampil dalam viewport */
+    width: 300%; // Menyesuaikan jumlah gambar
     transition: transform 0.7s ease-in-out;
 }
 
 .apaituomb_image {
-    width: 500px; /* Pastikan ukuran gambar sesuai */
-    flex-shrink: 0; /* Hindari mengecilkan gambar */
+    width: 500px;
     object-fit: cover;
     padding: 5px;
 }
