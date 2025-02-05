@@ -2,11 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; // Full screen height
     background-size: cover;
     padding: 20px;
-    text-align: center;
+}
 
+.Youtube {
+    text-align: center;
 }
 
 .YoutubeHeader {
