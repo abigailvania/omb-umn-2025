@@ -7,8 +7,8 @@ import './ApaItuOMB.scss';
 
 // import images
 import foto1 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
-import foto2 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
-import foto3 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
+import foto2 from '../../assets/images/omb-3.jpg';
+import foto3 from '../../assets/images/omb-6.jpg';
 
 // import Flower from '../../images/supergrafis/SUPERGRAFIS METALLIC VIOLET/Fill - Bunga Lotus Biru 1.svg';
 // import Supergrafis from '../../images/supergrafis/Divisi_supergrafis.png';
@@ -41,7 +41,7 @@ const ApaItuOMB = () => {
             <div className="apaituomb_content">
                 <div className="apaituomb_title">
                     {/* <img src={Flower} alt="Flower Icon" /> */}
-                    <h1>Apa itu OMB?a</h1>
+                    <h1>Apa itu OMB?</h1>
                 </div>
                 <p>
                     Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di 
