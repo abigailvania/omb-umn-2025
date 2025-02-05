@@ -5,6 +5,9 @@ function Youtube() {
     return (
         <>
             <section className="YoutubeContainer">
+                <div className="YoutubeBackground">
+                    <img src="" alt="gradien" />
+                </div>
                 <div className="Youtube">
                     <div className="YoutubeHeader">
                         <h1>Kura-kura Matahari merangkai memori</h1>
