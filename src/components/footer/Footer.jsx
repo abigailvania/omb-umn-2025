@@ -24,7 +24,10 @@ function Footer() {
             </div>
             <div className="BottomFooter">
                 <div className="ContactFooter">
-
+                    <a href="#"> <img src="" alt="email" /></a>
+                    <a href="https://www.instagram.com/ombumn"> <img src="" alt="instagram" /></a>
+                    <a href="https://linevoom.line.me/user/_dQto-n6wJSbyUlsQVlEfNHoStsNJwzSLtfVj2Xo"> <img src="" alt="line" /></a>
+                    <a href="https://www.facebook.com/ombumn/?_rdc=2&_rdr"> <img src="" alt="facebook" /></a>
                 </div>
                 <div className="CRFooter">
                     <p>© OMB UMN 2025</p>
