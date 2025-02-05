@@ -24,7 +24,7 @@ const ApaItuOMB = () => {
             <div className="apaituomb_slider">
                 <div 
                     className="apaituomb_slider_inner"
-                    style={{ transform: `translateX(-${currentIndex * 500}px)` }} // Hanya geser 1 gambar setiap kali
+                    style={{ transform: `translateX(-${currentIndex * 500}px)` }}
                 >
                     {images.map((image, index) => (
                         <img key={index} src={image} alt="OMB" className="apaituomb_image" />
