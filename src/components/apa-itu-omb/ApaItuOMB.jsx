@@ -17,9 +17,11 @@ const images = [foto1, foto2, foto3];
 
 const ApaItuOMB = () => {
     const [currentImage, setCurrentImage] = useState(0);
+    const [slideDirection, setSlideDirection] = useState('next');
 
     useEffect(() => {
         const interval = setInterval(() => {
+            setSlideDirection('next');
             setCurrentImage((prev) => (prev + 1) % images.length);
         }, 3000);
 
