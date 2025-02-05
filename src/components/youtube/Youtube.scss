@@ -5,7 +5,10 @@
     height: 100vh; // Full screen height
     padding: 20px;
 }
-
+.YoutubeContainer {
+    width: 100%;
+    background-size: cover;
+}
 .Youtube {
     text-align: center;
 }
