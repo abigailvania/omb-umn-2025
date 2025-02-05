@@ -1,23 +1,26 @@
 .apaituomb_section {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .apaituomb_slider {
+    flex: 1;
+    max-width: 500px;
+    min-width: 300px;
     overflow: hidden;
-    width: 500px;
-    max-width: 100%;
     position: relative;
     border: 2px solid #1E40AF;
     border-radius: 10px;
+    margin-right: 20px;
 }
 
 .apaituomb_slider_inner {
     display: flex;
-    width: 300%; // Menyesuaikan jumlah gambar
+    width: 300%;
     transition: transform 0.7s ease-in-out;
 }
 
@@ -28,17 +31,36 @@
 }
 
 .apaituomb_content {
-    text-align: center;
+    flex: 2;
+    text-align: justify;
     margin-top: 20px;
 }
 
 .apaituomb_content h1 {
     font-size: 24px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .apaituomb_content p {
     font-size: 16px;
     color: #666;
     max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .apaituomb_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apaituomb_slider {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .apaituomb_content {
+        text-align: left;
+        max-width: 100%;
+    }
 }
