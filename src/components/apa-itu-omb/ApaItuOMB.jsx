@@ -41,7 +41,7 @@ const ApaItuOMB = () => {
             <div className="apaituomb_content">
                 <div className="apaituomb_title">
                     {/* <img src={Flower} alt="Flower Icon" /> */}
-                    <h1>Apa itu OMB?</h1>
+                    <h1>Apa itu OMB?a</h1>
                 </div>
                 <p>
                     Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di 
