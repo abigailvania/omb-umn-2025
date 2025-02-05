@@ -13,7 +13,7 @@ const DivisiCard = ({ divisi }) => {
 function Oprec() {
     return (
         <>
-            <section className="OprecText">
+            <section id="oprec-section" className="OprecText">
                 <div className="OprecHeader">
                     <h1>Kura-kura matahari menyanyi dalam harmoni,</h1>
                     <h1>Jangan lewatkan kesempatan ini!</h1>
