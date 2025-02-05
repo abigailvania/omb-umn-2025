@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-// import './ApaItuOMB.scss';
+import './ApaItuOMB.scss';
 
 // import icons
 // import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg';
