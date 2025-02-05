@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import './ApaItuOMB.scss';
+// import './ApaItuOMB.scss';
 
 // import icons
 // import ArrowRight from '../../images/Arrow/Arrow_Right_MD.svg';
 
 // import images
-import foto1 from '../../images/Perkembangan Hari 1_Steven Hans_195.jpg';
-import foto2 from '../../images/Perkembangan Hari 1_Steven Hans_195.jpg';
-import foto3 from '../../images/Perkembangan Hari 1_Steven Hans_195.jpg';
+import foto1 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
+import foto2 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
+import foto3 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
 
 // import Flower from '../../images/supergrafis/SUPERGRAFIS METALLIC VIOLET/Fill - Bunga Lotus Biru 1.svg';
 // import Supergrafis from '../../images/supergrafis/Divisi_supergrafis.png';
@@ -31,7 +31,7 @@ const ApaItuOMB = () => {
 
     return (
         <section className="apaituomb_section">
-            <img className="apaituomb_supergrafis" src={Supergrafis} alt="Supergrafis" />
+            {/* <img className="apaituomb_supergrafis" src={Supergrafis} alt="Supergrafis" /> */}
 
             <div className="apaituomb_image">
                 <img src={images[currentImage]} alt="OMB" />
@@ -39,7 +39,7 @@ const ApaItuOMB = () => {
 
             <div className="apaituomb_content">
                 <div className="apaituomb_title">
-                    <img src={Flower} alt="Flower Icon" />
+                    {/* <img src={Flower} alt="Flower Icon" /> */}
                     <h1>Apa itu OMB?</h1>
                 </div>
                 <p>
