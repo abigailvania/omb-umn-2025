@@ -49,10 +49,10 @@ const ApaItuOMB = () => {
                     dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
                 </p>
 
-                <button className="cta_button" onClick={openPage}>
+                {/* <button className="cta_button" onClick={openPage}>
                     Selengkapnya
                     <img src={ArrowRight} alt="Arrow Icon" />
-                </button>
+                </button> */}
             </div>
         </section>
     );
