@@ -5,8 +5,7 @@ import './Youtube.scss';
 function Youtube() {
     return (
         <>
-            <section className="YoutubeContainer">
-                <div className="Youtube">
+            <section className="Youtube">
                     <div className="YoutubeHeader">
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
@@ -17,7 +16,6 @@ function Youtube() {
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
-                </div>
             </section>
         </>
     );

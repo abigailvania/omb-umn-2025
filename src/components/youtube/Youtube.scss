@@ -1,14 +1,12 @@
-.YoutubeContainer {
+.Youtube{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; // Full screen height
+    height: 100vh;
     background-size: cover;
     padding: 20px;
-}
-
-.Youtube {
     text-align: center;
+
 }
 
 .YoutubeHeader {
