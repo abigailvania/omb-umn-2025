@@ -19,13 +19,13 @@ function Header() {
                         <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[95px]" />
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center text-center text-white mt-20">
+                <div className="flex flex-col justify-center items-center text-center text-white mt-[20px]">
                     <p className="text-xl mb-10">
                         Pendaftaran Kepanitiaan OMB UMN 2025 Telah Dibuka!</p>
                     <GlassButton
                         text="Daftar Sekarang!"
                         onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                        className="text-white max-w-[180px] mt-[20px] mb-[50px]"
+                        className="text-white max-w-[180px] mt-[20px]"
                     />
                 </div>
 
