@@ -20,7 +20,7 @@ function Header() {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center text-center text-white mt-20">
-                    <p className="text-xl">
+                    <p className="text-xl mb-10">
                         Pendaftaran Kepanitiaan OMB UMN 2025 Telah Dibuka!</p>
                     <GlassButton
                         text="Daftar Sekarang!"
