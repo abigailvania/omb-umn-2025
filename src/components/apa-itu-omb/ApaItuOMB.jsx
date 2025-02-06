@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ApaItuOMB.scss';
 
-// Import images
 import foto1 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
 import foto2 from '../../assets/images/omb-3.jpg';
 import foto3 from '../../assets/images/omb-6.jpg';
@@ -9,7 +8,6 @@ import foto4 from '../../assets/images/ALV00036.jpg';
 import foto5 from '../../assets/images/omb-10.jpg';
 
 const originalImages = [foto1, foto2, foto3, foto4, foto5];
-// Duplikasi gambar pertama untuk looping seamless
 const images = [...originalImages, originalImages[0]];
 
 const ApaItuOMB = () => {
@@ -25,12 +23,11 @@ const ApaItuOMB = () => {
     }, []);
 
     useEffect(() => {
-        // Jika mencapai gambar terakhir (duplikasi pertama), langsung lompat ke indeks awal tanpa animasi
         if (currentIndex === images.length - 1) {
             setTimeout(() => {
                 setIsTransitioning(false);
                 setCurrentIndex(0);
-            }, 700); // Delay agar animasi tidak terlihat
+            }, 700);
         } else {
             setIsTransitioning(true);
         }
