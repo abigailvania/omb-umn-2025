@@ -12,6 +12,8 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  outline: none;
+  border: none;
 
   &:hover {
     background: rgba(30, 125, 135, 0.4);
