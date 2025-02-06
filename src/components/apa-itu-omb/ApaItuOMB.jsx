@@ -7,7 +7,8 @@ import foto2 from '../../assets/images/omb-3.jpg';
 import foto3 from '../../assets/images/omb-6.jpg';
 
 const originalImages = [foto1, foto2, foto3];
-const images = [...originalImages, originalImages[0]]; // Tambahkan duplikasi foto pertama di akhir
+// Duplikasi gambar pertama untuk looping mulus
+const images = [...originalImages, originalImages[0]];
 
 const ApaItuOMB = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,11 +23,12 @@ const ApaItuOMB = () => {
     }, []);
 
     useEffect(() => {
+        // Jika mencapai gambar terakhir (duplikasi pertama), langsung lompat ke indeks awal tanpa animasi
         if (currentIndex === images.length - 1) {
             setTimeout(() => {
                 setIsTransitioning(false);
                 setCurrentIndex(0);
-            }, 500); // Sesuaikan timeout dengan durasi transisi CSS
+            }, 700); // Delay agar animasi tidak terlihat
         } else {
             setIsTransitioning(true);
         }
@@ -35,9 +37,12 @@ const ApaItuOMB = () => {
     return (
         <section className="apaituomb_section">
             <div className="apaituomb_slider">
-                <div 
-                    className={`apaituomb_slider_inner ${isTransitioning ? 'transition' : ''}`}
-                    style={{ transform: `translateX(-${currentIndex * 500}px)` }}
+                <div
+                    className="apaituomb_slider_inner"
+                    style={{
+                        transform: `translateX(-${currentIndex * 500}px)`,
+                        transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
+                    }}
                 >
                     {images.map((image, index) => (
                         <img key={index} src={image} alt="OMB" className="apaituomb_image" />
@@ -48,9 +53,9 @@ const ApaItuOMB = () => {
             <div className="apaituomb_content">
                 <h1>Apa itu OMB?</h1>
                 <p>
-                    Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di 
-                    <a href="https://www.umn.ac.id/en/home/" target="_blank" rel="noopener noreferrer"> Universitas Multimedia Nusantara</a> (UMN). 
-                    Melalui serangkaian kegiatan yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan, 
+                    Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di
+                    <a href="https://www.umn.ac.id/en/home/" target="_blank" rel="noopener noreferrer"> Universitas Multimedia Nusantara</a> (UMN).
+                    Melalui serangkaian kegiatan yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan,
                     dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
                 </p>
             </div>
