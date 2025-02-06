@@ -10,8 +10,7 @@ function Header() {
     return (
         <>
             <section className="headerSection">
-                <div className="flex flex-col justify-center align-center
-                                md:pt-18">
+                <div className="flex flex-col justify-center align-center md:pt-18">
                     <div className="flex justify-center">
                         <img src={logo} alt="" className="h-[270px]" />
                     </div>
@@ -26,7 +25,7 @@ function Header() {
                     <GlassButton
                         text="Daftar Sekarang!"
                         onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                        className="text-white max-w-[180px] mt-[20px]"
+                        className="text-white max-w-[180px] mt-[20px] mb-[50px]"
                     />
                 </div>
 
