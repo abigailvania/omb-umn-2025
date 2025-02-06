@@ -28,6 +28,9 @@ function Header() {
                         className="text-white max-w-[180px] mt-[20px]"
                     />
                 </div>
+                <div className="ombak">
+                    
+                </div>
 
             </section>        
         </>
