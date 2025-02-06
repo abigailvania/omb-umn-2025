@@ -23,7 +23,7 @@
 
 .apaituomb_slider_inner {
     display: flex;
-    width: calc(100% * 4); // Dinamis berdasarkan jumlah gambar + 1 (duplikasi untuk efek loop)
+    width: calc(100% * 6); // 5 foto + 1 duplikasi untuk loop seamless
 }
 
 .apaituomb_image {

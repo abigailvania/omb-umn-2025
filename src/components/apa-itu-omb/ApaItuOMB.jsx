@@ -5,9 +5,11 @@ import './ApaItuOMB.scss';
 import foto1 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
 import foto2 from '../../assets/images/omb-3.jpg';
 import foto3 from '../../assets/images/omb-6.jpg';
+import foto4 from '../../assets/images/omb-7.jpg';
+import foto5 from '../../assets/images/omb-8.jpg';
 
-const originalImages = [foto1, foto2, foto3];
-// Duplikasi gambar pertama untuk looping mulus
+const originalImages = [foto1, foto2, foto3, foto4, foto5];
+// Duplikasi gambar pertama untuk looping seamless
 const images = [...originalImages, originalImages[0]];
 
 const ApaItuOMB = () => {
