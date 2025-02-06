@@ -16,22 +16,23 @@ const ApaItuOMB = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => prevIndex + 1);
+            if (currentIndex === images.length - 1) {
+                setIsTransitioning(false);
+                setCurrentIndex(0);
+            } else {
+                setIsTransitioning(true);
+                setCurrentIndex((prevIndex) => prevIndex + 1);
+            }
         }, 3000);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [currentIndex]);
 
     useEffect(() => {
-        if (currentIndex === images.length - 1) {
-            setTimeout(() => {
-                setIsTransitioning(false);
-                setCurrentIndex(0);
-            }, 500);
-        } else {
-            setIsTransitioning(true);
+        if (!isTransitioning && currentIndex === 0) {
+            setTimeout(() => setIsTransitioning(true), 50); 
         }
-    }, [currentIndex]);
+    }, [isTransitioning, currentIndex]);
 
     return (
         <section className="apaituomb_section">
