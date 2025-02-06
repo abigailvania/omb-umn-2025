@@ -6,24 +6,37 @@ import foto1 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
 import foto2 from '../../assets/images/omb-3.jpg';
 import foto3 from '../../assets/images/omb-6.jpg';
 
-const images = [foto1, foto2, foto3];
+const originalImages = [foto1, foto2, foto3];
+const images = [...originalImages, originalImages[0]]; // Tambahkan duplikasi foto pertama di akhir
 
 const ApaItuOMB = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(true);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+            setCurrentIndex((prevIndex) => prevIndex + 1);
         }, 3000);
 
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        if (currentIndex === images.length - 1) {
+            setTimeout(() => {
+                setIsTransitioning(false);
+                setCurrentIndex(0);
+            }, 500); // Sesuaikan timeout dengan durasi transisi CSS
+        } else {
+            setIsTransitioning(true);
+        }
+    }, [currentIndex]);
+
     return (
         <section className="apaituomb_section">
             <div className="apaituomb_slider">
                 <div 
-                    className="apaituomb_slider_inner"
+                    className={`apaituomb_slider_inner ${isTransitioning ? 'transition' : ''}`}
                     style={{ transform: `translateX(-${currentIndex * 500}px)` }}
                 >
                     {images.map((image, index) => (
