@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.scss";
 
 import logo from "../../images/header-footer/logo.png"
 import tagline from "../../images/header-footer/tagline.png"
@@ -8,7 +9,7 @@ import GlassButton from "../button/Button.jsx";
 function Header() {
     return (
         <>
-            <div className="bg-[url('/gradient.png')] bg-cover bg-center h-screen">
+            <section className="headerSection">
                 <div className="flex flex-col justify-center align-center
                                 md:pt-18">
                     <div className="flex justify-center">
@@ -29,7 +30,7 @@ function Header() {
                     />
                 </div>
 
-            </div>
+            </section>        
         </>
     )
 }
