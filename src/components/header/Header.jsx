@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../../images/header-footer/logo.png"
 import tagline from "../../images/header-footer/tagline.png"
 
-import Button from "../button/Button.jsx";
+import GlassButton from "../button/Button.jsx";
 
 function Header() {
     return (
@@ -22,7 +22,7 @@ function Header() {
                 <div className="flex flex-col justify-center items-center text-center text-white mt-20">
                     <p className="text-xl">
                         Pendaftaran Kepanitiaan OMB UMN 2025 Telah Dibuka!</p>
-                    <Button
+                    <GlassButton
                         text="Daftar Sekarang!"
                         onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                         className="text-white max-w-[180px] mt-[20px]"
