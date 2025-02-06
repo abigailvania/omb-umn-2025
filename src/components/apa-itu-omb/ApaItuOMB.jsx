@@ -23,7 +23,7 @@ const ApaItuOMB = () => {
                 setIsTransitioning(true);
                 setCurrentIndex((prevIndex) => prevIndex + 1);
             }
-        }, 3000);
+        }, 1000);
 
         return () => clearInterval(interval);
     }, [currentIndex]);
