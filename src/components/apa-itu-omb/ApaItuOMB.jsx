@@ -27,7 +27,7 @@ const ApaItuOMB = () => {
             setTimeout(() => {
                 setIsTransitioning(false);
                 setCurrentIndex(0);
-            }, 700);
+            }, 500);
         } else {
             setIsTransitioning(true);
         }
