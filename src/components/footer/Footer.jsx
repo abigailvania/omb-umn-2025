@@ -8,9 +8,14 @@ import facebook from "../../images/header-footer/facebook.png"
 import insta from "../../images/header-footer/insta.png"
 import line from "../../images/header-footer/line.png"
 
+import ombaksantuytop from "../../images/ombak/Ombaksantuy_Top.png"
+
 function Footer() {
     return (
         <div className="bg-[url('/gradient.png')] bg-cover bg-center text-white">
+            <div className="ombak">
+                <img src={ombaksantuytop} alt="ombak" />
+            </div>
             <div className="flex flex-row justify-between items-center">
                 <div className="flex-1 text-right">
                     <p className="text-xl font-bold">Alamat</p>
