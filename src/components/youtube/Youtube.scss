@@ -1,7 +1,5 @@
 .YoutubeContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     height: 100vh; // Full screen height
     padding: 0;
     background: linear-gradient(to top right, 
@@ -23,6 +21,9 @@
     background-size: cover;
 }
 .Youtube {
+    display: flex0;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 

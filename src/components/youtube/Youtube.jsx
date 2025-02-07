@@ -9,7 +9,6 @@ function Youtube() {
             <section className="YoutubeContainer">
                 <div className="ombak">
                     <img src={ombakterangtop} alt="ombak"/>
-                    <br />
                 </div>
                 <div className="Youtube">
                     <div className="YoutubeHeader">
