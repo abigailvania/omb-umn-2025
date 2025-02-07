@@ -31,26 +31,26 @@ const Navbar = () => {
                             e.preventDefault();
                             setDropdownOpen(!dropdownOpen);
                         }}>Informasi</a>
-                        {dropdownOpen && (
-                            <div className="dropdown-card">
-                                <ul className="dropdown-menu">
-                                    <li><a href="#" onClick={(e) => {
-                                        e.preventDefault();
-                                        document.getElementById("tentang-omb")?.scrollIntoView({ behavior: "smooth" });
-                                    }}>Tentang OMB</a></li>
-                                    <li><a href="#" onClick={(e) => {
-                                        e.preventDefault();
-                                        document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
-                                    }}>Divisi</a></li>
-                                </ul>
-                            </div>
-                        )}
                     </li>
                 </ul>
                 <button className="register-btn" onClick={() => {
                     document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
                 }}>Daftar Sekarang</button>
             </div>
+            {dropdownOpen && (
+                <div className="dropdown-card">
+                    <ul className="dropdown-menu">
+                        <li><a href="#" onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById("tentang-omb")?.scrollIntoView({ behavior: "smooth" });
+                        }}>Tentang OMB</a></li>
+                        <li><a href="#" onClick={(e) => {
+                            e.preventDefault();
+                            document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
+                        }}>Divisi</a></li>
+                    </ul>
+                </div>
+            )}
         </nav>
     );
 };
