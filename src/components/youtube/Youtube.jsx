@@ -3,6 +3,8 @@ import './Youtube.scss';
 
 import ombakterangtop from '../../images/ombak/Ombakterang_Top-crop.png';
 import ombaksantuydown from '../../images/ombak/Ombaksantuy_Down.png';
+import supergrafis from '../../images/supergrafis/supergrafis2.png';
+
 
 function Youtube() {
     return (
@@ -10,6 +12,9 @@ function Youtube() {
             <section className="YoutubeContainer">
                 <div className="ombak">
                     <img src={ombakterangtop} alt="ombak"/>
+                </div>
+                <div className="supergrafis">
+                    <img src={supergrafis} alt="supergrafis" />
                 </div>
                 <div className="Youtube">
                     <div className="YoutubeHeader">
