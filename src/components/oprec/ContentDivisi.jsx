@@ -42,8 +42,6 @@ const ContentDivisi = [
         deskripsi: "Atowo adalah alat musik tradisional Papua yang terbuat dari kayu, dimainkan dengan cara dipukul untuk menghasilkan ritme yang melambangkan persatuan dan kerja sama dalam upacara adat. Seperti Arunika, yang menangkap dan menyatukan setiap momen, menjaga alur cerita kegiatan dengan harmoni yang selaras, serta memastikan setiap kenangan tersimpan dengan sempurna.",
         tugas: "Arunika bertugas untuk mengabadikan momen yang ada dalam seluruh rangkaian kegiatan OMB UMN 2025.",
         link: "",
-        link
-            : "",
     },
     {
         logoImg: Perlengkapan,

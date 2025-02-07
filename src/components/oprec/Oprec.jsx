@@ -5,6 +5,8 @@ import Countdown from "./countdown/Countdown.jsx";
 
 import ContentDivisi from "./ContentDivisi";
 
+import GlassButton from "../button/Button.jsx";
+
 import ombakterangdown from "../../images/ombak/Ombakterang_Down-crop.png"
 import ombakterangtop from "../../images/ombak/Ombakterang_Top-crop.png"
 import supergrafis1 from '../../images/supergrafis/supergrafis4.png';
@@ -29,7 +31,7 @@ function Oprec() {
                     <img src={supergrafis1} alt="supergrafis" />
                 </div>
                 <div className="OprecHeader">
-                    <h1>Kura-kura matahari menyanyi dalam harmoni,</h1>
+                    <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
                     <h1>Jangan lewatkan kesempatan ini!</h1>
                 </div>
                 <div className="OprecText">
@@ -44,30 +46,30 @@ function Oprec() {
             <section className="OprecDivisi">
                 <div className="DivisiHeader">
                     <div className="ombak1">
-                        <img src={ombakterangtop} alt="ombak1"/>
+                        <img src={ombakterangtop} alt="ombak1" />
                     </div>
                     <h1>Divisi</h1>
                     <h6>Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!</h6>
                     <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
                     <div className="ombak2">
-                        <img src={ombakterangdown} alt="ombak2"/>
+                        <img src={ombakterangdown} alt="ombak2" />
                     </div>
-                    <div className="supergrafis2">
-                        <img src={supergrafis2} alt="supergrafis" />
+                    <div className="supergrafis2 z-0">
+                        <img src={supergrafis2} alt="supergrafis" className="z-0" />
                     </div>
                 </div>
-                <div className="flex flex-col p-2">
-                    <div className="flex flex-1 justify-center">
+                <div className="flex flex-col p-2 z-10">
+                    <div className="flex flex-1 justify-center z-10">
                         {ContentDivisi.slice(0, 4).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
                     </div>
-                    <div className="flex flex-1 justify-center">
+                    <div className="flex flex-1 justify-center z-10">
                         {ContentDivisi.slice(4, 7).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
                     </div>
-                    <div className="flex flex-1 justify-center">
+                    <div className="flex flex-1 justify-center z-10">
                         {ContentDivisi.slice(7, 9).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
@@ -82,16 +84,19 @@ function Oprec() {
                             animate={{ opacity: 1, scale: 1 }}
                             exit={{ opacity: 0, scale: 0.9 }}
                             transition={{ duration: 0.3, ease: "easeOut" }}
-                            className="relative bg-gray-100 p-6 max-w-[600px] w-full max-h-[80vh] overflow-y-auto rounded-xl shadow-lg "
+                            className="relative bg-gray-100 p-6 max-w-[700px] w-full 
+                                        max-h-[80vh] overflow-y-auto rounded-xl shadow-lg
+                                        flex flex-col
+                                        "
                         >
                             <button
-                                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 
-                                            text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex align"
+                                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-8 h-8"
                                 onClick={() => setSelectedDivisi(null)}
                             >
                                 &times;
                             </button>
 
+                            <div className="">
                             <div className="flex flex-row items-center text-center">
                                 <div className="flex-row mx-4">
                                     <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
@@ -111,13 +116,23 @@ function Oprec() {
                                     </div>
                                 </div>
 
-                                <div className="bg-gray-200 p-4 mt-4 rounded-lg border border-blue-950 w-full">
+                                <div className="">
                                     <div className="foto-divisi">
-                                        <img></img>
+                                        <img src={supergrafis1}></img>
+                                        <img src={supergrafis1}></img>
                                     </div>
-                                    <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
-                                    <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
+                                    <div className="bg-gray-200 p-4 mt-4 rounded-lg border border-blue-950 w-full mb-[20px]">
+                                        <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
+                                        <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
+                                    </div>
+                                    <GlassButton
+                                        text="Daftar"
+                                        onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
+                                        className="text-white max-w-[180px]"
+                                    />
                                 </div>
+                            </div>
+
                             </div>
                         </motion.div>
                     </div>
