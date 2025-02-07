@@ -13,10 +13,7 @@ import gradient from "../../images/gradien/gradien1.png"
 
 function Footer() {
     return (
-        <div className="footersection">
-            <div className="footerbg">
-                <img src={gradient} alt="background" />
-            </div>
+        <div className="footerSection">
             <div className="ombak">
                 <img src={ombaksantuytop} alt="ombak" />
             </div>
