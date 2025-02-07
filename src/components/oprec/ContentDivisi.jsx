@@ -18,9 +18,9 @@ import Pic from "../../images/logo-divisi/Ring_Gyana.png"
 
 import Keamanan from "../../images/logo-divisi/Ring_Abhiseva.png"
 
-import Bph from "../../images/logo-divisi/Ring_Naratama.png"
+// import Bph from "../../images/logo-divisi/Ring_Naratama.png"
 
-import Medis from "../../images/logo-divisi/Ring_Sadina.png"
+// import Medis from "../../images/logo-divisi/Ring_Sadina.png"
 
 import acara1 from "../../images/foto-divisi/acara-1.jpg"
 import acara2 from "../../images/foto-divisi/acara-2.jpg"
@@ -192,5 +192,5 @@ const ContentDivisi = [
     },
 ]
 
-export default ContentDivisi
+export default ContentDivisi;
 
