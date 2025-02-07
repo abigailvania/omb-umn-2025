@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import './oprec.scss';
+import Countdown from "./countdown/Countdown.jsx";
 
 import ContentDivisi from "./ContentDivisi";
 
@@ -34,6 +35,7 @@ function Oprec() {
                         terbuka dari 10 Februari 2025 pukul 08.00 WIB sampai 15 Februari 2025 pukul 23.59 WIB.
                     </p>
                 </div>
+                <Countdown targetDate="2025-02-10T08:00:00" />
             </section>
             <section className="OprecDivisi">
                 <div className="DivisiHeader">
