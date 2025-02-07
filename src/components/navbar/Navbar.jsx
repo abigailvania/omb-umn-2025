@@ -32,7 +32,7 @@ const Navbar = () => {
                             setDropdownOpen(!dropdownOpen);
                         }}>Informasi</a>
                         {dropdownOpen && (
-                            <div className="dropdown-card" style={{ position: 'absolute', top: '100%', left: 0, background: 'white', boxShadow: '0px 4px 6px rgba(0,0,0,0.1)', borderRadius: '8px', padding: '10px', zIndex: 1000 }}>
+                            <div className="dropdown-card">
                                 <ul className="dropdown-menu">
                                     <li><a href="#" onClick={(e) => {
                                         e.preventDefault();
