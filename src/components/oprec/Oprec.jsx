@@ -75,45 +75,61 @@ function Oprec() {
                 </div>
             </section>
             {selectedDivisi && (
-                <AnimatePresence>
-                    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50 text-blue-950">
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.9 }}
-                            transition={{ duration: 0.3, ease: "easeOut" }}
-                            className="relative bg-gray-100 p-6 max-w-[700px] w-full max-h-[65vh] overflow-y-auto rounded-xl shadow-lg flex flex-col"
-                        >
-                            <button
-                                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-8 h-8"
-                                onClick={() => setSelectedDivisi(null)}
-                            >
-                                &times;
-                            </button>
-                            <div className="">
-                                <div className="flex flex-col items-center text-center">
-                                    <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
-                                    <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
-                                    <img src={selectedDivisi.logoImg} alt={selectedDivisi.name} className="w-[120px] object-contain rounded-full shadow-md my-4" />
-                                    <div className="bg-gray-200 p-2 rounded-lg border border-blue-950 w-full text-center">
-                                        <p className="text-sm">Logo: {selectedDivisi.logo}</p>
-                                        <p className="text-sm">Arti: {selectedDivisi.arti}</p>
-                                    </div>
-                                    <div className="bg-gray-200 p-4 mt-4 rounded-lg border border-blue-950 w-full">
-                                        <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
-                                        <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
-                                    </div>
-                                    <GlassButton
-                                        text="Daftar"
-                                        onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                                        className="text-white max-w-[180px]"
-                                    />
-                                </div>
-                            </div>
-                        </motion.div>
+    <AnimatePresence>
+        <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50 text-blue-950">
+            <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="relative bg-gray-100 p-6 max-w-[700px] w-full max-h-[75vh] overflow-y-auto rounded-xl shadow-lg flex flex-col"
+            >
+                <button
+                    className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-8 h-8"
+                    onClick={() => setSelectedDivisi(null)}
+                >
+                    &times;
+                </button>
+
+                {/* Tambahkan Grid untuk Tata Letak */}
+                <div className="grid grid-cols-2 gap-4">
+                    {/* Kotak Kosong untuk Gambar */}
+                    <div className="flex items-center justify-center bg-gray-300 rounded-lg w-full h-40 border border-gray-500">
+                        <img
+                            src={selectedDivisi.logoImg}
+                            alt={selectedDivisi.name}
+                            className="max-w-full max-h-full object-contain"
+                        />
                     </div>
-                </AnimatePresence>
-            )}
+
+                    {/* Informasi Divisi */}
+                    <div className="flex flex-col items-center text-center">
+                        <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
+                        <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
+
+                        <div className="bg-gray-200 p-2 rounded-lg border border-blue-950 w-full text-center">
+                            <p className="text-sm">Logo: {selectedDivisi.logo}</p>
+                            <p className="text-sm">Arti: {selectedDivisi.arti}</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Deskripsi dan Tombol */}
+                <div className="bg-gray-200 p-4 mt-4 rounded-lg border border-blue-950 w-full">
+                    <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
+                    <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
+                </div>
+
+                <GlassButton
+                    text="Daftar"
+                    onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
+                    className="text-white max-w-[180px] mt-4"
+                />
+            </motion.div>
+        </div>
+    </AnimatePresence>
+)}
+
         </>
     );
 }
