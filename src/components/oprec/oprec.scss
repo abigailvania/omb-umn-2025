@@ -1,21 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-
-$primary-color: #005a8d;
-$secondary-color: #f4f4f4;
-$gradient-bg: linear-gradient(to right, #004d40, #64b5f6);
-$text-color: #333;
-$border-color: #fff;
-
 .OprecText {
     text-align: center;
-    color: $text-color;
+    color: #1E7D87;
     margin: 20px 0;
 
     h1 {
         font-size: 1.5rem;
         font-weight: 700;
-        color: $primary-color;
+        color: #1E7D87;
         margin-bottom: 10px;
+    }
+
+    h2 {
+        color: black;
     }
 
     p {
