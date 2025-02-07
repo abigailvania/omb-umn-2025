@@ -4,8 +4,8 @@ import './oprec.scss';
 
 import ContentDivisi from "./ContentDivisi";
 
-import ombakterangdown from "../../images/ombak/Ombakterang_Down.png"
-import ombakterangtop from "../../images/ombak/Ombakterang_Top.png"
+import ombakterangdown from "../../images/ombak/Ombakterang_Down-crop.png"
+import ombakterangtop from "../../images/ombak/Ombakterang_Top-crop.png"
 
 
 const DivisiCard = ({ divisi, onClick }) => {
