@@ -1,6 +1,8 @@
 import React from "react";
 import './Youtube.scss';
 
+import ombakterangtop from '../../images/ombak/Ombakterang_Top.png';
+
 function Youtube() {
     return (
         <>

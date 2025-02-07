@@ -61,6 +61,7 @@ const ApaItuOMB = () => {
                     dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
                 </p>
             </div>
+
         </section>
     );
 };
