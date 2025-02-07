@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './ApaItuOMB.scss';
 
 import foto1 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
@@ -7,35 +7,40 @@ import foto3 from '../../assets/images/omb-6.jpg';
 import foto4 from '../../assets/images/ALV00036.jpg';
 import foto5 from '../../assets/images/omb-10.jpg';
 
-const [sliderWidth, setSliderWidth] = useState(0);
-const sliderRef = React.useRef(null);
+const ApaItuOMB = () => {
+    const originalImages = [foto1, foto2, foto3, foto4, foto5];
+    const images = [...originalImages, originalImages[0]];
 
-useEffect(() => {
-    if (sliderRef.current) {
-        setSliderWidth(sliderRef.current.clientWidth);
-    }
-}, []);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isTransitioning, setIsTransitioning] = useState(true);
+    const [sliderWidth, setSliderWidth] = useState(0);
+    const sliderRef = useRef(null);
 
-useEffect(() => {
-    const interval = setInterval(() => {
-        if (currentIndex === images.length - 1) {
-            setIsTransitioning(false);
-            setCurrentIndex(0);
-        } else {
-            setIsTransitioning(true);
-            setCurrentIndex((prevIndex) => prevIndex + 1);
+    useEffect(() => {
+        if (sliderRef.current) {
+            setSliderWidth(sliderRef.current.clientWidth);
         }
-    }, 2000);
+    }, []);
 
-    return () => clearInterval(interval);
-}, [currentIndex]);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            if (currentIndex === images.length - 1) {
+                setIsTransitioning(false);
+                setCurrentIndex(0);
+            } else {
+                setIsTransitioning(true);
+                setCurrentIndex((prevIndex) => prevIndex + 1);
+            }
+        }, 2000);
 
-useEffect(() => {
-    if (!isTransitioning && currentIndex === 0) {
-        setTimeout(() => setIsTransitioning(true), 50);
-    }
-}, [isTransitioning, currentIndex]);
+        return () => clearInterval(interval);
+    }, [currentIndex]);
 
+    useEffect(() => {
+        if (!isTransitioning && currentIndex === 0) {
+            setTimeout(() => setIsTransitioning(true), 50);
+        }
+    }, [isTransitioning, currentIndex]);
 
     return (
         <section className="apaituomb_section">
@@ -47,7 +52,6 @@ useEffect(() => {
                         transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
                     }}
                 >
-
                     {images.map((image, index) => (
                         <img key={index} src={image} alt="OMB" className="apaituomb_image" />
                     ))}
