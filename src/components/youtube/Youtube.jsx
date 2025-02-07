@@ -8,15 +8,17 @@ import supergrafis from "../../images/supergrafis/supergrafis3.png";
 function Youtube() {
     const [videoSrc, setVideoSrc] = useState("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF");
     const videoRef = useRef(null);
+    const hasPlayed = useRef(false); // Untuk memastikan autoplay hanya terjadi sekali
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
-                if (entries[0].isIntersecting) {
-                    setVideoSrc("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1");
+                if (entries[0].isIntersecting && !hasPlayed.current) {
+                    setVideoSrc("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1&mute=1");
+                    hasPlayed.current = true; // Pastikan hanya autoplay sekali
                 }
             },
-            { threshold: 0.3 } 
+            { threshold: 0.5 } // Autoplay saat 50% video masuk ke viewport
         );
 
         if (videoRef.current) {
