@@ -6,6 +6,8 @@ import Countdown from "./countdown/Countdown.jsx";
 import ContentDivisi from "./ContentDivisi";
 
 import GlassButton from "../button/Button.jsx";
+import ImageSlider from "../image-slider/image-slider.jsx";
+
 
 import ombakterangdown from "../../images/ombak/Ombakterang_Down-crop.png"
 import ombakterangtop from "../../images/ombak/Ombakterang_Top-crop.png"
@@ -118,8 +120,7 @@ function Oprec() {
 
                                 <div className="">
                                     <div className="foto-divisi">
-                                        <img src={supergrafis1}></img>
-                                        <img src={supergrafis1}></img>
+                                        <ImageSlider images={images} />
                                     </div>
                                     <div className="bg-gray-200 p-4 mt-4 rounded-lg border border-blue-950 w-full mb-[20px]">
                                         <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
