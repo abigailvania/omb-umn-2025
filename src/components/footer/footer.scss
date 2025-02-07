@@ -22,7 +22,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.4));
+        height: 150px; /* Adjust the height to a smaller value */
+        background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.3)); /* Slightly lighter gradient */
         z-index: 0;
     }
 
@@ -63,6 +64,7 @@
 
         .ombak {
             top: 0;
+            height: 100px; /* Reduce size further for smaller screens */
         }
 
         .flex {
@@ -88,6 +90,7 @@
 
         .ombak {
             top: 0;
+            height: 80px; /* Adjust for smaller screens */
         }
 
         .social-icons {
