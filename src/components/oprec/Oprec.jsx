@@ -7,6 +7,8 @@ import ContentDivisi from "./ContentDivisi";
 
 import ombakterangdown from "../../images/ombak/Ombakterang_Down-crop.png"
 import ombakterangtop from "../../images/ombak/Ombakterang_Top-crop.png"
+import supergrafis1 from '../../images/supergrafis/supergrafis4.png';
+import supergrafis2 from '../../images/supergrafis/supergrafis5.png';
 
 
 const DivisiCard = ({ divisi, onClick }) => {
@@ -26,7 +28,9 @@ function Oprec() {
                 <div className="OprecHeader">
                     <h1>Kura-kura matahari menyanyi dalam harmoni,</h1>
                     <h1>Jangan lewatkan kesempatan ini!</h1>
-                    
+                </div>
+                <div className="supergrafis1">
+                    <img src={supergrafis1} alt="supergrafis" />
                 </div>
                 <div className="OprecText">
                     <h2>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h2>
@@ -65,6 +69,9 @@ function Oprec() {
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
                     </div>
+                </div>
+                <div className="supergrafis">
+                    <img src={supergrafis2} alt="supergrafis" />
                 </div>
             </section>
             {selectedDivisi && (
