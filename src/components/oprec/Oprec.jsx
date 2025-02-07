@@ -27,7 +27,7 @@ function Oprec() {
                     <h1>Jangan lewatkan kesempatan ini!</h1>
                     
                 </div>
-                <div className="OprecText">
+                <div className="OprecText text-left">
                     <h1>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h1>
                     <p>Pendaftaran terbuka bagi mahasiswa/i aktif seluruh program studi dari angkatan 2022,
                         2023 dan 2024 yang telah lulus mengikuti rangkaian kegiatan OMB UMN. Form pendaftaran
