@@ -13,10 +13,10 @@ function Footer() {
     return (
         <div className="footerSection">
             <div className="overlay"></div>
+            <div className="content">
                 <div className="ombak">
                     <img src={ombaksantuytop} alt="ombak" />
                 </div>
-            <div className="content">
                 <div className="flex flex-row justify-between items-center">
                     <div className="flex-1 text-right">
                         <p className="text-xl font-bold">Alamat</p>
