@@ -18,9 +18,16 @@ const ApaItuOMB = () => {
     const sliderRef = useRef(null);
 
     useEffect(() => {
-        if (sliderRef.current) {
-            setSliderWidth(sliderRef.current.clientWidth);
-        }
+        const updateSliderWidth = () => {
+            if (sliderRef.current) {
+                setSliderWidth(sliderRef.current.clientWidth);
+            }
+        };
+
+        updateSliderWidth(); // Panggil saat komponen pertama kali dimuat
+        window.addEventListener('resize', updateSliderWidth);
+        
+        return () => window.removeEventListener('resize', updateSliderWidth);
     }, []);
 
     useEffect(() => {
@@ -35,7 +42,7 @@ const ApaItuOMB = () => {
         }, 2000);
 
         return () => clearInterval(interval);
-    }, [currentIndex]);
+    }, [currentIndex, images.length]);
 
     useEffect(() => {
         if (!isTransitioning && currentIndex === 0) {
