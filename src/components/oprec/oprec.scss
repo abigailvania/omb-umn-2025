@@ -16,7 +16,6 @@
         font-weight: 700;
         margin: auto;
         max-width: 800px;
-
     }
 
     p {
@@ -30,14 +29,13 @@
         position: absolute;
         width: 100%;
     }
-
 }
-
 
 .OprecDivisi {
     text-align: center;
     color: white;
     border-radius: 10px;
+    padding: 20px;
 
     .DivisiHeader {
         background: linear-gradient(to top right, 
@@ -50,6 +48,8 @@
       );
         width: 100%;
         background-size: cover;
+        padding: 20px;
+
         h1 {
             font-size: 3rem;
             font-weight: 700;
@@ -60,76 +60,41 @@
             font-weight: 500;
         }
     }
+
     .supergrafis2 {
         position: absolute;
         width: 100%;
     }
-}
 
-@media (max-width: 1024px) {
-    .OprecHeader {
-        font-size: 2rem;
+    .DivisiContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        padding: 20px;
     }
-    
-    .OprecText h2 {
-        font-size: 1.3rem;
+
+    .DivisiCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
     }
-    
-    .OprecText p {
-        font-size: 1rem;
-    }
-    
-    .DivisiHeader h1 {
-        font-size: 2.5rem;
-    }
-    
-    .DivisiHeader h6 {
-        font-size: 1.3rem;
+
+    .DivisiCard:hover {
+        transform: scale(1.05);
     }
 }
 
 @media (max-width: 768px) {
-    .OprecHeader {
-        font-size: 1.8rem;
-    }
-    
-    .OprecText h2 {
-        font-size: 1.2rem;
-    }
-    
-    .OprecText p {
-        font-size: 0.9rem;
-    }
-    
-    .DivisiHeader h1 {
-        font-size: 2rem;
-    }
-    
-    .DivisiHeader h6 {
-        font-size: 1.2rem;
+    .OprecDivisi .DivisiContainer {
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
     }
 }
 
 @media (max-width: 480px) {
-    .OprecHeader {
-        font-size: 1.5rem;
-    }
-    
-    .OprecText h2 {
-        font-size: 1rem;
-    }
-    
-    .OprecText p {
-        font-size: 0.85rem;
-    }
-    
-    .DivisiHeader h1 {
-        font-size: 1.8rem;
-    }
-    
-    .DivisiHeader h6 {
-        font-size: 1rem;
+    .OprecDivisi .DivisiContainer {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
     }
 }
-
-
