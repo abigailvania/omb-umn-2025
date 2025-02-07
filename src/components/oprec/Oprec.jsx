@@ -70,7 +70,7 @@ function Oprec() {
                         ))}
                     </div>
                 </div>
-                <div className="supergrafis">
+                <div className="supergrafis2">
                     <img src={supergrafis2} alt="supergrafis" />
                 </div>
             </section>
