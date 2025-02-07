@@ -11,7 +11,7 @@ function Youtube() {
                 <div className="ombak">
                     <img src={ombakterangtop} alt="ombak"/>
                 </div>
-                <div className="Youtube">
+                <div className="Youtube flex flex-col justify-center align-center">
                     <div className="YoutubeHeader">
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
