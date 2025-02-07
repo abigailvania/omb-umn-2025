@@ -1,6 +1,4 @@
 .YoutubeContainer {
-
-    height: 100vh; // Full screen height
     padding: 0;
     background: linear-gradient(to top right, 
           #03335B, 
@@ -12,7 +10,7 @@
         );
       background-size: fit;
       border: none;
-      .ombak {
+      .ombak, .ombak2 {
         width: 100%;
       }
 }
