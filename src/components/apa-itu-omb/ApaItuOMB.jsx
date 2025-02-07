@@ -6,6 +6,7 @@ import foto2 from '../../assets/images/omb-3.jpg';
 import foto3 from '../../assets/images/omb-6.jpg';
 import foto4 from '../../assets/images/ALV00036.jpg';
 import foto5 from '../../assets/images/omb-10.jpg';
+import supergrafis from '../../images/supergrafis/supergrafis2.png';
 
 const ApaItuOMB = () => {
     const originalImages = [foto1, foto2, foto3, foto4, foto5];
@@ -44,6 +45,9 @@ const ApaItuOMB = () => {
 
     return (
         <section className="apaituomb_section">
+            <div className="supergrafis">
+                <img src={supergrafis} alt="supergrafis" />
+            </div>
             <div className="apaituomb_slider" ref={sliderRef}>
                 <div
                     className="apaituomb_slider_inner"
