@@ -22,51 +22,51 @@ import Bph from "../../images/logo-divisi/Ring_Naratama.png"
 
 import Medis from "../../images/logo-divisi/Ring_Sadina.png"
 
-import acara1 from "../../images/foto-divisi/acara1.jpg";
-import acara2 from "../../images/foto-divisi/acara2.jpg";
-import acara3 from "../../images/foto-divisi/acara3.jpg";
+import acara1 from "../../images/foto-divisi/acara-1.jpg"
+import acara2 from "../../images/foto-divisi/acara-2.jpg"
+import acara3 from "../../images/foto-divisi/acara-3.jpg"
 
-import dokumentasi1 from "../../images/foto-divisi/dokum1.jpg";
-import dokumentasi2 from "../../images/foto-divisi/dokum2.jpg";
-import dokumentasi3 from "../../images/foto-divisi/dokum3.jpg";
-import dokumentasi4 from "../../images/foto-divisi/dokum4.jpg";
-import dokumentasi5 from "../../images/foto-divisi/dokum5.jpg";
+import dokumentasi1 from "../../images/foto-divisi/dokum-1.jpg"
+import dokumentasi2 from "../../images/foto-divisi/dokum-2.jpg"
+import dokumentasi3 from "../../images/foto-divisi/dokum-3.jpg"
+import dokumentasi4 from "../../images/foto-divisi/dokum-4.jpg"
+import dokumentasi5 from "../../images/foto-divisi/dokum-5.jpg"
 
-import perlengkapan1 from "../../images/foto-divisi/perkap1.jpg";
-import perlengkapan2 from "../../images/foto-divisi/perkap2.jpg";
-import perlengkapan3 from "../../images/foto-divisi/perkap3.jpg";
+import perlengkapan1 from "../../images/foto-divisi/perkap-1.jpg"
+import perlengkapan2 from "../../images/foto-divisi/perkap-2.jpg"
+import perlengkapan3 from "../../images/foto-divisi/perkap-3.jpg"
 
-import konsumsi1 from "../../images/foto-divisi/konsum.1jpg";
-import konsumsi2 from "../../images/foto-divisi/konsum2.jpg";
-import konsumsi3 from "../../images/foto-divisi/konsum3.jpg";
+import konsumsi1 from "../../images/foto-divisi/konsum-1.jpg"
+import konsumsi2 from "../../images/foto-divisi/konsum-2.jpg"
+import konsumsi3 from "../../images/foto-divisi/konsum-3.jpg"
 
-import desain1 from "../../images/foto-divisi/desain1.jpg";
-import desain2 from "../../images/foto-divisi/desain2.jpg";
-import desain3 from "../../images/foto-divisi/desain3.jpg";
+import desain1 from "../../images/foto-divisi/desain-1.jpg"
+import desain2 from "../../images/foto-divisi/desain-2.jpg"
+import desain3 from "../../images/foto-divisi/desain-3.jpg"
 
-import pr1 from "../../images/foto-divisi/pr1.jpg";
-import pr2 from "../../images/foto-divisi/pr2.jpg";
-import pr3 from "../../images/foto-divisi/pr3.jpg";
+import pr1 from "../../images/foto-divisi/pr-1.jpg"
+import pr2 from "../../images/foto-divisi/pr-2.jpg"
+import pr3 from "../../images/foto-divisi/pr-3.jpg"
 
-import website1 from "../../images/foto-divisi/web1.jpg";
-import website2 from "../../images/foto-divisi/web2.jpg";
-import website3 from "../../images/foto-divisi/web3.jpg";
+import website1 from "../../images/foto-divisi/web-1.jpg"
+import website2 from "../../images/foto-divisi/web-2.jpg"
+import website3 from "../../images/foto-divisi/web-3.jpg"
 
-import pic1 from "../../images/foto-divisi/pic1.jpg";
-import pic2 from "../../images/foto-divisi/pic2.jpg";
-import pic3 from "../../images/foto-divisi/pic3.jpg";
+import pic1 from "../../images/foto-divisi/pic-1.jpg"
+import pic2 from "../../images/foto-divisi/pic-2.jpg"
+import pic3 from "../../images/foto-divisi/pic-3.jpg"
 
-import keamanan1 from "../../images/foto-divisi/keamanan1.jpg";
-import keamanan2 from "../../images/foto-divisi/keamanan2.jpg";
-import keamanan3 from "../../images/foto-divisi/keamanan3.jpg";
+import keamanan1 from "../../images/foto-divisi/keamanan-1.jpg"
+import keamanan2 from "../../images/foto-divisi/keamanan-2.jpg"
+import keamanan3 from "../../images/foto-divisi/keamanan-3.jpg"
 
-import medis1 from "../../images/foto-divisi/medis1.jpg";
-import medis2 from "../../images/foto-divisi/medis2.jpg";
-import medis3 from "../../images/foto-divisi/medis3.jpg";
+import medis1 from "../../images/foto-divisi/medis-1.jpg"
+import medis2 from "../../images/foto-divisi/medis-2.jpg"
+import medis3 from "../../images/foto-divisi/medis-3.jpg"
 
-import bph1 from "../../images/foto-divisi/bph1.jpg";
-import bph2 from "../../images/foto-divisi/bph2.jpg";
-import bph3 from "../../images/foto-divisi/bph3.jpg";
+import bph1 from "../../images/foto-divisi/bph-1.jpg"
+import bph2 from "../../images/foto-divisi/bph-2.jpg"
+import bph3 from "../../images/foto-divisi/bph-3.jpg"
 
 const ContentDivisi = [
     {
