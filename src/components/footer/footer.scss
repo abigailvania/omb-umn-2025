@@ -1,199 +1,102 @@
-.footer_section {
+.footerSection {
+    position: relative;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background: url("../../images/header-footer/foto-footer.jpg") center/cover no-repeat;
-    position: absolute;
-    padding: 0 10px; /* Added padding for better layout on small screens */
-    
-    .ombak, .wave-water {
+    height: 100vh;
+    background: url("../../images/header-footer/foto-footer.jpg");
+    background-size: cover;
+
+    .overlay {
+        content: "";
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        z-index: 0;
+        height: 100%;
+        background: url("../../images/gradien/gradien1.png");
+        background-size: cover;
+        opacity: 0.9;
+        z-index: 1;
     }
 
     .ombak {
+        width: 100%;
+        position: absolute;
         top: 0;
+        left: 0;
         background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.4));
+        z-index: 0;
     }
 
-    .footer_content {
-        width: 100%;
-        max-width: 1200px; /* Maximum width for better control on large screens */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 60px;
-        padding: 60px;
-        margin-bottom: 100px;
+    .content {
         position: relative;
         z-index: 2;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
 
-        .footer_top {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            flex-wrap: wrap; /* Allow wrapping for better layout on smaller screens */
-            gap: 30px;
+    .social-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
 
-            .left_content, .right_content, .mid_content {
-                display: flex;
-                flex-direction: column;
-                gap: 8px;
-                flex: 1;
-                color: white;
-                font-weight: 500;
-                text-shadow: 0px 4px 40px rgba(255, 255, 255, 0.24), 0px 4px 12px rgba(129, 87, 206, 0.25), 0px 2px 4px rgba(0, 0, 0, 0.12);
+        .icon {
+            width: 25px;
+            margin: 0 10px;
+            transition: transform 0.3s ease-in-out;
 
-                h1 {
-                    font-size: 24px;
-                    font-weight: 600;
-                }
-
-                p {
-                    font-size: 18px;
-                }
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
-
-            .mid_content {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex: 1;
-                
-                img {
-                    width: 160px;
-                    height: auto;
-                    object-fit: cover;
-                }
-            }
-
-            .right_content {
-                flex-direction: row;
-                justify-content: space-around;
-                gap: 32px;
-                flex-wrap: wrap;
-
-                .list_wrapper {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 12px;
-
-                    .each_list {
-                        display: flex;
-                        align-items: center;
-                        gap: 8px;
-
-                        img {
-                            width: 20px;
-                            height: 20px;
-                        }
-
-                        a {
-                            font-size: 18px;
-                        }
-                    }
-                }
+            &:hover {
+                transform: scale(1.2);
             }
         }
+    }
 
-        .footer_bottom {
-            display: flex;
+    .copyright {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            margin-top: 100px;
+            padding: 15px;
+        }
+
+        .ombak {
+            top: 0;
+        }
+
+        .flex {
             flex-direction: column;
             align-items: center;
-            gap: 12px;
-            width: 100%;
+        }
 
-            .top_info {
-                text-align: center;
+        .flex-1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-                .copyright, .slebew {
-                    font-size: 16px;
-                }
-
-                .update {
-                    border: 1px solid white;
-                    background-color: rgba(255, 255, 255, 0.273);
-                    border-radius: 100px;
-                    padding: 4px 8px;
-                    font-size: 12px;
-                    font-weight: 500;
-                }
-            }
-
-            p {
-                font-size: 16px;
-                color: rgba(255, 255, 255, 0.65);
-            }
+        .social-icons {
+            margin-top: 10px;
         }
     }
 
-    .wave-water {
-        height: 300px;
-        bottom: 0;
-        opacity: 0.5;
-        pointer-events: none;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-    .footer_section {
-        padding: 0 20px;
-        
-        .footer_content {
-            padding: 50px;
-        }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .footer_section .footer_content {
-        padding: 40px;
-
-        .footer_top {
-            gap: 20px;
+    @media (max-width: 480px) {
+        .content {
+            margin-top: 80px;
+            padding: 10px;
         }
 
-        .footer_bottom {
-            gap: 8px;
+        .ombak {
+            top: 0;
         }
-    }
-}
 
-@media screen and (max-width: 810px) {
-    .footer_section {
-        background-position: 50%;
-        background-size: cover;
+        .social-icons {
+            margin-top: 15px;
+        }
 
-        .footer_content {
-            padding: 30px;
-            
-            .footer_top {
-                flex-direction: column;
-                gap: 30px;
-            }
-
-            .mid_content img {
-                width: 140px;
-            }
-
-            .right_content {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .right_content .list_wrapper .each_list a {
-                font-size: 16px;
-            }
+        .copyright {
+            font-size: 12px;
         }
     }
 }
