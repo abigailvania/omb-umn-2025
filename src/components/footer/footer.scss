@@ -13,20 +13,20 @@
         height: 100%;
         background: url("../../images/gradien/gradien1.png") no-repeat center center;
         background-size: cover;
-        opacity: 0.9; // Transparansi gradien
-        z-index: 1; // Menempatkan gradien di bawah konten
+        opacity: 0.9;
+        z-index: 1;
     }
 
     .ombak {
-        width: 100%;  // Ombak full width
+        width: 100%;
         position: absolute;
-        top: 0;  // Pastikan ombak berada di bagian bawah footer
+        top: 0;
         left: 0;
     }
 
     .content {
         position: relative;
-        z-index: 2; // Konten berada di atas overlay dan ombak
+        z-index: 2;
         padding: 20px;
         color: white;
         text-align: center;

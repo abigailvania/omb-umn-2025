@@ -19,10 +19,10 @@
 .Youtube {
     display: flex;
     flex-direction: column;
-    align-items: center; // Ini akan memusatkan konten secara horizontal
-    justify-content: center; // Ini akan memusatkan konten secara vertikal
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 20px 0; // Tambahkan padding jika diperlukan
+    padding: 20px 0;
 }
 
 .YoutubeHeader {
@@ -37,7 +37,7 @@
 
 .YoutubeThumbnail {
     display: flex;
-    justify-content: center; // Ini akan memusatkan iframe di dalam .YoutubeThumbnail
+    justify-content: center;
     width: 100%;
 
     iframe {

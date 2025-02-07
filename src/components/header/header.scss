@@ -15,13 +15,13 @@
     background: url('../../images/gradien/gradien1.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.5; // Transparansi gradien
+    opacity: 0.5; 
     z-index: 1;
   }
 
   .ombak {
     width: 100%;
     position: relative;
-    z-index: 2; // Pastikan elemen lain tidak tertutup
+    z-index: 2;
   }
 }
