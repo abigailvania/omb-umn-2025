@@ -20,20 +20,20 @@
     .ombak {
         width: 100%;
         position: absolute;
-        top: 0;  // Menjaga ombak tetap di atas
+        top: 0;
         left: 0;
         background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.4));
         background-size: cover;
-        z-index: 0;  // Menjaga ombak di bawah konten
+        z-index: 0;
     }
 
     .content {
         position: relative;
-        z-index: 2;  // Pastikan konten berada di atas ombak
+        z-index: 2;
         padding: 20px;
         color: white;
         text-align: center;
-        margin-top: 140px;  // Memberikan ruang tambahan di atas konten agar tidak tertimpa ombak
+        margin-top: 140px;
     }
 
     .social-icons {
@@ -59,12 +59,12 @@
 
     @media (max-width: 768px) {
         .content {
-            margin-top: 100px;  // Mengurangi margin atas untuk tampilan layar lebih kecil
+            margin-top: 100px;
             padding: 15px;
         }
 
         .ombak {
-            top: 0;  // Menjaga posisi tetap
+            top: 0;
         }
 
         .flex {
@@ -84,12 +84,12 @@
 
     @media (max-width: 480px) {
         .content {
-            margin-top: 80px;  // Mengurangi margin atas lebih lanjut pada layar lebih kecil
+            margin-top: 80px;
             padding: 10px;
         }
 
         .ombak {
-            top: 0;  // Menjaga posisi tetap
+            top: 0;
         }
 
         .social-icons {
