@@ -15,7 +15,7 @@ function Youtube() {
         const observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0].isIntersecting && !hasPlayed.current) {
-                    setVideoSrc("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1&mute=1");
+                    setVideoSrc("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1");
                     hasPlayed.current = true;
                 }
             },
