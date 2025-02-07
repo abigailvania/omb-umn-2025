@@ -28,7 +28,7 @@ function Oprec() {
                     
                 </div>
                 <div className="OprecText">
-                    <h1>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h1>
+                    <h2>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h2>
                     <p>Pendaftaran terbuka bagi mahasiswa/i aktif seluruh program studi dari angkatan 2022,
                         2023 dan 2024 yang telah lulus mengikuti rangkaian kegiatan OMB UMN. Form pendaftaran
                         terbuka dari 10 Februari 2025 pukul 08.00 WIB sampai 15 Februari 2025 pukul 23.59 WIB.
