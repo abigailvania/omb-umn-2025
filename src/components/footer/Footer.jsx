@@ -20,7 +20,8 @@ function Footer() {
                 <div className="flex-1 text-right">
                     <p className="text-xl font-bold">Alamat</p>
                     <p>Universitas Multimedia Nusantara</p> 
-                        <p>Jl. Scientia Boulevard, Gading Serpong, Tangerang Banten 15811, Indonesia.</p>
+                        <p>Jl. Scientia Boulevard, Gading Serpong, </p>
+                        <p>Tangerang Banten 15811, Indonesia.</p>
                 </div>
                 <div className="flex-1 flex flex-col items-center">
                     <img src={logo} alt="Logo OMB UMN 2025" className="h-[270px]" />
