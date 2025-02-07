@@ -8,7 +8,7 @@ import supergrafis from "../../images/supergrafis/supergrafis1.png"
 import ombakterangdown from "../../images/ombak/Ombakterang_Down.png"
 
 import GlassButton from "../button/Button.jsx";
-import Countdown from "../countdown/Countdown.jsx";
+import Countdown from "../oprec/countdown/Countdown.jsx";
 
 
 function Header() {
