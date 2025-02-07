@@ -84,7 +84,7 @@ function Oprec() {
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.9 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        className="relative bg-gray-100 p-6 max-w-[700px] w-full max-h-[75vh] overflow-y-auto rounded-xl shadow-lg flex flex-col"
+                        className="relative bg-gray-100 p-6 max-w-[700px] w-full max-h-[65vh] overflow-y-auto rounded-xl shadow-lg flex flex-col"
                     >
 
                             <button
