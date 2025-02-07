@@ -3,7 +3,7 @@ import "./header.scss";
 
 import logo from "../../images/header-footer/logo.png"
 import tagline from "../../images/header-footer/tagline.png"
-import ombakterangdown from "../../images/Ombakterang_Down.png"
+import ombakterangdown from "../../images/ombak/Ombakterang_Down.png"
 
 import GlassButton from "../button/Button.jsx";
 
