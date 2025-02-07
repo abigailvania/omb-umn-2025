@@ -85,7 +85,7 @@ function Oprec() {
                             exit={{ opacity: 0, scale: 0.9 }}
                             transition={{ duration: 0.3, ease: "easeOut" }}
                             className="relative bg-gray-100 p-6 max-w-[700px] w-full 
-                                        max-h-[80vh] overflow-y-auto rounded-xl shadow-lg
+                                        max-h-[70vh] overflow-y-auto rounded-xl shadow-lg
                                         flex flex-col
                                         "
                         >
