@@ -60,13 +60,13 @@ import keamanan1 from "../../images/foto-divisi/keamanan-1.jpg"
 import keamanan2 from "../../images/foto-divisi/keamanan-2.jpg"
 import keamanan3 from "../../images/foto-divisi/keamanan-3.jpg"
 
-import medis1 from "../../images/foto-divisi/medic-1.jpg"
-import medis2 from "../../images/foto-divisi/medic-2.jpg"
-import medis3 from "../../images/foto-divisi/medic-3.jpg"
+// import medis1 from "../../images/foto-divisi/medic-1.jpg"
+// import medis2 from "../../images/foto-divisi/medic-2.jpg"
+// import medis3 from "../../images/foto-divisi/medic-3.jpg"
 
-import bph1 from "../../images/foto-divisi/bph-1.jpg"
-import bph2 from "../../images/foto-divisi/bph-2.jpg"
-import bph3 from "../../images/foto-divisi/bph-3.jpg"
+// import bph1 from "../../images/foto-divisi/bph-1.jpg"
+// import bph2 from "../../images/foto-divisi/bph-2.jpg"
+// import bph3 from "../../images/foto-divisi/bph-3.jpg"
 
 const ContentDivisi = [
     {
