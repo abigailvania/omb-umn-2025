@@ -88,6 +88,8 @@ const ContentDivisi = [
         photo1: dokumentasi1,
         photo2: dokumentasi2,
         photo3: dokumentasi3,
+        photo3: dokumentasi4,
+        photo3: dokumentasi5,
     },
     {
         logoImg: Perlengkapan,
