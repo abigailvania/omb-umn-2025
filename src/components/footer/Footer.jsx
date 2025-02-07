@@ -12,7 +12,7 @@ import ombaksantuytop from "../../images/ombak/Ombaksantuy_Top.png"
 
 function Footer() {
     return (
-        <div className="bg-[url('../../images/gradien/ASSET BACKGROUND-01.png')] bg-cover bg-center text-white">
+        <div className="bg-[url('/gradient.png')] bg-cover bg-center text-white">
             <div className="ombak">
                 <img src={ombaksantuytop} alt="ombak" />
             </div>
