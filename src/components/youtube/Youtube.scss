@@ -18,7 +18,8 @@
     .supergrafis {
         position: absolute;
         width: 100%;
-      }
+        z-index: 1;
+    }
 }
 
 .Youtube {
@@ -28,6 +29,7 @@
     justify-content: center;
     text-align: center;
     padding: 20px 0;
+    z-index: 2;
 }
 
 .YoutubeHeader {
