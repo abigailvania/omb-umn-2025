@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Navbar.css';
-import logo from './logo.png';
+import './Navbar.scss';
+import logo from "../../images/header-footer/logo.png"
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
