@@ -20,18 +20,18 @@
     .ombak {
         width: 100%;
         position: absolute;
-        top: -50px;
+        top: 0;
         left: 0;
     }
     
-
     .content {
         position: relative;
         z-index: 2;
         padding: 20px;
         color: white;
         text-align: center;
-    }
+        margin-top: 40px;
+    
 
     .social-icons {
         margin-top: 20px;
