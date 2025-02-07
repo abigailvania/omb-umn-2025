@@ -136,14 +136,13 @@
     object-fit: contain;
 }
 
-/* Responsive styling */
 @media (max-width: 1024px) {
     .logo-divisi .baris1,
     .logo-divisi .baris2,
     .logo-divisi .baris3 {
         gap: 20px;
 }
-
+}
 @media (max-width: 600px) {
     .logo-divisi .baris1,
     .logo-divisi .baris2,
