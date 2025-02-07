@@ -12,7 +12,7 @@ import ombaksantuytop from "../../images/ombak/Ombaksantuy_Top.png";
 function Footer() {
     return (
         <div className="footerSection">
-            <div className="overlay"></div>
+            <div className="overlay">
             <div className="content">
                 <div className="ombak">
                     <img src={ombaksantuytop} alt="ombak" />
@@ -46,6 +46,7 @@ function Footer() {
                         <p>© OMB UMN 2025</p>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     );
