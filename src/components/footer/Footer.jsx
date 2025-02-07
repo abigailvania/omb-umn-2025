@@ -9,10 +9,14 @@ import insta from "../../images/header-footer/insta.png"
 import line from "../../images/header-footer/line.png"
 
 import ombaksantuytop from "../../images/ombak/Ombaksantuy_Top.png"
+import gradient from "../../images/gradien/gradien1.png"
 
 function Footer() {
     return (
-        <div className="bg-[url('/gradient.png')] bg-cover bg-center text-white">
+        <div className="footersection">
+            <div className="footerbg">
+                <img src={gradient} alt="background" />
+            </div>
             <div className="ombak">
                 <img src={ombaksantuytop} alt="ombak" />
             </div>
