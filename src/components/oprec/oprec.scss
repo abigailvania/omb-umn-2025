@@ -16,7 +16,6 @@
         font-weight: 700;
         margin: auto;
         max-width: 800px;
-
     }
 
     p {
@@ -30,9 +29,7 @@
         position: absolute;
         width: 100%;
     }
-
 }
-
 
 .OprecDivisi {
     text-align: center;
@@ -50,6 +47,8 @@
       );
         width: 100%;
         background-size: cover;
+        padding: 20px;
+
         h1 {
             font-size: 3rem;
             font-weight: 700;
@@ -60,11 +59,75 @@
             font-weight: 500;
         }
     }
+
     .supergrafis2 {
         position: absolute;
         width: 100%;
     }
 }
 
+@media (max-width: 1024px) {
+    .OprecHeader {
+        font-size: 2rem;
+    }
+    
+    .OprecText h2 {
+        font-size: 1.3rem;
+    }
+    
+    .OprecText p {
+        font-size: 1rem;
+    }
+    
+    .DivisiHeader h1 {
+        font-size: 2.5rem;
+    }
+    
+    .DivisiHeader h6 {
+        font-size: 1.3rem;
+    }
+}
 
+@media (max-width: 768px) {
+    .OprecHeader {
+        font-size: 1.8rem;
+    }
+    
+    .OprecText h2 {
+        font-size: 1.2rem;
+    }
+    
+    .OprecText p {
+        font-size: 0.9rem;
+    }
+    
+    .DivisiHeader h1 {
+        font-size: 2rem;
+    }
+    
+    .DivisiHeader h6 {
+        font-size: 1.2rem;
+    }
+}
 
+@media (max-width: 480px) {
+    .OprecHeader {
+        font-size: 1.5rem;
+    }
+    
+    .OprecText h2 {
+        font-size: 1rem;
+    }
+    
+    .OprecText p {
+        font-size: 0.85rem;
+    }
+    
+    .DivisiHeader h1 {
+        font-size: 1.8rem;
+    }
+    
+    .DivisiHeader h6 {
+        font-size: 1rem;
+    }
+}
