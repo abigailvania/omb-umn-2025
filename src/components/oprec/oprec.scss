@@ -1,12 +1,19 @@
+.OprecHeader {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
 .OprecText {
     text-align: center;
     color: #1E7D87;
     margin: 0;
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-weight: 700;
-        color: #1E7D87;
+        color: #000000;
         margin-bottom: 10px;
     }
 
@@ -18,11 +25,6 @@
     }
 }
 
-.OprecHeader {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
 
 .OprecDivisi {
     text-align: center;
