@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './ImageSlider.scss';
+import './image-slider.scss';
 
 const ImageSlider = ({ images, interval = 2000 }) => {
     const extendedImages = [...images, images[0]];
