@@ -40,7 +40,7 @@ const ApaItuOMB = () => {
                 <div
                     className="apaituomb_slider_inner"
                     style={{
-                        transform: `translateX(-${currentIndex * 490}px)`, // Menyesuaikan ukuran slider baru
+                        transform: `translateX(-${currentIndex * 500}px)`, // Menyesuaikan ukuran slider baru
                         transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
                     }}
                 >
