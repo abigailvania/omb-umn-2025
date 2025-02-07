@@ -12,7 +12,7 @@ import ombaksantuytop from "../../images/ombak/Ombaksantuy_Top.png";
 function Footer() {
     return (
         <div className="footerSection">
-            {/* <div className="overlay"></div> */}
+            <div className="overlay"></div>
             <div className="content">
                 <div className="ombak mb-[100px]">
                     <img src={ombaksantuytop} alt="ombak" />
