@@ -3,7 +3,7 @@ import './Youtube.scss';
 
 import ombakterangtop from '../../images/ombak/Ombakterang_Top-crop.png';
 import ombaksantuydown from '../../images/ombak/Ombaksantuy_Down.png';
-import supergrafis from '../../images/supergrafis/supergrafis2.png';
+import supergrafis from '../../images/supergrafis/supergrafis3.png';
 
 
 function Youtube() {
