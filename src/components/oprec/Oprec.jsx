@@ -79,22 +79,21 @@ function Oprec() {
             {selectedDivisi && (
                 <AnimatePresence>
                     <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50 text-blue-950">
-                        <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            exit={{ opacity: 0, scale: 0.9 }}
-                            transition={{ duration: 0.3, ease: "easeOut" }}
-                            className="relative bg-gray-100 p-6 max-w-[700px] w-full 
-                                        max-h-[70vh] overflow-y-auto rounded-xl shadow-lg
-                                        flex flex-col
-                                        "
-                        >
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.9 }}
+                        transition={{ duration: 0.3, ease: "easeOut" }}
+                        className="relative bg-gray-100 p-6 max-w-[700px] w-full max-h-[75vh] overflow-y-auto rounded-xl shadow-lg flex flex-col"
+                    >
+
                             <button
-                                className="fixed top-5 right-5 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-8 h-8 shadow-md"
+                                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-10 h-10 shadow-md"
                                 onClick={() => setSelectedDivisi(null)}
                             >
                                 &times;
                             </button>
+
 
 
                             <div className="">
