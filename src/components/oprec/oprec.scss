@@ -37,11 +37,11 @@ $border-color: #fff;
 .OprecDivisi {
     text-align: center;
     padding: 30px 10px;
-    background: $gradient-bg;
     color: white;
     border-radius: 10px;
 
     .DivisiHeader {
+        background: $gradient-bg;
         h1 {
             font-size: 2rem;
             font-weight: 700;
