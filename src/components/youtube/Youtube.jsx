@@ -13,9 +13,7 @@ function Youtube() {
                 <div className="ombak">
                     <img src={ombakterangtop} alt="ombak"/>
                 </div>
-                <div className="supergrafis">
-                    <img src={supergrafis} alt="supergrafis" />
-                </div>
+                
                 <div className="Youtube">
                     <div className="YoutubeHeader">
                         <h1>Kura-kura Matahari merangkai memori</h1>
@@ -27,6 +25,9 @@ function Youtube() {
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
+                </div>
+                <div className="supergrafis">
+                    <img src={supergrafis} alt="supergrafis" />
                 </div>
                 <div className="ombak2">
                     <img src={ombaksantuydown} alt="ombak" />
