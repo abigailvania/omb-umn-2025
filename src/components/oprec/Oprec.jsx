@@ -90,11 +90,12 @@ function Oprec() {
                                         "
                         >
                             <button
-                                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-8 h-8"
+                                className="fixed top-5 right-5 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-8 h-8 shadow-md"
                                 onClick={() => setSelectedDivisi(null)}
                             >
                                 &times;
                             </button>
+
 
                             <div className="">
                             <div className="flex flex-row items-center text-center">
