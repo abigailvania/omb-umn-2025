@@ -47,8 +47,8 @@ function Oprec() {
                         <img src={ombakterangtop} alt="ombak1" />
                     </div>
                     <h1>Divisi</h1>
-                    <h6>Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!</h6>
-                    <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
+                    <p>Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!</p>
+                    <p>Klik divisi untuk melihat informasi lebih lanjut.</p>
                     <div className="ombak2">
                         <img src={ombakterangdown} alt="ombak2" />
                     </div>
