@@ -3,6 +3,7 @@ import "./header.scss";
 
 import logo from "../../images/header-footer/logo.png"
 import tagline from "../../images/header-footer/tagline.png"
+import ombakterangdown from "../../images/Ombakterang_Down.png"
 
 import GlassButton from "../button/Button.jsx";
 
@@ -29,7 +30,7 @@ function Header() {
                     />
                 </div>
                 <div className="ombak">
-                    
+                    <img src={ombakterangdown} alt="ombak" className="w-100"/>
                 </div>
 
             </section>        
