@@ -3,6 +3,8 @@ import "./header.scss";
 
 import logo from "../../images/header-footer/logo.png"
 import tagline from "../../images/header-footer/tagline.png"
+
+import supergrafis from "../../images/supergrafis/supergrafis1.png"
 import ombakterangdown from "../../images/ombak/Ombakterang_Down.png"
 
 import GlassButton from "../button/Button.jsx";
@@ -11,6 +13,9 @@ function Header() {
     return (
         <section id="home-section" className="headerSection">
             <div className="headerContent">
+                <div className="supergrafis">
+                    <img src={supergrafis} alt="supergrafis" />
+                </div>
                 <div className="flex flex-col justify-center align-center md:pt-18">
                     <div className="flex justify-center">
                         <img src={logo} alt="" className="h-[270px]" />

@@ -6,6 +6,7 @@ import foto2 from '../../assets/images/omb-3.jpg';
 import foto3 from '../../assets/images/omb-6.jpg';
 import foto4 from '../../assets/images/ALV00036.jpg';
 import foto5 from '../../assets/images/omb-10.jpg';
+import supergrafis from '../../images/supergrafis/supergrafis2.png';
 
 const ApaItuOMB = () => {
     const originalImages = [foto1, foto2, foto3, foto4, foto5];
@@ -43,7 +44,14 @@ const ApaItuOMB = () => {
     }, [isTransitioning, currentIndex]);
 
     return (
+<<<<<<< HEAD
         <section id="tentang-omb" className="apaituomb_section">
+=======
+        <section className="apaituomb_section">
+            <div className="supergrafis">
+                <img src={supergrafis} alt="supergrafis" />
+            </div>
+>>>>>>> d5996ef2fd952b36bc7f9464a315463327b9b145
             <div className="apaituomb_slider" ref={sliderRef}>
                 <div
                     className="apaituomb_slider_inner"
