@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.scss";
 
 import logo from "../../images/header-footer/logo.png"
 import tagline from "../../images/header-footer/tagline.png"
