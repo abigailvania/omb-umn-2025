@@ -27,7 +27,7 @@ function Header() {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center text-center text-white mt-[20px]">
-                    <p className="text-xl mb-10">
+                    <p className="text-xl">
                         Pendaftaran Kepanitiaan OMB UMN 2025
                         “countdown”
                         {/* Pendaftaran Kepanitiaan OMB UMN 2025 Telah Dibuka! */}
