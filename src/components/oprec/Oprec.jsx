@@ -57,7 +57,7 @@ function Oprec() {
                         <img src={supergrafis2} alt="supergrafis" className="z-0" />
                     </div>
                 </div>
-                <div className="flex flex-col p-2 z-10 w-1/2 ">
+                <div className="flex flex-col p-2 z-10 w-1/2 justify-center">
                     <div className="flex flex-1 justify-center z-10">
                         {ContentDivisi.slice(0, 4).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
