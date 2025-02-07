@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 import ContentDivisi from "./ContentDivisi";
 
-const DivisiCard = ({ divisi }) => {
+const DivisiCard = ({ divisi, onClick }) => {
     return (
-        <>
-            <img src={divisi.logoImg} alt={divisi.name} />
-        </>
-    )
-}
+        <div className="flex flex-col items-center p-4 cursor-pointer" onClick={() => onClick(divisi)}>
+            <img src={divisi.logoImg} alt={divisi.name} className="w-56 object-contain rounded-full border-white border-8 shadow-[0_5px_5px_rgba(0,0,0,0.25)] " />
+        </div>
+    );
+};
 
 function Oprec() {
+    const [selectedDivisi, setSelectedDivisi] = useState(null);
+
     return (
         <>
             <section id="oprec-section" className="OprecText">
@@ -32,14 +35,75 @@ function Oprec() {
                     <h6>Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!</h6>
                     <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
                 </div>
-                <div className="DivisiSection">
-                    {ContentDivisi.map((divisi, index) => (
-                        <DivisiCard key={index} divisi={divisi} />
-                    ))}
+                <div className="flex flex-col p-2">
+                    <div className="flex flex-1 justify-center">
+                        {ContentDivisi.slice(0, 4).map((divisi, index) => (
+                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                        ))}
+                    </div>
+                    <div className="flex flex-1 justify-center">
+                        {ContentDivisi.slice(4, 7).map((divisi, index) => (
+                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                        ))}
+                    </div>
+                    <div className="flex flex-1 justify-center">
+                        {ContentDivisi.slice(7, 9).map((divisi, index) => (
+                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                        ))}
+                    </div>
                 </div>
             </section>
+            {selectedDivisi && (
+                <AnimatePresence>
+                    <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50 text-blue-950">
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            exit={{ opacity: 0, scale: 0.9 }}
+                            transition={{ duration: 0.3, ease: "easeOut" }}
+                            className="relative bg-gray-100 p-6 max-w-[600px] w-full max-h-[80vh] overflow-y-auto rounded-xl shadow-lg "
+                        >
+                            <button
+                                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 
+                                            text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex align"
+                                onClick={() => setSelectedDivisi(null)}
+                            >
+                                &times;
+                            </button>
+
+                            <div className="flex flex-row items-center text-center">
+                                <div className="flex-row mx-4">
+                                    <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
+                                    <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
+
+                                    <div className="flex justify-center my-4">
+                                        <img
+                                            src={selectedDivisi.logoImg}
+                                            alt={selectedDivisi.name}
+                                            className="w-[120px] object-contain rounded-full shadow-md"
+                                        />
+                                    </div>
+
+                                    <div className="bg-gray-200 p-2 rounded-lg border border-blue-950 w-full">
+                                        <p className="text-sm">Logo: {selectedDivisi.logo}</p>
+                                        <p className="text-sm">Arti: {selectedDivisi.arti}</p>
+                                    </div>
+                                </div>
+
+                                <div className="bg-gray-200 p-4 mt-4 rounded-lg border border-blue-950 w-full">
+                                    <div className="foto-divisi">
+                                        <img></img>
+                                    </div>
+                                    <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
+                                    <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                </AnimatePresence>
+            )}
         </>
-    )
+    );
 }
 
 export default Oprec
