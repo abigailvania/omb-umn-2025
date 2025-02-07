@@ -25,11 +25,24 @@ const Navbar = () => {
             <div className="navbar-container">
                 <img src={logo} alt="Logo" className="navbar-logo" />
                 <ul className="navbar-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Tentang OMB</a></li>
-                    <li><a href="#">Divisi</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById("home-section")?.scrollIntoView({ behavior: "smooth" });
+                    }}>Home</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById("tentang-omb")?.scrollIntoView({ behavior: "smooth" });
+                    }}>Tentang OMB</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
+                    }}>Divisi</a></li>
                 </ul>
-                <button className="register-btn">Daftar Sekarang</button>
+                <button
+                    className="register-btn" onClick={(e) => {
+                        document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                >Daftar Sekarang</button>
             </div>
         </nav>
     );

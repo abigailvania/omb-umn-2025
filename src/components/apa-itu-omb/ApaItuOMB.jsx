@@ -43,7 +43,7 @@ const ApaItuOMB = () => {
     }, [isTransitioning, currentIndex]);
 
     return (
-        <section className="apaituomb_section">
+        <section id="tentang-omb" className="apaituomb_section">
             <div className="apaituomb_slider" ref={sliderRef}>
                 <div
                     className="apaituomb_slider_inner"

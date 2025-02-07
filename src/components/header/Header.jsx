@@ -9,7 +9,7 @@ import GlassButton from "../button/Button.jsx";
 
 function Header() {
     return (
-        <section className="headerSection">
+        <section id="home-section" className="headerSection">
             <div className="headerContent">
                 <div className="flex flex-col justify-center align-center md:pt-18">
                     <div className="flex justify-center">
