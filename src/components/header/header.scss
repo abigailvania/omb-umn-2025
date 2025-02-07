@@ -1,13 +1,29 @@
 .headerSection {
-  background: 
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url('../../images/gradien/ASSET BACKGROUND-01.png'),
-    url('../../images/header-footer/gif.gif');
+  position: relative;
+  width: 100%;
+  height: 100vh; // Sesuaikan tinggi dengan kebutuhan
+  background: url('../../images/header-footer/gif.gif');
   background-size: cover;
   background-position: center;
-  background-blend-mode: overlay;
-      .ombak {
-        width: 100%;
-      }
-      
+  background-repeat: repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../images/gradien/gradien1.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; // Transparansi gradien
+    z-index: 1;
+  }
+
+  .ombak {
+    width: 100%;
+    position: relative;
+    z-index: 2; // Pastikan elemen lain tidak tertutup
+  }
 }
