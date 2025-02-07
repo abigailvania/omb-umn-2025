@@ -25,12 +25,12 @@ function Oprec() {
     return (
         <>
             <section id="oprec-section" className="OprecText">
+                <div className="supergrafis1">
+                    <img src={supergrafis1} alt="supergrafis" />
+                </div>
                 <div className="OprecHeader">
                     <h1>Kura-kura matahari menyanyi dalam harmoni,</h1>
                     <h1>Jangan lewatkan kesempatan ini!</h1>
-                </div>
-                <div className="supergrafis1">
-                    <img src={supergrafis1} alt="supergrafis" />
                 </div>
                 <div className="OprecText">
                     <h2>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h2>
