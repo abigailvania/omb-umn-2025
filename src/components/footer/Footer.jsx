@@ -27,7 +27,7 @@ function Footer() {
                         <img src={logo} alt="Logo OMB UMN 2025" className="h-[270px]" />
                         <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[100px] -mt-[20px]" />
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 text-left">
                         <p className="text-xl font-bold">Pranala</p>
                         <p>YouTube: @ombumn</p>
                         <p>Spotify: Swara Bestari</p>
