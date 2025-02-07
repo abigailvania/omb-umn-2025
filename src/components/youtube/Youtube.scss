@@ -8,9 +8,12 @@
           #A7DB65, 
           #FFFC97
         );
-      .ombak, .ombak2 {
+    display: inline;
+    justify-content: center;
+    text-align: center;
+    .ombak, .ombak2 {
         width: 100%;
-      }
+    }
 }
 .YoutubeContainer {
     width: 100%;
@@ -36,8 +39,5 @@
     iframe {
         border-radius: 10px;
         max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
