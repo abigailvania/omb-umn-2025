@@ -89,13 +89,13 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .OprecHeader {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .OprecText h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .OprecText p {
@@ -103,7 +103,7 @@
     }
     
     .DivisiHeader h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .DivisiHeader h6 {
@@ -111,26 +111,5 @@
     }
 }
 
-@media (max-width: 480px) {
-    .OprecHeader {
-        font-size: 1.5rem;
-    }
-    
-    .OprecText h2 {
-        font-size: 1rem;
-    }
-    
-    .OprecText p {
-        font-size: 0.85rem;
-    }
-    
-    .DivisiHeader h1 {
-        font-size: 1.1rem;
-    }
-    
-    .DivisiHeader h6 {
-        font-size: 0.6rem;
-    }
-}
 
 
