@@ -40,14 +40,14 @@ function Oprec() {
                 </div>
                 <Countdown targetDate="2025-02-15T23:59:00" />
             </section>
-            <section className="OprecDivisi py-8 px-4 md:px-8 lg:px-16 relative">
-                <div className="DivisiHeader text-center relative">
-                    <img src={ombakterangtop} alt="ombak" className="w-full absolute top-0 left-0" />
-                    <h1 className="text-3xl md:text-4xl font-bold relative z-10">Divisi</h1>
-                    <h6 className="text-lg md:text-xl font-medium relative z-10">Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025!</h6>
-                    <img src={ombakterangdown} alt="ombak" className="w-full absolute bottom-0 left-0" />
+            <section className="OprecDivisi py-8 px-4 md:px-8 lg:px-16">
+                <div className="DivisiHeader text-center">
+                    <img src={ombakterangtop} alt="ombak" className="w-full" />
+                    <h1 className="text-3xl md:text-4xl font-bold">Divisi</h1>
+                    <h6 className="text-lg md:text-xl font-medium">Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025!</h6>
+                    <img src={ombakterangdown} alt="ombak" className="w-full" />
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-center mt-6 relative z-10">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-center mt-6">
                     {ContentDivisi.map((divisi, index) => (
                         <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                     ))}
