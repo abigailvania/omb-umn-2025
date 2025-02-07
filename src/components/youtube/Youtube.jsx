@@ -8,9 +8,9 @@ function Youtube() {
         <>
             <section className="YoutubeContainer">
                 <div className="ombak">
-                    <img src={ombakterangtop} alt="ombak" />
+                    <img src={ombakterangtop} alt="ombak"/>
+                    <br />
                 </div>
-                <br />
                 <div className="Youtube">
                     <div className="YoutubeHeader">
                         <h1>Kura-kura Matahari merangkai memori</h1>
