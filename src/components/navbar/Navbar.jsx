@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.scss';
-import logo from "../../images/header-footer/logo.png";
+import logo from "../../images/header-footer/logo.png"
 
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            setShowNavbar(window.scrollY > 50);
+            if (window.scrollY > 50) {
+                setShowNavbar(true);
+            } else {
+                setShowNavbar(false);
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -26,31 +29,21 @@ const Navbar = () => {
                         e.preventDefault();
                         document.getElementById("home-section")?.scrollIntoView({ behavior: "smooth" });
                     }}>Home</a></li>
-                    <li className="dropdown">
-                        <a href="#" onClick={(e) => {
-                            e.preventDefault();
-                            setDropdownOpen(!dropdownOpen);
-                        }}>Informasi</a>
-                    </li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById("tentang-omb")?.scrollIntoView({ behavior: "smooth" });
+                    }}>Tentang OMB</a></li>
+                    <li><a href="#" onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
+                    }}>Divisi</a></li>
                 </ul>
-                <button className="register-btn" onClick={() => {
-                    document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
-                }}>Daftar Sekarang</button>
+                <button
+                    className="register-btn" onClick={(e) => {
+                        document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
+                    }}
+                >Daftar Sekarang</button>
             </div>
-            {dropdownOpen && (
-                <div className="dropdown-card">
-                    <ul className="dropdown-menu">
-                        <li><a href="#" onClick={(e) => {
-                            e.preventDefault();
-                            document.getElementById("tentang-omb")?.scrollIntoView({ behavior: "smooth" });
-                        }}>Tentang OMB</a></li>
-                        <li><a href="#" onClick={(e) => {
-                            e.preventDefault();
-                            document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
-                        }}>Divisi</a></li>
-                    </ul>
-                </div>
-            )}
         </nav>
     );
 };
