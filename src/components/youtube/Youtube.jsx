@@ -6,7 +6,7 @@ import ombaksantuydown from "../../images/ombak/Ombaksantuy_Down.png";
 import supergrafis from "../../images/supergrafis/supergrafis3.png";
 
 function Youtube() {
-    const [videoSrc, setVideoSrc] = useState("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1&mute=1");
+    const [videoSrc, setVideoSrc] = useState("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1");
     const [isMuted, setIsMuted] = useState(true);
     const videoRef = useRef(null);
     const hasPlayed = useRef(false);
