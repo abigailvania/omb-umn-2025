@@ -4,6 +4,10 @@ import './oprec.scss';
 
 import ContentDivisi from "./ContentDivisi";
 
+import ombakterangdown from "../../images/ombak/Ombakterang_Down.png"
+import ombakterangtop from "../../images/ombak/Ombakterang_Top.png"
+
+
 const DivisiCard = ({ divisi, onClick }) => {
     return (
         <div className="flex flex-col items-center p-4 cursor-pointer" onClick={() => onClick(divisi)}>
@@ -32,10 +36,16 @@ function Oprec() {
                 </div>
             </section>
             <section className="OprecDivisi">
+                <div className="ombak1">
+                    <img src={ombakterangdown} alt="ombak1"/>
+                </div>
                 <div className="DivisiHeader">
                     <h1>Divisi</h1>
                     <h6>Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!</h6>
                     <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
+                </div>
+                <div className="ombak2">
+                    <img src={ombakterangtop} alt="ombak2"/>
                 </div>
                 <div className="flex flex-col p-2">
                     <div className="flex flex-1 justify-center">
