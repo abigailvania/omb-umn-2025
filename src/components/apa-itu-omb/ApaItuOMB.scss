@@ -1,20 +1,15 @@
 .apaituomb_section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Pastikan elemen tersebar dengan baik */
     flex-direction: row;
     width: 100%;
     padding: 0;
     flex-wrap: wrap;
     box-sizing: border-box;
-
-    .ombak {
-        width: 100%;
-    }
 }
 
 .apaituomb_slider {
-    flex: 1;
     max-width: 500px;
     min-width: 300px;
     overflow: hidden;
@@ -22,6 +17,7 @@
     border: 2px solid #1E40AF;
     border-radius: 10px;
     aspect-ratio: 16 / 9;
+    flex-shrink: 0; /* Pastikan tidak menyusut secara tidak sengaja */
 }
 
 .apaituomb_slider_inner {
@@ -35,7 +31,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin: 0; 
+    margin: 0;
     opacity: 0.9;
     transition: opacity 0.5s ease-in-out;
 }
@@ -45,10 +41,10 @@
 }
 
 .apaituomb_content {
-    flex: 2;
+    flex: 1;
     text-align: justify;
     max-width: 600px;
-    margin-left: 20px;
+    padding-left: 20px; /* Gunakan padding daripada margin agar lebih konsisten */
 }
 
 .apaituomb_content h1 {
@@ -67,24 +63,18 @@
 @media (max-width: 1024px) {
     .apaituomb_section {
         flex-direction: column;
+        align-items: center; /* Pastikan konten tetap rapi di tengah */
     }
 
     .apaituomb_slider {
         max-width: 100%;
     }
 
-    .apaituomb_slider_inner {
-        width: 100%;
-    }
-
-    .apaituomb_image {
-        width: 100%;
-        height: 100%;
-    }
-
     .apaituomb_content {
         max-width: 100%;
         text-align: center;
+        padding-left: 0;
+        margin-top: 20px;
     }
 }
 
