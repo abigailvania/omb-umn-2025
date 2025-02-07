@@ -7,6 +7,8 @@ import foto3 from '../../assets/images/omb-6.jpg';
 import foto4 from '../../assets/images/ALV00036.jpg';
 import foto5 from '../../assets/images/omb-10.jpg';
 
+import ombakterangtop from '../../images/ombak/Ombakterang_Top.png';
+
 const originalImages = [foto1, foto2, foto3, foto4, foto5];
 const images = [...originalImages, originalImages[0]];
 
@@ -58,6 +60,9 @@ const ApaItuOMB = () => {
                     Melalui serangkaian kegiatan yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan,
                     dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
                 </p>
+            </div>
+            <div className="ombak">
+                <img src={ombakterangtop} alt="ombak" />
             </div>
         </section>
     );
