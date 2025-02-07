@@ -52,6 +52,9 @@ function Oprec() {
                     <div className="ombak2">
                         <img src={ombakterangdown} alt="ombak2"/>
                     </div>
+                    <div className="supergrafis2">
+                        <img src={supergrafis2} alt="supergrafis" />
+                    </div>
                 </div>
                 <div className="flex flex-col p-2">
                     <div className="flex flex-1 justify-center">
@@ -69,9 +72,6 @@ function Oprec() {
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
                     </div>
-                </div>
-                <div className="supergrafis2">
-                    <img src={supergrafis2} alt="supergrafis" />
                 </div>
             </section>
             {selectedDivisi && (
