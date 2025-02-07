@@ -10,15 +10,17 @@
         );
     width: 100%;
     background-size: cover;
+    position: relative;
+}
 
-    .ombak, .ombak2 {
-        width: 100%;
-        .supergrafis {
-            position: absolute;
-            width: 100%;
-        }
-    }
+.ombak, .ombak2 {
+    width: 100%;
+}
 
+.supergrafis {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
 }
 
 .Youtube {
@@ -32,27 +34,43 @@
 
 .YoutubeHeader {
     margin-bottom: 20px;
+}
 
-    h1 {
-        font-size: 2rem;
-        font-weight: 600;
-        color: #ffffff;
-        margin: 5px 0;
-    }
+.YoutubeHeader h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 5px 0;
 }
 
 .YoutubeThumbnail {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: relative;
+    padding: 0 10px;
+}
 
-    iframe {
-        border-radius: 10px;
-        max-width: 100%;
-        position: absolute;
-    }
+.YoutubeThumbnail iframe {
+    border-radius: 10px;
+    max-width: 100%;
+    width: 560px;
+    height: 315px;
+    z-index: 2;
 }
 
 .ombak2 {
     margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .YoutubeHeader h1 {
+        font-size: 1rem;
+    }
+
+    .YoutubeThumbnail iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
 }
