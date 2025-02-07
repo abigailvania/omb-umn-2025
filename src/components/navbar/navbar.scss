@@ -15,7 +15,7 @@
     transition: opacity 0.5s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .navbar.show {
@@ -30,7 +30,9 @@
 }
 
 .navbar-logo {
-    height: 40px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-menu {
