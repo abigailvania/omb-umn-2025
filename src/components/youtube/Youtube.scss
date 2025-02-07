@@ -28,7 +28,7 @@
     justify-content: center;
     text-align: center;
     padding: 20px 0;
-    position: relative;
+    position: absolute;
     z-index: 2;
 }
 
@@ -64,7 +64,7 @@
 
 @media (max-width: 768px) {
     .YoutubeHeader h1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .YoutubeThumbnail iframe {
