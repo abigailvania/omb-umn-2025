@@ -1,15 +1,16 @@
 .apaituomb_section {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Pastikan elemen tersebar dengan baik */
-    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     padding: 0;
-    flex-wrap: wrap;
     box-sizing: border-box;
 }
 
+/* Slider: Tidak diberi margin agar foto tetap menutupi seluruh area */
 .apaituomb_slider {
+    flex: 0 0 auto;
     max-width: 500px;
     min-width: 300px;
     overflow: hidden;
@@ -17,13 +18,14 @@
     border: 2px solid #1E40AF;
     border-radius: 10px;
     aspect-ratio: 16 / 9;
-    flex-shrink: 0; /* Pastikan tidak menyusut secara tidak sengaja */
 }
 
+/* Pastikan slider inner tidak memiliki gap */
 .apaituomb_slider_inner {
     display: flex;
     width: 100%;
     transition: transform 0.5s ease-in-out;
+    gap: 0;
 }
 
 .apaituomb_image {
@@ -31,7 +33,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin: 0;
+    margin: 0;  /* Tidak ada margin agar tidak ada ruang ekstra */
     opacity: 0.9;
     transition: opacity 0.5s ease-in-out;
 }
@@ -40,11 +42,12 @@
     opacity: 1;
 }
 
+/* Konten: Beri sedikit margin agar tidak menempel dengan slider */
 .apaituomb_content {
-    flex: 1;
-    text-align: justify;
+    flex: 1 1 auto;
     max-width: 600px;
-    padding-left: 20px; /* Gunakan padding daripada margin agar lebih konsisten */
+    text-align: justify;
+    margin-left: 10px;  /* Jarak minimal antara slider dan konten */
 }
 
 .apaituomb_content h1 {
@@ -60,21 +63,23 @@
     line-height: 1.5;
 }
 
+/* Responsive styling */
 @media (max-width: 1024px) {
     .apaituomb_section {
         flex-direction: column;
-        align-items: center; /* Pastikan konten tetap rapi di tengah */
+        align-items: center;
     }
 
     .apaituomb_slider {
         max-width: 100%;
+        /* Hilangkan margin tambahan */
     }
 
     .apaituomb_content {
         max-width: 100%;
         text-align: center;
-        padding-left: 0;
-        margin-top: 20px;
+        margin-left: 0;
+        margin-top: 10px; /* Jarak antar slider dan konten ketika disusun secara kolom */
     }
 }
 
