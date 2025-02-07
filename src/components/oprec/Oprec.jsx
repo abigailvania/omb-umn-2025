@@ -12,7 +12,6 @@ import ombakterangtop from "../../images/ombak/Ombakterang_Top-crop.png"
 import supergrafis1 from '../../images/supergrafis/supergrafis4.png';
 import supergrafis2 from '../../images/supergrafis/supergrafis5.png';
 
-
 const DivisiCard = ({ divisi, onClick }) => {
     return (
         <div className="flex flex-col items-center p-4 cursor-pointer" onClick={() => onClick(divisi)}>
@@ -58,7 +57,7 @@ function Oprec() {
                         <img src={supergrafis2} alt="supergrafis" className="z-0" />
                     </div>
                 </div>
-                <div className="flex flex-col p-2 z-10">
+                <div className="flex flex-col p-2 z-10 w-1/2 ">
                     <div className="flex flex-1 justify-center z-10">
                         {ContentDivisi.slice(0, 4).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
@@ -85,9 +84,8 @@ function Oprec() {
                             exit={{ opacity: 0, scale: 0.9 }}
                             transition={{ duration: 0.3, ease: "easeOut" }}
                             className="relative bg-gray-100 p-6 max-w-[700px] w-full 
-                                        max-h-[80vh] overflow-y-auto rounded-xl shadow-lg
-                                        flex flex-col
-                                        "
+                                        max-h-[65vh] overflow-y-auto rounded-xl shadow-lg
+                                        flex flex-col"
                         >
                             <button
                                 className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-8 h-8"
@@ -97,41 +95,41 @@ function Oprec() {
                             </button>
 
                             <div className="">
-                            <div className="flex flex-row items-center text-center">
-                                <div className="flex-row mx-4">
-                                    <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
-                                    <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
+                                <div className="flex flex-row items-center text-center">
+                                    <div className="flex-row mx-4">
+                                        <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
+                                        <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
 
-                                    <div className="flex justify-center my-4">
-                                        <img
-                                            src={selectedDivisi.logoImg}
-                                            alt={selectedDivisi.name}
-                                            className="w-[120px] object-contain rounded-full shadow-md"
+                                        <div className="flex justify-center my-4">
+                                            <img
+                                                src={selectedDivisi.logoImg}
+                                                alt={selectedDivisi.name}
+                                                className="w-[120px] object-contain rounded-full shadow-md"
+                                            />
+                                        </div>
+
+                                        <div className="bg-gray-200 p-2 rounded-lg border border-blue-950 w-full">
+                                            <p className="text-sm">Logo: {selectedDivisi.logo}</p>
+                                            <p className="text-sm">Arti: {selectedDivisi.arti}</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="">
+                                        <div className="foto-divisi flex flex-row overflow-hidden max-w-full">
+                                            <img src={supergrafis1} className="w-1/2 object-contain" alt="supergrafis" />
+                                            <img src={supergrafis1} className="w-1/2 object-contain" alt="supergrafis" />
+                                        </div>
+                                        <div className="bg-gray-200 p-4 mt-4 rounded-lg border border-blue-950 w-full mb-[20px]">
+                                            <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
+                                            <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
+                                        </div>
+                                        <GlassButton
+                                            text="Daftar"
+                                            onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
+                                            className="text-white max-w-[180px]"
                                         />
                                     </div>
-
-                                    <div className="bg-gray-200 p-2 rounded-lg border border-blue-950 w-full">
-                                        <p className="text-sm">Logo: {selectedDivisi.logo}</p>
-                                        <p className="text-sm">Arti: {selectedDivisi.arti}</p>
-                                    </div>
                                 </div>
-
-                                <div className="">
-                                    <div className="foto-divisi">
-                                        <img src={supergrafis1}></img>
-                                        <img src={supergrafis1}></img>
-                                    </div>
-                                    <div className="bg-gray-200 p-4 mt-4 rounded-lg border border-blue-950 w-full mb-[20px]">
-                                        <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
-                                        <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
-                                    </div>
-                                    <GlassButton
-                                        text="Daftar"
-                                        onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                                        className="text-white max-w-[180px]"
-                                    />
-                                </div>
-                            </div>
 
                             </div>
                         </motion.div>
