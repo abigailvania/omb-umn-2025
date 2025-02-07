@@ -86,10 +86,8 @@ const ContentDivisi = [
         tugas: "Arunika bertugas untuk mengabadikan momen yang ada dalam seluruh rangkaian kegiatan OMB UMN 2025.",
         link: "",
         photo1: dokumentasi1,
-        photo2: dokumentasi2,
-        photo3: dokumentasi3,
+        photo2: dokumentasi3,
         photo3: dokumentasi4,
-        photo3: dokumentasi5,
     },
     {
         logoImg: Perlengkapan,
