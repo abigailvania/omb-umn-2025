@@ -19,6 +19,7 @@
     position: relative;
     border: 2px solid #1E40AF;
     border-radius: 10px;
+    aspect-ratio: 16 / 9; /* Menyesuaikan perbandingan ukuran */
 }
 
 .apaituomb_slider_inner {
@@ -84,6 +85,10 @@
 @media (max-width: 600px) {
     .apaituomb_section {
         padding: 20px;
+    }
+
+    .apaituomb_slider {
+        aspect-ratio: 16 / 9; /* Menyesuaikan perbandingan ukuran pada mobile */
     }
 
     .apaituomb_content h1 {
