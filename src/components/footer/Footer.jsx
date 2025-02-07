@@ -16,7 +16,7 @@ function Footer() {
                 <div className="ombak mb-[100px]">
                     <img src={ombaksantuytop} alt="ombak" />
                 </div>
-                <div className="flex flex-row justify-between items-center">
+                <div className="flex flex-row justify-between items-center mt-50">
                     <div className="flex-1 text-right">
                         <p className="text-xl font-bold">Alamat</p>
                         <p>Universitas Multimedia Nusantara</p> 
