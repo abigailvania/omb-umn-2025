@@ -1,14 +1,11 @@
 .footer_section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    background: url("../../images/header-footer/foto-footer.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("../../images/header-footer/foto-footer.jpg");
+    background-size: cover;
+
+
 
     .overlay {
         content: "";
