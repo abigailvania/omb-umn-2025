@@ -14,7 +14,7 @@ function Footer() {
         <div className="footerSection">
             <div className="overlay"></div>
             <div className="content">
-                <div className="ombak">
+                <div className="ombak mb-[100px]">
                     <img src={ombaksantuytop} alt="ombak" />
                 </div>
                 <div className="flex flex-row justify-between items-center">
