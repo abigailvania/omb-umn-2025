@@ -1,10 +1,10 @@
 .headerSection {
   position: relative;
   width: 100%;
-  background: url('../../images/header-footer/gif.gif'), url('../../images/supergrafis/supergrafis1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
+  background: 
+      url('../../images/header-footer/gif.gif') center/cover no-repeat, 
+      url('../../images/supergrafis/supergrafis1.png') center/contain no-repeat;
+  background-blend-mode: normal;
 
   &::before {
       content: "";
