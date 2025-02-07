@@ -61,9 +61,6 @@ const ApaItuOMB = () => {
                     dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
                 </p>
             </div>
-            <div className="ombak">
-                <img src={ombakterangtop} alt="ombak" />
-            </div>
         </section>
     );
 };
