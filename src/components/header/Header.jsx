@@ -18,7 +18,7 @@ function Header() {
                 <div className="supergrafis">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
-                <div className="flex flex-col justify-center align-center md:pt-18">
+                <div className="flex flex-col justify-center align-center md:pt-10">
                     <div className="flex justify-center">
                         <img src={logo} alt="" className="h-[270px]" />
                     </div>
