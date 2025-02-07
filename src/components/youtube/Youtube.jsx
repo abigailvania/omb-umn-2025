@@ -19,6 +19,9 @@ function Youtube() {
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
+                    <div className="supergrafis">
+                        <img src={supergrafis} alt="supergrafis" />
+                    </div>
                     <div className="YoutubeThumbnail">
                         <iframe width="600" height="337" src="https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF" 
                                 title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; 
@@ -26,9 +29,7 @@ function Youtube() {
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                 </div>
-                <div className="supergrafis">
-                    <img src={supergrafis} alt="supergrafis" />
-                </div>
+
                 <div className="ombak2">
                     <img src={ombaksantuydown} alt="ombak" />
                 </div>
