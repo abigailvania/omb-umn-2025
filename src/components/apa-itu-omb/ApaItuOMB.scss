@@ -8,7 +8,6 @@
     box-sizing: border-box;
 }
 
-/* Slider: Tidak diberi margin agar foto tetap menutupi seluruh area */
 .apaituomb_slider {
     flex: 0 0 auto;
     max-width: 500px;
@@ -20,7 +19,6 @@
     aspect-ratio: 16 / 9;
 }
 
-/* Pastikan slider inner tidak memiliki gap */
 .apaituomb_slider_inner {
     display: flex;
     width: 100%;
@@ -33,7 +31,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    margin: 0;  /* Tidak ada margin agar tidak ada ruang ekstra */
+    margin: 0;
     opacity: 0.9;
     transition: opacity 0.5s ease-in-out;
 }
@@ -42,12 +40,11 @@
     opacity: 1;
 }
 
-/* Konten: Beri sedikit margin agar tidak menempel dengan slider */
 .apaituomb_content {
     flex: 1 1 auto;
     max-width: 600px;
     text-align: justify;
-    margin-left: 10px;  /* Jarak minimal antara slider dan konten */
+    margin-left: 10px;
 }
 
 .apaituomb_content h1 {
@@ -63,7 +60,6 @@
     line-height: 1.5;
 }
 
-/* Responsive styling */
 @media (max-width: 1024px) {
     .apaituomb_section {
         flex-direction: column;
@@ -72,14 +68,13 @@
 
     .apaituomb_slider {
         max-width: 100%;
-        /* Hilangkan margin tambahan */
     }
 
     .apaituomb_content {
         max-width: 100%;
         text-align: center;
         margin-left: 0;
-        margin-top: 10px; /* Jarak antar slider dan konten ketika disusun secara kolom */
+        margin-top: 10px;
     }
 }
 
