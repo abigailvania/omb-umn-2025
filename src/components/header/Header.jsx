@@ -30,7 +30,7 @@ function Header() {
                     />
                 </div>
                 <div className="ombak">
-                    <img src={ombakterangdown} alt="ombak" className="w-100"/>
+                    <img src={ombakterangdown} alt="ombak"/>
                 </div>
 
             </section>        
