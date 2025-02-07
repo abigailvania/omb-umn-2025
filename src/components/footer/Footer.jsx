@@ -1,29 +1,24 @@
 import React from "react";
 import "./Footer.scss";
 
-import logo from "../../images/header-footer/logo.png"
-import tagline from "../../images/header-footer/tagline.png"
-
-import email from "../../images/header-footer/email.png"
-import facebook from "../../images/header-footer/facebook.png"
-import insta from "../../images/header-footer/insta.png"
-import line from "../../images/header-footer/line.png"
-
-import ombaksantuytop from "../../images/ombak/Ombaksantuy_Top.png"
-import gradient from "../../images/gradien/gradien1.png"
+import logo from "../../images/header-footer/logo.png";
+import tagline from "../../images/header-footer/tagline.png";
+import email from "../../images/header-footer/email.png";
+import facebook from "../../images/header-footer/facebook.png";
+import insta from "../../images/header-footer/insta.png";
+import line from "../../images/header-footer/line.png";
+import ombaksantuytop from "../../images/ombak/Ombaksantuy_Top.png";
 
 function Footer() {
     return (
         <div className="footerSection">
-            <div className="ombak">
-                <img src={ombaksantuytop} alt="ombak" />
-            </div>
+            <div className="overlay"></div>
             <div className="flex flex-row justify-between items-center">
                 <div className="flex-1 text-right">
                     <p className="text-xl font-bold">Alamat</p>
                     <p>Universitas Multimedia Nusantara</p> 
-                        <p>Jl. Scientia Boulevard, Gading Serpong, </p>
-                        <p>Tangerang Banten 15811, Indonesia.</p>
+                    <p>Jl. Scientia Boulevard, Gading Serpong,</p>
+                    <p>Tangerang Banten 15811, Indonesia.</p>
                 </div>
                 <div className="flex-1 flex flex-col items-center">
                     <img src={logo} alt="Logo OMB UMN 2025" className="h-[270px]" />
@@ -48,7 +43,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
-export default Footer
+export default Footer;
