@@ -37,7 +37,7 @@ function Oprec() {
             </section>
             <section className="OprecDivisi">
                 <div className="ombak1">
-                    <img src={ombakterangdown} alt="ombak1"/>
+                    <img src={ombakterangtop} alt="ombak1"/>
                 </div>
                 <div className="DivisiHeader">
                     <h1>Divisi</h1>
@@ -45,7 +45,7 @@ function Oprec() {
                     <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
                 </div>
                 <div className="ombak2">
-                    <img src={ombakterangtop} alt="ombak2"/>
+                    <img src={ombakterangdown} alt="ombak2"/>
                 </div>
                 <div className="flex flex-col p-2">
                     <div className="flex flex-1 justify-center">
