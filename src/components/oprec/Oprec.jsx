@@ -36,16 +36,16 @@ function Oprec() {
                 </div>
             </section>
             <section className="OprecDivisi">
-                <div className="ombak1">
-                    <img src={ombakterangtop} alt="ombak1"/>
-                </div>
                 <div className="DivisiHeader">
+                    <div className="ombak1">
+                        <img src={ombakterangtop} alt="ombak1"/>
+                    </div>
                     <h1>Divisi</h1>
                     <h6>Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!</h6>
                     <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
-                </div>
-                <div className="ombak2">
-                    <img src={ombakterangdown} alt="ombak2"/>
+                    <div className="ombak2">
+                        <img src={ombakterangdown} alt="ombak2"/>
+                    </div>
                 </div>
                 <div className="flex flex-col p-2">
                     <div className="flex flex-1 justify-center">
