@@ -98,7 +98,7 @@ function Oprec() {
                             className="relative bg-gray-100 p-6 max-w-[700px] w-full max-h-[65vh] overflow-y-auto rounded-xl shadow-lg flex flex-col"
                         >
                             <button
-                                className="absolute top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-10 h-10 shadow-md"
+                                className="absolute z-10 top-3 right-3 text-gray-600 hover:text-gray-900 text-2xl px-2 rounded-full bg-gray-300 cursor-pointer flex items-center justify-center w-10 h-10 shadow-md"
                                 onClick={() => setSelectedDivisi(null)}
                             >
                                 &times;
