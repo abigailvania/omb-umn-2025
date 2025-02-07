@@ -1,14 +1,11 @@
 .headerSection {
-  background: linear-gradient(
-      to top right,
-      #03335B 0%,
-      #1E7D87 20%,
-      #1C9393 40%, 
-      #48D3CF 60%,
-      #A7DB65 80%,
-      #FFFC97 100%
-  );
-
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('../../images/gradien/ASSET BACKGROUND-01.png'),
+    url('../../images/header-footer/gif.gif');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
       .ombak {
         width: 100%;
       }
