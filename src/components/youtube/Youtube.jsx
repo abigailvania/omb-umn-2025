@@ -6,19 +6,20 @@ import ombaksantuydown from "../../images/ombak/Ombaksantuy_Down.png";
 import supergrafis from "../../images/supergrafis/supergrafis3.png";
 
 function Youtube() {
-    const [videoSrc, setVideoSrc] = useState("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF");
+    const [videoSrc, setVideoSrc] = useState("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1&mute=1");
+    const [isMuted, setIsMuted] = useState(true);
     const videoRef = useRef(null);
-    const hasPlayed = useRef(false); // Untuk memastikan autoplay hanya terjadi sekali
+    const hasPlayed = useRef(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 if (entries[0].isIntersecting && !hasPlayed.current) {
                     setVideoSrc("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1&mute=1");
-                    hasPlayed.current = true; // Pastikan hanya autoplay sekali
+                    hasPlayed.current = true;
                 }
             },
-            { threshold: 0.5 } // Autoplay saat 50% video masuk ke viewport
+            { threshold: 0.5 }
         );
 
         if (videoRef.current) {
@@ -31,6 +32,11 @@ function Youtube() {
             }
         };
     }, []);
+
+    const handleUnmute = () => {
+        setIsMuted(false);
+        setVideoSrc("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1");
+    };
 
     return (
         <section className="YoutubeContainer">
@@ -59,6 +65,11 @@ function Youtube() {
                         allowFullScreen
                     ></iframe>
                 </div>
+                {isMuted && (
+                    <button className="unmute-button" onClick={handleUnmute}>
+                        🔊 Aktifkan Suara
+                    </button>
+                )}
             </div>
             <div className="ombak2">
                 <img src={ombaksantuydown} alt="ombak" />
