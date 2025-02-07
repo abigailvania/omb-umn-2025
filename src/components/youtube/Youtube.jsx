@@ -16,7 +16,7 @@ function Youtube() {
                     setVideoSrc("https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF&autoplay=1");
                 }
             },
-            { threshold: 0.5 } // Aktif ketika 50% elemen terlihat
+            { threshold: 0.3 } 
         );
 
         if (videoRef.current) {
