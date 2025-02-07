@@ -11,12 +11,12 @@ function Youtube() {
                 <div className="ombak">
                     <img src={ombakterangtop} alt="ombak"/>
                 </div>
-                <div className="Youtube flex flex-col justify-center align-center">
+                <div className="Youtube">
                     <div className="YoutubeHeader">
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
-                    <div className="YoutubeThumbnail">
+                    <div className="YoutubeThumbnail flex flex-col justify-center align-center">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF" 
                                 title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; 
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
