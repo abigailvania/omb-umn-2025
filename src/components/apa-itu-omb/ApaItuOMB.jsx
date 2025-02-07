@@ -24,7 +24,7 @@ const ApaItuOMB = () => {
             }
         };
 
-        updateSliderWidth(); // Panggil saat komponen pertama kali dimuat
+        updateSliderWidth();
         window.addEventListener('resize', updateSliderWidth);
         
         return () => window.removeEventListener('resize', updateSliderWidth);
