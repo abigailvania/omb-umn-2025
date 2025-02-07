@@ -57,17 +57,17 @@ function Oprec() {
                     </div>
                 </div>
                 <div className="logo-divisi flex flex-col items-center gap-4">
-                    <div className="baris1 flex justify-center gap-4">
+                    <div className="baris1 flex justify-center ">
                         {ContentDivisi.slice(0, 4).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
                     </div>
-                    <div className="baris2 flex justify-center gap-4">
+                    <div className="baris2 flex justify-center ">
                         {ContentDivisi.slice(4, 7).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
                     </div>
-                    <div className="baris3 flex justify-center gap-4">
+                    <div className="baris3 flex justify-center ">
                         {ContentDivisi.slice(7, 9).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
