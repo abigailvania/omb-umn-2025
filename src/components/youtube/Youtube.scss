@@ -8,21 +8,21 @@
           #A7DB65, 
           #FFFC97
         );
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    width: 100%;
+    background-size: cover;
+
     .ombak, .ombak2 {
         width: 100%;
     }
 }
-.YoutubeContainer {
-    width: 100%;
-    background-size: cover;
-}
+
 .Youtube {
-    display: inline;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Ini akan memusatkan konten secara horizontal
+    justify-content: center; // Ini akan memusatkan konten secara vertikal
     text-align: center;
+    padding: 20px 0; // Tambahkan padding jika diperlukan
 }
 
 .YoutubeHeader {
@@ -36,6 +36,10 @@
 }
 
 .YoutubeThumbnail {
+    display: flex;
+    justify-content: center; // Ini akan memusatkan iframe di dalam .YoutubeThumbnail
+    width: 100%;
+
     iframe {
         border-radius: 10px;
         max-width: 100%;
