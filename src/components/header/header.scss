@@ -1,9 +1,10 @@
 .headerSection {
   position: relative;
   width: 100%;
-  background: 
-      url('../../images/header-footer/gif.gif') center/cover no-repeat, 
-      url('../../images/supergrafis/supergrafis1.png') center/contain no-repeat;
+  background: url('../../images/header-footer/gif.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &::before {
       content: "";
@@ -19,9 +20,24 @@
       z-index: 1;
   }
 
+  &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: auto;
+      background: url('../../images/supergrafis/supergrafis1.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 2;
+  }
+
   .headerContent {
       position: relative;
-      z-index: 2;
+      z-index: 3;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -33,6 +49,6 @@
   .ombak {
       width: 100%;
       position: relative;
-      z-index: 2;
+      z-index: 3;
   }
 }
