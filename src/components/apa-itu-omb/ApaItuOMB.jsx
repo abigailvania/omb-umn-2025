@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageSlider from './image-slider/image-slider.jsx';
+import ImageSlider from '../image-slider/image-slider.jsx';
 import './ApaItuOMB.scss';
 
 import foto1 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
