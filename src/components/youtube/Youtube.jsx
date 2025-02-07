@@ -2,6 +2,7 @@ import React from "react";
 import './Youtube.scss';
 
 import ombakterangtop from '../../images/ombak/Ombakterang_Top.png';
+import ombaksantuydown from '../../images/ombak/Ombaksantuy_Down.png';
 
 function Youtube() {
     return (
@@ -21,6 +22,9 @@ function Youtube() {
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
+                </div>
+                <div className="ombak2">
+                    <img src={ombaksantuydown} alt="ombak" />
                 </div>
             </section>
         </>
