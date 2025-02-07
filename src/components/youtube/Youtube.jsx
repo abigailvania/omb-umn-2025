@@ -55,8 +55,8 @@ function Youtube() {
                     </div>
                     <iframe
                         ref={videoRef}
-                        width="600"
-                        height="337"
+                        width="800"
+                        height="450"
                         src={videoSrc}
                         title="YouTube video player"
                         frameBorder="0"
