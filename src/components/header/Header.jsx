@@ -26,13 +26,16 @@ function Header() {
                 </div>
                 <div className="flex flex-col justify-center items-center text-center text-white mt-[20px]">
                     <p className="text-xl mb-10">
-                        Pendaftaran Kepanitiaan OMB UMN 2025 Telah Dibuka!
+                        Pendaftaran Kepanitiaan OMB UMN 2025
+                        “countdown”
+                        {/* Pendaftaran Kepanitiaan OMB UMN 2025 Telah Dibuka! */}
                     </p>
-                    <GlassButton
+                    {/* <GlassButton
                         text="Daftar Sekarang!"
                         onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                         className="text-white max-w-[180px] mt-[20px]"
-                    />
+                    /> */}
+                    <Countdown targetDate="2025-02-15T23:59:00" />
                 </div>
             </div>
 
