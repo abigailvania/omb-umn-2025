@@ -26,7 +26,6 @@
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
-    color: $primary-color;
     margin-bottom: 20px;
 }
 
@@ -36,8 +35,16 @@
     border-radius: 10px;
 
     .DivisiHeader {
-        background: $gradient-bg;
+        background: linear-gradient(to top right, 
+        #03335B, 
+        #1E7D87, 
+        #1C9393, 
+        #48D3CF, 
+        #A7DB65, 
+        #FFFC97
+      );
         width: 100%;
+        background-size: cover;
         h1 {
             font-size: 2rem;
             font-weight: 700;
