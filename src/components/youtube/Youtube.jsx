@@ -27,6 +27,9 @@ function Youtube() {
                     </div>
                 </div>
                 <div className="ombak2">
+                    <div className="supergrafis">
+                        <img src={supergrafis} alt="supergrafis" />
+                    </div>
                     <img src={ombaksantuydown} alt="ombak" />
                 </div>
             </section>

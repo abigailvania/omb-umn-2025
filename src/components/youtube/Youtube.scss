@@ -6,21 +6,19 @@
           #1C9393, 
           #48D3CF, 
           #A7DB65, 
-          #FFFC97,
-          url('../../images/supergrafis/supergrafis3.png'),
-          cover / no-repeat
+          #FFFC97
         );
     width: 100%;
     background-size: cover;
 
     .ombak, .ombak2 {
         width: 100%;
+        .supergrafis {
+            position: absolute;
+            width: 100%;
+        }
     }
 
-    .supergrafis {
-        position: absolute;
-        width: 100%;
-    }
 }
 
 .Youtube {
