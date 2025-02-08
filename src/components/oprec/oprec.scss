@@ -116,21 +116,24 @@
 
 .logo-divisi {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
+    gap: 10px; /* Sesuaikan dengan jarak yang lebih rapat */
+    margin: auto;
     justify-items: center;
     align-items: center;
-    gap: 10px;  /* Mengurangi jarak antar logo */
 }
 
 .logo-divisi img {
     width: 150px;
     height: 150px;
+    object-fit: contain;
+    margin: 0; /* Pastikan margin tidak menambah jarak */
 }
 
 @media (max-width: 1024px) {
     .logo-divisi {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;  /* Mengurangi jarak antar logo */
+        grid-template-columns: repeat(3, 1fr); /* Tetap 3 kolom di tablet */
+        gap: 10px;
     }
     .logo-divisi img {
         width: 120px;
@@ -140,8 +143,8 @@
 
 @media (max-width: 600px) {
     .logo-divisi {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;  /* Mengurangi jarak antar logo pada layar kecil */
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk mobile */
+        gap: 5px; /* Menyesuaikan gap untuk ukuran layar lebih kecil */
     }
     .logo-divisi img {
         width: 100px;
