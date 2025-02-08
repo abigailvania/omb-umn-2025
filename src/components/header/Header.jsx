@@ -30,14 +30,14 @@ function Header() {
                 </div>
                 <div className="rightColumn">
                     <div className="flex flex-col justify-center items-center text-center text-white mt-[20px]">
+                        <Countdown targetDate="2025-02-10T08:00:00" />
                         <p className="text-xl">
                             Pendaftaran Kepanitiaan OMB UMN akan Segera Dibuka
                         </p>
-                        <Countdown targetDate="2025-02-10T08:00:00" />
                         <GlassButton
                             text="Daftar Sekarang!"
                             onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                            className="text-white max-w-[180px] mt-[20px]"
+                            className="text-white max-w-[180px] mt-[20px] mt-[30px]"
                         />
                     </div>
                 </div>
