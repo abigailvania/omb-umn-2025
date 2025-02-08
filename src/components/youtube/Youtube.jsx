@@ -9,7 +9,7 @@ import supergrafis from '../../images/supergrafis/supergrafis3.png';
 function Youtube() {
     return (
         <>
-            <section className="YoutubeContainer mt-[10px]">
+            <section className="YoutubeContainer mt-[-30px]">
                 <div className="ombak">
                     <img src={ombakterangtop} alt="ombak"/>
                 </div>
