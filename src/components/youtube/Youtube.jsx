@@ -17,7 +17,7 @@ function Youtube() {
                     <div className="YoutubeHeader mt-[150px]">
                         <h1>Kura-kura Matahari merangkai memori, <br />Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
-                    <div className="YoutubeThumbnail">
+                    <div className="YoutubeThumbnail mt-[10px]">
                         <iframe width="700" height="394" src="https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF" 
                                 title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; 
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
