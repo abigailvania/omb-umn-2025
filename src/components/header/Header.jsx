@@ -18,16 +18,7 @@ const ombak = [ombak1, ombak2, ombak3];
 function Header() {
     return (
         <section id="home-section" className="headerSection">
-            <div className="image-container z-10">
-            {ombak.map((imgSrc, index) => (
-                <img
-                key={index}
-                src={imgSrc}
-                alt={`ombak-${index}`}
-                className="image-stack"
-                />
-            ))}
-            </div>
+            
             <div className="headerContent">
                 <div className="supergrafis">
                     <img src={supergrafis} alt="supergrafis" />
@@ -53,7 +44,16 @@ function Header() {
                     <Countdown targetDate="2025-02-10T08:00:00" />
                 </div>
             </div>
-
+            <div className="image-container z-10">
+            {ombak.map((imgSrc, index) => (
+                <img
+                key={index}
+                src={imgSrc}
+                alt={`ombak-${index}`}
+                className="image-stack"
+                />
+            ))}
+            </div>
         </section>
     );
 }
