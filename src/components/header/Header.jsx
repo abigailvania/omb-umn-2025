@@ -9,16 +9,10 @@ import supergrafis from "../../images/supergrafis/supergrafis1.png"
 import GlassButton from "../button/Button.jsx";
 import Countdown from "../oprec/countdown/Countdown.jsx";
 
-import ombak1 from '../../images/ombak/wave5-03.png';
-import ombak2 from '../../images/ombak/WAVE3-03.png';
-import ombak3 from '../../images/ombak/WAVE4-03.png';
-
-const ombak = [ombak1, ombak2, ombak3];
 
 function Header() {
     return (
         <section id="home-section" className="headerSection">
-            
             <div className="headerContent">
                 <div className="supergrafis">
                     <img src={supergrafis} alt="supergrafis" />
@@ -44,15 +38,9 @@ function Header() {
                     <Countdown targetDate="2025-02-10T08:00:00" />
                 </div>
             </div>
-            <div className="image-container z-10">
-            {ombak.map((imgSrc, index) => (
-                <img
-                key={index}
-                src={imgSrc}
-                alt={`ombak-${index}`}
-                className="image-stack"
-                />
-            ))}
+
+            <div className="ombak">
+                <img src={ombakterangdown} alt="ombak"/>
             </div>
         </section>
     );
