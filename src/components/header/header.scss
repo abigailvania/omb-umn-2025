@@ -71,7 +71,9 @@
       padding-top: 1px;
       grid-template-columns: 1fr; // Stacks content vertically on smaller screens
     }
-
+    .rightColumn{
+      margin-top: 5px;
+    }
     .headerContent .supergrafis {
       width: 90%;
       max-width: 400px;
