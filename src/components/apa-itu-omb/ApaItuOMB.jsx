@@ -6,7 +6,7 @@ import foto2 from '../../assets/images/foto-2.jpg';
 import foto3 from '../../assets/images/foto-3.jpg';
 import foto4 from '../../assets/images/foto-4.jpg';
 import foto5 from '../../assets/images/foto-5.jpg';
-import supergrafis from '../../images/supergrafis/supergrafis2.png';
+import supergrafis from '../../images/supergrafis/SUP2.png';
 
 
 const ApaItuOMB = () => {
