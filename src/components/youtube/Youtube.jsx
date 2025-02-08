@@ -15,8 +15,7 @@ function Youtube() {
                 
                 <div className="Youtube">
                     <div className="YoutubeHeader mt-[150px]">
-                        <h1>Kura-kura Matahari merangkai memori</h1>
-                        <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
+                        <h1>Kura-kura Matahari merangkai memori, Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
                     <div className="YoutubeThumbnail">
                         <iframe width="700" height="394" src="https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF" 
