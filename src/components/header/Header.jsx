@@ -5,6 +5,7 @@ import logo from "../../images/header-footer/putih_glowterang.png"
 import tagline from "../../images/header-footer/tagline-01.png"
 
 import supergrafis from "../../images/supergrafis/supergrafis1.png"
+import ombakterangdown from "../../images/ombak/Ombakterang_Down.png"
 
 import GlassButton from "../button/Button.jsx";
 import Countdown from "../oprec/countdown/Countdown.jsx";
@@ -30,11 +31,11 @@ function Header() {
                         Pendaftaran Kepanitiaan OMB UMN akan Segera Dibuka
                         {/* Pendaftaran Kepanitiaan OMB UMN 2025 Telah Dibuka! */}
                     </p>
-                    {/* <GlassButton
+                    <GlassButton
                         text="Daftar Sekarang!"
                         onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                         className="text-white max-w-[180px] mt-[20px]"
-                    /> */}
+                    />
                     <Countdown targetDate="2025-02-10T08:00:00" />
                 </div>
             </div>
