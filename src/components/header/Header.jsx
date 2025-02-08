@@ -16,9 +16,9 @@ function Header() {
         <section id="home-section" className="headerSection">
             <div className="headerContent">
                 <div className="leftColumn">
-                    <div className="supergrafis">
+                    {/* <div className="supergrafis">
                         <img src={supergrafis} alt="supergrafis" />
-                    </div>
+                    </div> */}
                     <div className="flex flex-col justify-center align-center">
                         <div className="flex justify-center">
                             <img src={logo} alt="Logo" className="h-[500px] z-5" />
