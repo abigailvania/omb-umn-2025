@@ -9,10 +9,10 @@ import supergrafis from '../../images/supergrafis/supergrafis3.png';
 function Youtube() {
     return (
         <>
-            <section className="YoutubeContainer mt-[-30px] z-0">
+            <section className="YoutubeContainer mt-[-50px] z-0">
 
                 
-                <div className="Youtube">
+                <div className="Youtube mt-[50px]">
                     <div className="YoutubeHeader">
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
