@@ -65,7 +65,8 @@
 
   @media (max-width: 512px) {
     .headerContent {
-      grid-template-columns: 1fr; // Stacks content vertically on smaller screens
+      grid-template-columns: 1fr;
+      height: 100vh;
     }
 
     .headerContent .supergrafis {
