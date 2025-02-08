@@ -32,7 +32,14 @@ function Oprec() {
 
     return (
         <>
+<<<<<<< HEAD
             <section className="oprec pt-[300px]">
+=======
+            <section className="oprec pt-[150px]">
+                <div className="supergrafis">
+                    <img src={supergrafis} alt="supergrafis" />
+                </div>
+>>>>>>> 5b223a9110d6036e4d5b69672867e2d3a0044de0
                 <div id="oprec-section" className="OprecText">
                     <div className="supergrafis">
                         <img src={supergrafis} alt="supergrafis" />
