@@ -118,7 +118,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 0;
-    justify-content: space-around;
+    justify-items: center;
     align-items: center;
 }
 
