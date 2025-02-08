@@ -1,15 +1,8 @@
 .oprec {
-    background: linear-gradient(to top right, 
-    #03335B, 
-    #1E7D87, 
-    #1C9393, 
-    #48D3CF, 
-    #A7DB65, 
-    #FFFC97
-  );
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background: url('../../gradien/gradienDivisi.png') no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .OprecHeader {
