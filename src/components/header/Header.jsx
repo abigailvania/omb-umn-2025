@@ -21,7 +21,7 @@ function Header() {
                     </div>
                     <div className="flex flex-col justify-center align-center">
                         <div className="flex justify-center">
-                            <img src={logo} alt="Logo" className="h-[400px] z-5" />
+                            <img src={logo} alt="Logo" className="h-[300px] z-5" />
                         </div>
                         <div className="flex justify-center mt-[10px] align-center">
                             <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[100px]" />
