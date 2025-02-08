@@ -44,11 +44,8 @@ function Header() {
             </div>
 
             <div className="ombak">
-<<<<<<< HEAD
                 <img src={ombakterangdown} alt="ombak" />
-=======
                 <img src={ombak} alt="ombak"/>
->>>>>>> c300e8f409811ca8b750f0b3116e5250c967c5eb
             </div>
         </section>
     );
