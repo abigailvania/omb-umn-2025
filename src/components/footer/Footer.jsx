@@ -7,7 +7,6 @@ import email from "../../images/header-footer/email.png";
 import facebook from "../../images/header-footer/facebook.png";
 import insta from "../../images/header-footer/insta.png";
 import line from "../../images/header-footer/line.png";
-import ombaksantuytop from "../../images/ombak/Ombaksantuy_Top.png";
 
 function Footer() {
     return (

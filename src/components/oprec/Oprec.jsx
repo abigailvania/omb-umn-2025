@@ -8,10 +8,7 @@ import ContentDivisi from "./ContentDivisi";
 import GlassButton from "../button/Button.jsx";
 import ImageSlider from "../image-slider/image-slider.jsx";
 
-import ombakterangdown from "../../images/ombak/Ombakterang_Down.png";
-import ombakterangtop from "../../images/ombak/Ombakterang_Top.png";
-import supergrafis1 from "../../images/supergrafis/supergrafis4.png";
-import supergrafis2 from "../../images/supergrafis/supergrafis5.png";
+
 
 const DivisiCard = ({ divisi, onClick }) => {
     return (
