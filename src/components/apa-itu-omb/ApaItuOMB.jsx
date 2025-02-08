@@ -60,7 +60,7 @@ const ApaItuOMB = () => {
     return (
         <section id="tentang-omb" className="apaituomb_section">
             <div className="ombak">
-                <img src={ombak[currentIndex % ombak.length]} alt="ombak" />
+                <img src={ombak} alt="ombak" />
             </div>
             <div className="supergrafis z-0">
                 <img src={supergrafis} alt="supergrafis" />
