@@ -116,18 +116,18 @@
 
 .logo-divisi {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Membuat 3 kolom */
-    gap: 10px; /* Sesuaikan dengan jarak yang lebih rapat */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     margin: auto;
     justify-items: center;
     align-items: center;
 }
 
 .logo-divisi img {
-    width: 150px;
+    width: 350px;
     height: 150px;
     object-fit: contain;
-    margin: 0; /* Pastikan margin tidak menambah jarak */
+    margin: 0; 
 }
 
 @media (max-width: 1024px) {
