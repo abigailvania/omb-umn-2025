@@ -8,21 +8,18 @@ import ContentDivisi from "./ContentDivisi";
 import GlassButton from "../button/Button.jsx";
 import ImageSlider from "../image-slider/image-slider.jsx";
 
-import ombakterangdown from "../../images/ombak/Ombakterang_Down.png";
-import ombakterangtop from "../../images/ombak/Ombakterang_Top.png";
+import ombakterangdown from "../../images/ombak/Ombakterang_Down-crop.png";
+import ombakterangtop from "../../images/ombak/Ombakterang_Top-crop.png";
 import supergrafis1 from "../../images/supergrafis/supergrafis4.png";
 import supergrafis2 from "../../images/supergrafis/supergrafis5.png";
 
 const DivisiCard = ({ divisi, onClick }) => {
     return (
-        <div 
-        className="flex flex-col items-center justify-center p-4 cursor-pointer w-[120px] md:w-[150px] lg:w-[180px] mx-auto" 
-        onClick={() => onClick(divisi)}
-        >
+        <div className="flex flex-col items-center p-4 cursor-pointer" onClick={() => onClick(divisi)}>
             <img
                 src={divisi.logoImg}
                 alt={divisi.name}
-                className="w-full max-w-[200px] h-auto"
+                className="w-56 object-contain rounded-full border-white border-8 shadow-[0_5px_5px_rgba(0,0,0,0.25)]"
             />
         </div>
     );
@@ -72,12 +69,23 @@ function Oprec() {
                         <img src={supergrafis2} alt="supergrafis" className="z-0" />
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-6 justify-center items-center mx-auto">
-                {ContentDivisi.slice(0, 9).map((divisi, index) => (
-                    <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
-                ))}
+                <div className="logo-divisi flex flex-col p-2 z-10">
+                    <div className="baris1 flex flex-1 justify-center z-10">
+                        {ContentDivisi.slice(0, 4).map((divisi, index) => (
+                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                        ))}
+                    </div>
+                    <div className="baris2 flex flex-1 justify-center z-10">
+                        {ContentDivisi.slice(4, 7).map((divisi, index) => (
+                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                        ))}
+                    </div>
+                    <div className="baris3 flex flex-1 justify-center z-10">
+                        {ContentDivisi.slice(7, 9).map((divisi, index) => (
+                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                        ))}
+                    </div>
                 </div>
-
             </section>
             {selectedDivisi && (
                 <AnimatePresence>
