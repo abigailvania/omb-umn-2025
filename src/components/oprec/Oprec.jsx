@@ -15,7 +15,10 @@ import supergrafis2 from "../../images/supergrafis/supergrafis5.png";
 
 const DivisiCard = ({ divisi, onClick }) => {
     return (
-        <div className="flex justify-content-center items-center p-4 cursor-pointer w-[300px]" onClick={() => onClick(divisi)}>
+        <div 
+        className="flex flex-col items-center justify-center p-4 cursor-pointer w-[300px] mx-auto" 
+        onClick={() => onClick(divisi)}
+        >
             <img
                 src={divisi.logoImg}
                 alt={divisi.name}
