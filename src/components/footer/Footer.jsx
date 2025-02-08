@@ -12,7 +12,6 @@ function Footer() {
     return (
         <div className="footerSection">
             <div className="content">
-
                 <div className="flex flex-row justify-between items-center mt-50">
                     <div className="flex-1 text-center order-2
                                     md:text-right md:order-1">
