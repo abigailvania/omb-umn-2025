@@ -121,13 +121,6 @@
     gap: 10px;
 }
 
-.logo-divisi .baris1,
-.logo-divisi .baris2,
-.logo-divisi .baris3 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 .logo-divisi img {
     width: 200px; 
@@ -136,16 +129,12 @@
 }
 
 @media (max-width: 1024px) {
-    .logo-divisi .baris1,
-    .logo-divisi .baris2,
-    .logo-divisi .baris3 {
+    .logo-divisi{
         gap: 20px;
 }
 }
 @media (max-width: 600px) {
-    .logo-divisi .baris1,
-    .logo-divisi .baris2,
-    .logo-divisi .baris3 {
+    .logo-divisi {
         gap: 10px; 
     }
 
