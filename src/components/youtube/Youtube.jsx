@@ -11,6 +11,9 @@ function Youtube() {
         <>
             <section className="YoutubeContainer mt-[-50px] z-0">
 
+                        <div className="ombak">
+                            <img src={supergrafis} alt="ombak" />
+                        </div>
                 
                 <div className="Youtube">
                     <div className="YoutubeHeader mt-[100px]">
@@ -26,9 +29,6 @@ function Youtube() {
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
-                </div>
-                <div className="ombak">
-                    <img src={supergrafis} alt="ombak" />
                 </div>
             </section>
         </>
