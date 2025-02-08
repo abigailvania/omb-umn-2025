@@ -55,7 +55,6 @@
     padding: 50px 0;
 
     .DivisiHeader {
-
         width: 100%;
         background-size: cover;
         h1 {
@@ -85,11 +84,13 @@
         box-shadow: 0px 12px 20px 1px rgba(0, 0, 0, 0.49);
     }
 }
+
 .supergrafis img {
     width: 100%;
 }
 .ombak img {
     width: 100%;
+    position: relative;
 }
 
 @media (max-width: 1024px) {
