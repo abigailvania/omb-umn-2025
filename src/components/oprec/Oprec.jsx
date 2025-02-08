@@ -55,17 +55,17 @@ function Oprec() {
                 </div>
                 <div className="OprecDivisi">
                     <div className="DivisiHeader">
-                        <div className="ombak1">
+                        {/* <div className="ombak1">
                             <img src={ombakterangtop} alt="ombak1" />
-                        </div>
+                        </div> */}
                         <h1>Divisi</h1>
                         <h6>
                             Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!
                         </h6>
                         <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
-                        <div className="ombak2">
+                        {/* <div className="ombak2">
                             <img src={ombakterangdown} alt="ombak2" />
-                        </div>
+                        </div> */}
                         {/* <div className="supergrafis2 z-0">
                             <img src={supergrafis2} alt="supergrafis" className="z-0" />
                         </div> */}
