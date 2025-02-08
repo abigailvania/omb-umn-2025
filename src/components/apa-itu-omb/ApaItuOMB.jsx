@@ -55,9 +55,7 @@ const ApaItuOMB = () => {
 
     return (
         <section id="tentang-omb" className="apaituomb_section z-1">
-            <div className="supergrafis z-0">
-                <img src={supergrafis} alt="supergrafis" />
-            </div>
+
             <div className="apaituomb_slider z-1" ref={sliderRef}>
                 <div
                     className="apaituomb_slider_inner"
