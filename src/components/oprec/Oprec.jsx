@@ -66,9 +66,9 @@ function Oprec() {
                         <div className="ombak2">
                             <img src={ombakterangdown} alt="ombak2" />
                         </div>
-                        <div className="supergrafis2 z-0">
+                        {/* <div className="supergrafis2 z-0">
                             <img src={supergrafis2} alt="supergrafis" className="z-0" />
-                        </div>
+                        </div> */}
                     </div>
                     <div className="logo-divisi z-10 ">
                             {ContentDivisi.slice(0, 9).map((divisi, index) => (
