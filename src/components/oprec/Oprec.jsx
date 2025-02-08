@@ -8,8 +8,8 @@ import ContentDivisi from "./ContentDivisi";
 import GlassButton from "../button/Button.jsx";
 import ImageSlider from "../image-slider/image-slider.jsx";
 
-import ombakterangdown from "../../images/ombak/Ombakterang_Down.png";
-import ombakterangtop from "../../images/ombak/Ombakterang_Top.png";
+import ombakterangdown from "../../images/ombak/Ombakterang_Down-crop.png";
+import ombakterangtop from "../../images/ombak/Ombakterang_Top-crop.png";
 import supergrafis1 from "../../images/supergrafis/supergrafis4.png";
 import supergrafis2 from "../../images/supergrafis/supergrafis5.png";
 
@@ -69,10 +69,12 @@ function Oprec() {
                         <img src={supergrafis2} alt="supergrafis" className="z-0" />
                     </div>
                 </div>
-                <div className="logo-divisi gap-4 p-2 z-10">
-                    {ContentDivisi.slice(0, 9).map((divisi, index) => (
-                        <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
-                    ))}
+                <div className="logo-divisi flex flex-col p-2 z-10">
+                    <div className="baris1 flex flex-1 justify-center z-10">
+                        {ContentDivisi.slice(0, 9).map((divisi, index) => (
+                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                        ))}
+                    </div>
                 </div>
             </section>
             {selectedDivisi && (
