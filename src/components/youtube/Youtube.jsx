@@ -15,8 +15,8 @@ function Youtube() {
                             <img src={supergrafis} alt="ombak" />
                         </div>
                 
-                <div className="Youtube">
-                    <div className="YoutubeHeader mt-[150px] mb-[300px]">
+                <div className="Youtube mb-[300px]">
+                    <div className="YoutubeHeader mt-[150px]">
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
