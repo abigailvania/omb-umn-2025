@@ -70,7 +70,7 @@ function Oprec() {
                     </div>
                 </div>
                 <div className="logo-divisi flex flex-col p-2 z-10">
-                    <div className="baris1 flex flex-1 justify-center z-10 gap-[30px] w-30">
+                    <div className="baris1 flex flex-1 justify-center z-10">
                         {ContentDivisi.slice(0, 9).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
