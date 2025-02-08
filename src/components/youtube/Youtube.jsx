@@ -9,7 +9,7 @@ function Youtube() {
     return (
         <>
             <section className="YoutubeContainer mt-[-50px] z-0">
-                <div className="supergrafis">
+                <div className="supergrafis opacity-40">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
                 
