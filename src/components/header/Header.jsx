@@ -4,13 +4,13 @@ import "./header.scss";
 import logo from "../../images/header-footer/putih_glowterang.png"
 import tagline from "../../images/header-footer/tagline-01.png"
 
-import supergrafis from "../../images/supergrafis/supergrafis1.png"
 import ombak from "../../images/ombak/1.png"
 
 import GlassButton from "../button/Button.jsx";
 import Countdown from "../oprec/countdown/Countdown.jsx";
 
-import supergrafis2 from "../../images/supergrafis/Frame 2.png"
+import supergrafis from "../../images/supergrafis/SUP1.png"
+import ombak from "../../images/ombak/OMBAK1.png"
 
 function Header() {
     return (
