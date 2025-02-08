@@ -35,7 +35,7 @@ function Oprec() {
     return (
         <>
             <section className="oprec">
-                <div id="oprec-section" className="OprecText">
+                <div id="oprec-section" className="OprecText mt-[20px]">
                     {/* <div className="supergrafis1">
                         <img src={supergrafis1} alt="supergrafis" />
                     </div> */}
