@@ -38,7 +38,7 @@ function Header() {
                             />
                         </div>
                     </div>
-                    <div className="ombak">
+                    <div className="ombak mt-[100px]">
                         <img src={ombak} alt="ombak" />
                     </div>
                 </div>
