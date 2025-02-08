@@ -2,16 +2,16 @@ import React from "react";
 import './Youtube.scss';
 
 import supergrafis from '../../images/supergrafis/SUP2.png';
+import ombak from '../../images/supergrafis/ombak2.png';
 
 
 function Youtube() {
     return (
         <>
             <section className="YoutubeContainer mt-[-50px] pb-[300px] z-0">
-
-                        <div className="ombak">
-                            <img src={supergrafis} alt="ombak" />
-                        </div>
+                <div className="supergrafis">
+                    <img src={supergrafis} alt="supergrafis" />
+                </div>
                 
                 <div className="Youtube">
                     <div className="YoutubeHeader mt-[150px]">
@@ -24,6 +24,9 @@ function Youtube() {
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
+                </div>
+                <div className="ombak">
+                    <img src={ombak} alt="ombak" />
                 </div>
             </section>
         </>
