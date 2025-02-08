@@ -106,9 +106,12 @@
 .ombak img {
     width: 100%;
     position: relative;
+    display: block;
+    margin: 0;
     padding: 0;
 }
 >>>>>>> 75b3a3ae6ce072fe4300d27c10d8d39807c3abdd
+
 
 
 @media (max-width: 1024px) {
