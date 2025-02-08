@@ -116,23 +116,24 @@
 
 .logo-divisi {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
 }
+
 
 .logo-divisi .baris1,
 .logo-divisi .baris2,
 .logo-divisi .baris3 {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Pastikan setiap baris mengisi lebar penuh */
 }
 
 .logo-divisi img {
-    width: 200px; 
-    height: 200px;
+    width: 100%;  /* Memastikan logo memenuhi lebar container */
+    max-width: 150px;  /* Menetapkan ukuran maksimal untuk logo */
     object-fit: contain;
 }
 
@@ -140,20 +141,23 @@
     .logo-divisi .baris1,
     .logo-divisi .baris2,
     .logo-divisi .baris3 {
-        gap: 20px;
+        gap: 15px;
+        justify-content: center; /* Pastikan logo rata tengah */
+    }
+    .logo-divisi img {
+        width: 45%;  /* Ukuran logo pada tablet lebih kecil */
+    }
 }
-}
+
 @media (max-width: 600px) {
     .logo-divisi .baris1,
     .logo-divisi .baris2,
     .logo-divisi .baris3 {
-        gap: 10px; 
+        gap: 10px;
     }
 
     .logo-divisi img {
-        width: 120px;
-        height: 120px;
+        width: 80%;  /* Menyesuaikan logo dengan layar kecil */
+        max-width: 120px;
     }
 }
-
-
