@@ -88,6 +88,12 @@
 .supergrafis img {
     width: 100%;
 }
+.ombak {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Pastikan tidak ada ekstra ruang */
+}
+
 .ombak img {
     width: 100%;
     position: relative;
