@@ -63,7 +63,7 @@
     bottom: -50px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 512px) {
     .headerContent {
       grid-template-columns: 1fr; // Stacks content vertically on smaller screens
     }
