@@ -7,9 +7,9 @@ import foto3 from '../../assets/images/foto-3.jpg';
 import foto4 from '../../assets/images/foto-4.jpg';
 import foto5 from '../../assets/images/foto-5.jpg';
 import supergrafis from '../../images/supergrafis/supergrafis2.png';
-import ombak1 from '../../assets/ombak/wave 5-03.png';
-import ombak2 from '../../assets/ombak/WAVE 3-03.png';
-import ombak3 from '../../assets/ombak/WAVE 4-03.png';
+import ombak1 from '../../assets/ombak/wave5-03.png';
+import ombak2 from '../../assets/ombak/WAVE3-03.png';
+import ombak3 from '../../assets/ombak/WAVE4-03.png';
 
 const ombak = [ombak1, ombak2, ombak3];
 
