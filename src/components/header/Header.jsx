@@ -5,7 +5,6 @@ import logo from "../../images/header-footer/putih_glowterang.png"
 import tagline from "../../images/header-footer/tagline-01.png"
 
 import supergrafis from "../../images/supergrafis/supergrafis1.png"
-import ombakterangdown from "../../images/ombak/Ombakterang_Down.png"
 
 import GlassButton from "../button/Button.jsx";
 import Countdown from "../oprec/countdown/Countdown.jsx";
@@ -40,9 +39,6 @@ function Header() {
                 </div>
             </div>
 
-            <div className="ombak">
-                <img src={ombakterangdown} alt="ombak"/>
-            </div>
         </section>
     );
 }
