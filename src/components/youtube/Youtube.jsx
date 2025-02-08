@@ -27,7 +27,7 @@ function Youtube() {
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                 </div>
-                <div className="ombak2">
+                <div className="ombak">
                     <img src={supergrafis} alt="ombak" />
                 </div>
             </section>
