@@ -54,7 +54,7 @@ const ApaItuOMB = () => {
     }, [isTransitioning]);
 
     return (
-        <section id="tentang-omb" className="apaituomb_section">
+        <section id="tentang-omb" className="apaituomb_section z-1">
             <div className="supergrafis z-0">
                 <img src={supergrafis} alt="supergrafis" />
             </div>
