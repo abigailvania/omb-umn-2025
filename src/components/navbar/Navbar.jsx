@@ -37,12 +37,16 @@ const Navbar = () => {
                         e.preventDefault();
                         document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
                     }}>Divisi</a></li>
-                </ul>
+                    <li>
                 <button
                     className="register-btn" onClick={(e) => {
                         document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
                     }}
                 >Daftar Sekarang</button>
+
+                    </li>
+                </ul>
+                
             </div>
         </nav>
     );
