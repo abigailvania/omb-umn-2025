@@ -65,6 +65,7 @@
 
   @media (max-width: 768px) {
     .headerContent {
+      margin-top: 10px;
       grid-template-columns: 1fr; // Stacks content vertically on smaller screens
     }
 
