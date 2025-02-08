@@ -13,7 +13,7 @@ function Youtube() {
 
                 
                 <div className="Youtube">
-                    <div className="YoutubeHeader mt-[50px]">
+                    <div className="YoutubeHeader mt-[100px]">
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
