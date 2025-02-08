@@ -9,7 +9,7 @@ import supergrafis from '../../images/supergrafis/supergrafis3.png';
 function Youtube() {
     return (
         <>
-            <section className="YoutubeContainer">
+            <section className="YoutubeContainer mt-[10px]">
                 <div className="ombak">
                     <img src={ombakterangtop} alt="ombak"/>
                 </div>
@@ -20,9 +20,9 @@ function Youtube() {
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
                     <div className="YoutubeThumbnail">
-                        <div className="supergrafis">
+                        {/* <div className="supergrafis">
                             <img src={supergrafis} alt="supergrafis" />
-                        </div>
+                        </div> */}
                         <iframe width="600" height="337" src="https://www.youtube.com/embed/uzkX9F6AkKU?si=eA2lIn2KHLYr8PgF" 
                                 title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; 
                                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
