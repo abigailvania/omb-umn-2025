@@ -117,11 +117,10 @@
 .logo-divisi {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
     margin: auto;
     justify-items: center;
     align-items: center;
-    padding: 100px;
+    padding: 50px;
 }
 
 .logo-divisi img {
