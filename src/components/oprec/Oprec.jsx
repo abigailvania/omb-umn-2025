@@ -10,12 +10,15 @@ import ImageSlider from "../image-slider/image-slider.jsx";
 
 import ombak from "../../images/ombak/OMBAK4.png";
 import supergrafis from "../../images/supergrafis/SUP3.png";
-import backgroundImage from "../../gradien/gradienDivisi.png"; // Pastikan path benar
 
 const DivisiCard = ({ divisi, onClick }) => {
     return (
         <div className="flex flex-col items-center cursor-pointer" onClick={() => onClick(divisi)}>
-            <img src={divisi.logoImg} alt={divisi.name} className="" />
+            <img
+                src={divisi.logoImg}
+                alt={divisi.name}
+                className=""
+            />
         </div>
     );
 };
@@ -29,15 +32,7 @@ function Oprec() {
 
     return (
         <>
-            <section 
-                className="oprec pt-[-100px]" 
-                style={{
-                    backgroundImage: `url(${backgroundImage})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    backgroundRepeat: "no-repeat",
-                }}
-            >
+            <section className="oprec pt-[-100px]">
                 <div className="supergrafis pt-[-200px]">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
@@ -58,6 +53,7 @@ function Oprec() {
                 </div>
                 <div className="OprecDivisi">
                     <div className="DivisiHeader">
+
                         <h1>Divisi</h1>
                         <h6>
                             Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!
@@ -65,9 +61,10 @@ function Oprec() {
                         <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
                     </div>
                     <div className="logo-divisi z-10 mb-[100px]">
-                        {ContentDivisi.slice(0, 9).map((divisi, index) => (
-                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
-                        ))}
+                            {ContentDivisi.slice(0, 9).map((divisi, index) => (
+                                <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                            ))}
+
                     </div>
                 </div>
                 <div className="ombak mb-[-100px]">
@@ -90,11 +87,13 @@ function Oprec() {
                             >
                                 &times;
                             </button>
+
                             <div className="">
                                 <div className="flex flex-row items-center text-center">
                                     <div className="flex-row mx-4">
                                         <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
                                         <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
+
                                         <div className="flex justify-center my-4">
                                             <img
                                                 src={selectedDivisi.logoImg}
@@ -102,11 +101,13 @@ function Oprec() {
                                                 className="w-[120px] object-contain rounded-full shadow-md"
                                             />
                                         </div>
+
                                         <div className="bg-gray-200 p-2 rounded-lg border border-blue-950 w-full">
                                             <p className="text-sm">Logo: {selectedDivisi.logo}</p>
                                             <p className="text-sm">Arti: {selectedDivisi.arti}</p>
                                         </div>
                                     </div>
+
                                     <div className="">
                                         <div className="foto-divisi">
                                             <ImageSlider images={images} interval={3000} />
@@ -115,6 +116,13 @@ function Oprec() {
                                             <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
                                             <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
                                         </div>
+                                        {/* <GlassButton
+                                            text="Daftar"
+                                            onClick={() =>
+                                                document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })
+                                            }
+                                            className="text-white max-w-[180px]"
+                                        /> */}
                                     </div>
                                 </div>
                             </div>
