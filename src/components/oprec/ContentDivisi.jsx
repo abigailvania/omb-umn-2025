@@ -149,7 +149,7 @@ const ContentDivisi = [
         nama: "Website",
         logo: "Sampe",
         arti: "Kumpulan, Disatukan, Dipersatukan",
-        deskripsi: "Sampe merupakan alat musik yang berasal dari Kalimantan Timur dan dimainkan dengan cara dipetik. Sampe dihias dengan menggunakan berbagai ukiran indah yang memiliki makna tersendiri. Sampe biasanya digunakan untuk menyatakan perasaan agar dapat diterima,sama seperti SAMHITA yang bertugas untuk menyampaikan segala informasi dengan tepat. Sampe juga terbuat dari kayu pilihan berkualitas baik, seperti SAMHITA yang menyediakan wadah informasi berdasarkan konten pilihan dan terjamin kebenarannya.",
+        deskripsi: "Sampe merupakan alat musik yang berasal dari Kalimantan Timur dan dimainkan dengan cara dipetik. Sampe dihias dengan menggunakan berbagai ukiran indah yang memiliki makna tersendiri. Sampe biasanya digunakan untuk menyatakan perasaan agar dapat diterima,sama seperti Samhita yang bertugas untuk menyampaikan segala informasi dengan tepat. Sampe juga terbuat dari kayu pilihan berkualitas baik, seperti Samhita yang menyediakan wadah informasi berdasarkan konten pilihan dan terjamin kebenarannya.",
         tugas: "Samhita bertugas dalam merancang dan mengembangkan website resmi OMB UMN 2025 untuk mempersatukan peserta OMB UMN 2025 dengan menyediakan wadah informasi.",
         link: "",
         photo1: website1,

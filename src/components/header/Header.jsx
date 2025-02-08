@@ -28,9 +28,7 @@ function Header() {
                 </div>
                 <div className="flex flex-col justify-center items-center text-center text-white mt-[20px]">
                     <p className="text-xl">
-                        Pendaftaran Kepanitiaan OMB UMN 2025
-                        <br />
-                        “countdown”
+                        Pendaftaran Kepanitiaan OMB UMN akan Segera Dibuka
                         {/* Pendaftaran Kepanitiaan OMB UMN 2025 Telah Dibuka! */}
                     </p>
                     {/* <GlassButton
