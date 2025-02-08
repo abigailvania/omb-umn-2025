@@ -8,12 +8,12 @@
     <style>
       @font-face {
           font-family: 'JosefinSans';
-          src: url('src/components/font/JosefinSans-Regular.ttf') format('ttf');
+          src: url('src/components/font/JosefinSans-Regular.ttf') format('truetype'); /* Format truetype yang benar */
           font-weight: normal;
           font-style: normal;
       }
       body {
-        font-family: 'JosefinSans';
+        font-family: 'JosefinSans', sans-serif; /* Menambahkan fallback font */
       }
     </style>
   </head>
