@@ -19,7 +19,7 @@ const DivisiCard = ({ divisi, onClick }) => {
             <img
                 src={divisi.logoImg}
                 alt={divisi.name}
-                className="w-56  shadow-[0_5px_5px_rgba(0,0,0,0.25)]"
+                className="w-56 "
             />
         </div>
     );
