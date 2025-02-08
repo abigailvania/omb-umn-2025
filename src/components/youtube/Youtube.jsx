@@ -8,7 +8,7 @@ import ombak from '../../images/ombak/OMBAK2.png';
 function Youtube() {
     return (
         <>
-            <section className="YoutubeContainer mt-[-50px] pb-[300px] z-0">
+            <section className="YoutubeContainer mt-[-50px] z-0">
                 <div className="supergrafis">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
