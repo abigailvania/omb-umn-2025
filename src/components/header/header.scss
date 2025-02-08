@@ -54,13 +54,13 @@
       object-fit: cover;
     }
 
-    .ombak img{
-      position: relative;
-      width: 100%;
-      height: auto;
-      z-index: 1;
-      bottom: -250px;
-    }
+  }
+  .ombak img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    bottom: -250px;
   }
 
   @media (max-width: 768px) {
