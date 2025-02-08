@@ -8,7 +8,7 @@ import ContentDivisi from "./ContentDivisi";
 import GlassButton from "../button/Button.jsx";
 import ImageSlider from "../image-slider/image-slider.jsx";
 
-import ombak from "../../images/ombak/OMBAK3.png";
+import ombak from "../../images/ombak/OMBAK4.png";
 import supergrafis from "../../images/supergrafis/SUP3.png";
 
 const DivisiCard = ({ divisi, onClick }) => {
@@ -36,9 +36,6 @@ function Oprec() {
                 <div id="oprec-section" className="OprecText">
                     <div className="supergrafis">
                         <img src={supergrafis} alt="supergrafis" />
-                    </div>
-                    <div className="ombak">
-                        <img src={ombak} alt="ombak" />
                     </div>
                     <div className="OprecHeader">
                         <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
@@ -69,6 +66,9 @@ function Oprec() {
                             ))}
 
                     </div>
+                </div>
+                <div className="ombak">
+                    <img src={ombak} alt="ombak" />
                 </div>
             </section>
             {selectedDivisi && (
