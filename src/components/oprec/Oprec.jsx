@@ -57,8 +57,9 @@ function Oprec() {
                         <h1>DIVISI</h1>
                         <h6>
                             Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!
+                            <br />
+                            Klik divisi untuk melihat informasi lebih lanjut.
                         </h6>
-                        <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
                     </div>
                     <div className="logo-divisi z-10 mb-[100px]">
                             {ContentDivisi.slice(0, 9).map((divisi, index) => (
