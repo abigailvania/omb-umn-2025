@@ -119,21 +119,12 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    width: 30%;
 }
 
-.logo-divisi .baris1,
-.logo-divisi .baris2,
-.logo-divisi .baris3 {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
 
 .logo-divisi img {
-    width: 200px; 
-    height: 200px;
+    width: 400px; 
+    height: 400px;
     object-fit: contain;
 }
 
