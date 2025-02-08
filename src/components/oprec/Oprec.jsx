@@ -34,46 +34,48 @@ function Oprec() {
 
     return (
         <>
-            <section id="oprec-section" className="OprecText">
-                <div className="supergrafis1">
-                    <img src={supergrafis1} alt="supergrafis" />
-                </div>
-                <div className="OprecHeader">
-                    <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
-                    <h1>Jangan lewatkan kesempatan ini!</h1>
-                </div>
-                <div className="OprecText">
-                    <h2>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h2>
-                    <p>
-                        Pendaftaran terbuka bagi mahasiswa/i aktif seluruh program studi dari angkatan 2022, 2023 dan 2024
-                        yang telah lulus mengikuti rangkaian kegiatan OMB UMN. Form pendaftaran terbuka dari 10 Februari
-                        2025 pukul 08.00 WIB sampai 15 Februari 2025 pukul 23.59 WIB.
-                    </p>
-                </div>
-                <Countdown targetDate="2025-02-15T23:59:00" />
-            </section>
-            <section className="OprecDivisi">
-                <div className="DivisiHeader">
-                    <div className="ombak1">
-                        <img src={ombakterangtop} alt="ombak1" />
+            <section className="oprec">
+                <div id="oprec-section" className="OprecText">
+                    <div className="supergrafis1">
+                        <img src={supergrafis1} alt="supergrafis" />
                     </div>
-                    <h1>Divisi</h1>
-                    <h6>
-                        Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!
-                    </h6>
-                    <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
-                    <div className="ombak2">
-                        <img src={ombakterangdown} alt="ombak2" />
+                    <div className="OprecHeader">
+                        <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
+                        <h1>Jangan lewatkan kesempatan ini!</h1>
                     </div>
-                    <div className="supergrafis2 z-0">
-                        <img src={supergrafis2} alt="supergrafis" className="z-0" />
+                    <div className="OprecText">
+                        <h2>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h2>
+                        <p>
+                            Pendaftaran terbuka bagi mahasiswa/i aktif seluruh program studi dari angkatan 2022, 2023 dan 2024
+                            yang telah lulus mengikuti rangkaian kegiatan OMB UMN. Form pendaftaran terbuka dari 10 Februari
+                            2025 pukul 08.00 WIB sampai 15 Februari 2025 pukul 23.59 WIB.
+                        </p>
                     </div>
+                    <Countdown targetDate="2025-02-15T23:59:00" />
                 </div>
-                <div className="logo-divisi z-10 ">
-                        {ContentDivisi.slice(0, 9).map((divisi, index) => (
-                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
-                        ))}
+                <div className="OprecDivisi">
+                    <div className="DivisiHeader">
+                        <div className="ombak1">
+                            <img src={ombakterangtop} alt="ombak1" />
+                        </div>
+                        <h1>Divisi</h1>
+                        <h6>
+                            Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!
+                        </h6>
+                        <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
+                        <div className="ombak2">
+                            <img src={ombakterangdown} alt="ombak2" />
+                        </div>
+                        <div className="supergrafis2 z-0">
+                            <img src={supergrafis2} alt="supergrafis" className="z-0" />
+                        </div>
+                    </div>
+                    <div className="logo-divisi z-10 ">
+                            {ContentDivisi.slice(0, 9).map((divisi, index) => (
+                                <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                            ))}
 
+                    </div>
                 </div>
             </section>
             {selectedDivisi && (
