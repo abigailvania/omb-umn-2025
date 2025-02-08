@@ -1,21 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ApaItuOMB.scss';
 
-import foto1 from '../../assets/images/foto1.jpg';
-import foto2 from '../../assets/images/foto2.jpg';
-import foto3 from '../../assets/images/foto3.jpg';
-import foto4 from '../../assets/images/foto4.jpg';
-import foto5 from '../../assets/images/foto5.jpg';
+import foto1 from '../../assets/images/foto-1.jpg';
+import foto2 from '../../assets/images/foto-2.jpg';
+import foto3 from '../../assets/images/foto-3.jpg';
+import foto4 from '../../assets/images/foto-4.jpg';
+import foto5 from '../../assets/images/foto-5.jpg';
 import supergrafis from '../../images/supergrafis/supergrafis2.png';
 
 const ApaItuOMB = () => {
     const originalImages = [foto1, foto2, foto3, foto4, foto5];
-    const images = [...originalImages, originalImages[0]];
-
-    const [currentIndex, setCurrentIndex] = useState(0);
+    const images = [originalImages[originalImages.length - 1], ...originalImages, originalImages[0]];
+    
+    const [currentIndex, setCurrentIndex] = useState(1);
     const [isTransitioning, setIsTransitioning] = useState(true);
     const [sliderWidth, setSliderWidth] = useState(0);
     const sliderRef = useRef(null);
+    const interval = 3000; // Waktu per slide (ms)
 
     useEffect(() => {
         const updateSliderWidth = () => {
@@ -23,39 +24,40 @@ const ApaItuOMB = () => {
                 setSliderWidth(sliderRef.current.clientWidth);
             }
         };
-
         updateSliderWidth();
         window.addEventListener('resize', updateSliderWidth);
-        
         return () => window.removeEventListener('resize', updateSliderWidth);
     }, []);
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            if (currentIndex === images.length - 1) {
-                setIsTransitioning(false);
-                setCurrentIndex(0);
-            } else {
-                setIsTransitioning(true);
-                setCurrentIndex((prevIndex) => prevIndex + 1);
-            }
-        }, 2000);
+        const slideInterval = setInterval(() => {
+            setCurrentIndex((prevIndex) => prevIndex + 1);
+        }, interval);
 
-        return () => clearInterval(interval);
-    }, [currentIndex, images.length]);
+        return () => clearInterval(slideInterval);
+    }, []);
 
     useEffect(() => {
-        if (!isTransitioning && currentIndex === 0) {
+        if (currentIndex === images.length - 1) {
+            setTimeout(() => {
+                setIsTransitioning(false);
+                setCurrentIndex(1);
+            }, 700);
+        }
+    }, [currentIndex]);
+
+    useEffect(() => {
+        if (!isTransitioning) {
             setTimeout(() => setIsTransitioning(true), 50);
         }
-    }, [isTransitioning, currentIndex]);
+    }, [isTransitioning]);
 
     return (
         <section id="tentang-omb" className="apaituomb_section">
-            <div className="supergrafis">
+            <div className="supergrafis z-0">
                 <img src={supergrafis} alt="supergrafis" />
             </div>
-            <div className="apaituomb_slider" ref={sliderRef}>
+            <div className="apaituomb_slider z-1" ref={sliderRef}>
                 <div
                     className="apaituomb_slider_inner"
                     style={{

@@ -132,13 +132,13 @@ function Oprec() {
                                             <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
                                             <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
                                         </div>
-                                        <GlassButton
+                                        {/* <GlassButton
                                             text="Daftar"
                                             onClick={() =>
                                                 document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })
                                             }
                                             className="text-white max-w-[180px]"
-                                        />
+                                        /> */}
                                     </div>
                                 </div>
                             </div>

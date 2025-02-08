@@ -20,10 +20,10 @@ function Header() {
                 </div>
                 <div className="flex flex-col justify-center align-center md:pt-0">
                     <div className="flex justify-center">
-                        <img src={logo} alt="" className="h-[270px]" />
+                        <img src={logo} alt="" className="h-[270px] z-5" />
                     </div>
-                    <div className="flex justify-center -mt-[30px] align-center md:mt-0">
-                        <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[95px]" />
+                    <div className="flex justify-center mt-[10px] align-center md:mt-0">
+                        <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[150px]" />
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center text-center text-white mt-[20px]">

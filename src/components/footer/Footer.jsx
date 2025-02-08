@@ -38,7 +38,7 @@ function Footer() {
                 </div>
                 <div className="flex flex-col justify-between items-center mt-4">
                     <div className="flex flex-row">
-                        <a href="#"> <img src={email} alt="email" className="w-[25px] mx-[10px]"/></a>
+                        <a href=""> <img src={email} alt="email" className="w-[25px] mx-[10px]"/></a>
                         <a href="https://www.instagram.com/ombumn"> <img src={insta} alt="instagram" className="w-[25px] mx-[10px]" /></a>
                         <a href="https://linevoom.line.me/user/_dQto-n6wJSbyUlsQVlEfNHoStsNJwzSLtfVj2Xo"> <img src={line} alt="line" className="w-[25px] mx-[10px]" /></a>
                         <a href="https://www.facebook.com/ombumn/?_rdc=2&_rdr"> <img src={facebook} alt="facebook" className="w-[25px] mx-[10px]" /></a>
