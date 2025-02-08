@@ -3,7 +3,7 @@ import './Youtube.scss';
 
 import ombakterangtop from '../../images/ombak/Ombakterang_Top.png';
 import ombaksantuydown from '../../images/ombak/Ombaksantuy_Down.png';
-import supergrafis from '../../images/supergrafis/supergrafis3.png';
+import supergrafis from '../../images/supergrafis/frame 3.png';
 
 
 function Youtube() {
@@ -28,7 +28,7 @@ function Youtube() {
                     </div>
                 </div>
                 <div className="ombak2">
-                    <img src={ombaksantuydown} alt="ombak" />
+                    <img src={supergrafis} alt="ombak" />
                 </div>
             </section>
         </>
