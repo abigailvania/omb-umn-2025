@@ -1,9 +1,10 @@
 .headerSection {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Pastikan tinggi minimal 100vh agar responsif */
-  background: url('../../images/header-footer/gif.gif') no-repeat center;
+  background: url('../../images/header-footer/gif.gif');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   &::before {
     content: "";
@@ -12,8 +13,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../../images/gradien/gradien1.png') no-repeat center;
+    background: url('../../images/gradien/gradien1.png');
     background-size: cover;
+    background-position: center;
     opacity: 0.8;
     z-index: 1;
   }
@@ -22,34 +24,38 @@
     position: relative;
     z-index: 3;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 40px 5%;
+    grid-template-columns: 1fr 1fr; // Two equal columns
+    padding: 40px 20px;
     color: white;
-    min-height: 100vh;
+    height: 100vh; // Ensures the content takes the full height of the screen
     align-items: center;
-    text-align: center;
-  }
 
-  .leftColumn, .rightColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+    .leftColumn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-  /* Responsif untuk logo dan supergrafis */
-  .supergrafis {
-    position: absolute;
-    width: 50vw; 
-    max-width: 600px;
-    height: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    object-fit: contain;
-  }
+    .rightColumn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-  .ombak img {
+    .supergrafis, .ombak {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      object-fit: cover;
+    }
+
+  }
+  .ombak img{
     position: relative;
     width: 100%;
     height: auto;
@@ -57,39 +63,15 @@
     bottom: -50px;
   }
 
-  /* RESPONSIVE DESIGN */
-  @media (max-width: 1024px) {
-    .headerContent {
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
-
-    .supergrafis {
-      width: 70vw;
-      max-width: 500px;
-    }
-  }
-
   @media (max-width: 768px) {
     .headerContent {
-      grid-template-columns: 1fr;
-      padding: 30px 10px;
+      padding-top: 5px;
+      grid-template-columns: 1fr; // Stacks content vertically on smaller screens
     }
 
-    .supergrafis {
-      width: 80vw;
-      max-width: 350px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .headerContent {
-      padding: 20px 5%;
-    }
-
-    .supergrafis {
-      width: 90vw;
-      max-width: 300px;
+    .headerContent .supergrafis {
+      width: 90%;
+      max-width: 400px;
     }
   }
 }
