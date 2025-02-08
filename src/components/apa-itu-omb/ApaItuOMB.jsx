@@ -7,7 +7,9 @@ import foto3 from '../../assets/images/foto-3.jpg';
 import foto4 from '../../assets/images/foto-4.jpg';
 import foto5 from '../../assets/images/foto-5.jpg';
 import supergrafis from '../../images/supergrafis/supergrafis2.png';
-import ombak from '../../assets/ombak/'
+import ombak1 from '../../assets/ombak/wave 5-03.png';
+import ombak2 from '../../assets/ombak/wave 3-03.png';
+import ombak3 from '../../assets/ombak/wave 4-03.png';
 
 const ombak = [ombak1, ombak2, ombak3];
 
@@ -57,6 +59,9 @@ const ApaItuOMB = () => {
 
     return (
         <section id="tentang-omb" className="apaituomb_section">
+            <div className="ombak">
+                <img src={ombak[currentIndex % ombak.length]} alt="ombak" />
+            </div>
             <div className="supergrafis z-0">
                 <img src={supergrafis} alt="supergrafis" />
             </div>
