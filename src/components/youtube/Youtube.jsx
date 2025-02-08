@@ -1,9 +1,7 @@
 import React from "react";
 import './Youtube.scss';
 
-import ombakterangtop from '../../images/ombak/Ombakterang_Top.png';
-import ombaksantuydown from '../../images/ombak/Ombaksantuy_Down.png';
-import supergrafis from '../../images/supergrafis/Frame 4.png';
+import supergrafis from '../../images/supergrafis/SUP2.png';
 
 
 function Youtube() {
