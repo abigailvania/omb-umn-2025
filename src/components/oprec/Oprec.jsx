@@ -49,7 +49,9 @@ function Oprec() {
                             2025 pukul 08.00 WIB sampai 15 Februari 2025 pukul 23.59 WIB.
                         </p>
                     </div>
-                    <Countdown targetDate="2025-02-15T23:59:00" />
+                    <div className="countdown-close">
+                        <Countdown targetDate="2025-02-15T23:59:00" />
+                    </div>
                 </div>
                 <div className="OprecDivisi">
                     <div className="DivisiHeader">
@@ -62,9 +64,9 @@ function Oprec() {
                         </h6>
                     </div>
                     <div className="logo-divisi z-10 mb-[100px]">
-                            {ContentDivisi.slice(0, 9).map((divisi, index) => (
-                                <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
-                            ))}
+                        {ContentDivisi.slice(0, 9).map((divisi, index) => (
+                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                        ))}
 
                     </div>
                 </div>

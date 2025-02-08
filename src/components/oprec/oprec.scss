@@ -23,7 +23,7 @@
     background: white;
     border-radius: 80px;
     padding: 50px;
-    margin: 20px 80px 20px 80px;
+    margin: 20px 60px;
 
     h2 {
         font-size: 2rem;
@@ -128,9 +128,16 @@
     .logo-divisi .baris1{
         gap: -10px;
     }
+
+    .OprecText {
+        margin: 20px;
+    }
 }
 
 @media (max-width: 600px) {
+    .oprec {
+        margin-top: 0px;
+    }
     .OprecHeader {
         font-size: 1.6rem;
     }
@@ -149,6 +156,11 @@
     
     .DivisiHeader h6 {
         font-size: 0.5rem;
+    }
+
+    .OprecText {
+        margin: 10px 20px;
+        width: 90%;
     }
 }
 
@@ -175,6 +187,12 @@
         width: 100px;
         height: 100px;
     }
-}
-
-
+    .countdown-close {
+        width: 60%;
+        margin: 0 auto; 
+        display: block;
+    }
+    .countdown-close > * {
+        transform: scale(0.8); 
+    }
+}    
