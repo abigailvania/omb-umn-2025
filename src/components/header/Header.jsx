@@ -9,8 +9,8 @@ import ombak from "../../images/ombak/1.png"
 import GlassButton from "../button/Button.jsx";
 import Countdown from "../oprec/countdown/Countdown.jsx";
 
-import supergrafis from "../../images/supergrafis/SUP1.png"
-import ombak from "../../images/ombak/OMBAK1.png"
+import supergrafis from "../../images/supergrafis/SUP1.png";
+import ombak from "../../images/ombak/OMBAK1.png";
 
 function Header() {
     return (
