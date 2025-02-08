@@ -7,6 +7,9 @@ import foto3 from '../../assets/images/foto-3.jpg';
 import foto4 from '../../assets/images/foto-4.jpg';
 import foto5 from '../../assets/images/foto-5.jpg';
 import supergrafis from '../../images/supergrafis/supergrafis2.png';
+import ombak from '../../assets/ombak/'
+
+const ombak = [ombak1, ombak2, ombak3];
 
 const ApaItuOMB = () => {
     const originalImages = [foto1, foto2, foto3, foto4, foto5];
