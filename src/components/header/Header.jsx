@@ -10,7 +10,6 @@ import ombak from "../../images/ombak/1.png"
 import GlassButton from "../button/Button.jsx";
 import Countdown from "../oprec/countdown/Countdown.jsx";
 
-
 function Header() {
     return (
         <section id="home-section" className="headerSection">
