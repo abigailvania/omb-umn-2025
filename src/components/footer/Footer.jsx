@@ -43,7 +43,7 @@ function Footer() {
                         <a href="https://linevoom.line.me/user/_dQto-n6wJSbyUlsQVlEfNHoStsNJwzSLtfVj2Xo"> <img src={line} alt="line" className="w-[25px] mx-[10px]" /></a>
                         <a href="https://www.facebook.com/ombumn/?_rdc=2&_rdr"> <img src={facebook} alt="facebook" className="w-[25px] mx-[10px]" /></a>
                     </div>
-                    <div className="mt-12 md:my-6">
+                    <div className="mt-12 md:my-6 mb-[50px]">
                         <p>© OMB UMN 2025</p>
                     </div>
                 </div>
