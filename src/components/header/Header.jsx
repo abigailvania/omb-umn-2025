@@ -17,8 +17,8 @@ function Header() {
             <section id="home-section" className="headerSection">
                 <div className="headerContent">
                     <div className="leftColumn">
-                        <div className="supergrafis">
-                        <img src={supergrafis} alt="supergrafis" />
+                        <div className="supergrafis absolute z-0">
+                            <img src={supergrafis} alt="supergrafis" className="z-0" />
                         </div>
                         <div className="flex flex-col justify-center align-center">
                             <div className="flex justify-center">
@@ -28,20 +28,22 @@ function Header() {
                         </div>
                     </div>
                     <div className="rightColumn">
-                        <div className="flex flex-col justify-center items-center text-center text-white mt-[20px]">
+                        <div className="flex flex-col justify-center items-center text-center text-white mt-[20px] z-20">
                             <Countdown targetDate="2025-02-10T08:00:00" />
                             <p className="text-xl m-[15px] px-12">
-                                Pendaftaran kepanitiaan OMB UMN 2025 akan segera dibuka!                            </p>
+                                Pendaftaran kepanitiaan OMB UMN 2025 akan segera dibuka!
+                            </p>
                             <GlassButton
                                 text="LIHAT DIVISI" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                                className="text-white max-w-[180px] mt-[30px] z-3"
+                                className="text-white max-w-[180px] mt-[30px] z-10"
+
                             />
                         </div>
                     </div>
                 </div>
-                    <div className="ombak">
-                        <img src={ombak} alt="ombak" />
-                    </div>
+                <div className="ombak">
+                    <img src={ombak} alt="ombak" />
+                </div>
             </section>
         </>
     );

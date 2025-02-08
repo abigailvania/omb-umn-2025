@@ -60,8 +60,6 @@ import keamanan1 from "../../images/foto-divisi/keamanan-1.jpg"
 import keamanan2 from "../../images/foto-divisi/keamanan-2.jpg"
 import keamanan3 from "../../images/foto-divisi/keamanan-3.jpg"
 
-
-
 const ContentDivisi = [
     {
         logoImg: Acara,
