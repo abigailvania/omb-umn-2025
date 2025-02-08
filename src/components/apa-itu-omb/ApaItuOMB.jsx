@@ -59,7 +59,7 @@ const ApaItuOMB = () => {
 
     return (
         <section id="tentang-omb" className="apaituomb_section">
-            <div className="image-container">
+            <div className="image-container z-10">
             {ombak.map((imgSrc, index) => (
                 <img
                 key={index}
