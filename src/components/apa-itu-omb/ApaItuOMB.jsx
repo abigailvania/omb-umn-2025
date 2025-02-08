@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ApaItuOMB.scss';
 
-import foto1 from '../../assets/images/Perkembangan Hari 1_Steven Hans_195.jpg';
-import foto2 from '../../assets/images/omb-3.jpg';
-import foto3 from '../../assets/images/omb-6.jpg';
-import foto4 from '../../assets/images/ALV00036.jpg';
-import foto5 from '../../assets/images/omb-10.jpg';
+import foto1 from '../../assets/images/foto1.jpg';
+import foto2 from '../../assets/images/foto2.jpg';
+import foto3 from '../../assets/images/foto3.jpg';
+import foto4 from '../../assets/images/foto4.jpg';
+import foto5 from '../../assets/images/foto5.jpg';
 import supergrafis from '../../images/supergrafis/supergrafis2.png';
 
 const ApaItuOMB = () => {
