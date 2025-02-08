@@ -5,12 +5,17 @@
     position: relative;
 }
 
+.ombak{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
 .ombak img {
     width: 100%;
     z-index: 1;
 }
 
-.supergrafis img {
+.supergrafis {
     position: absolute;
     width: 100%;
     z-index: 1;
