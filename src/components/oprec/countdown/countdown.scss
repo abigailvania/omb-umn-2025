@@ -29,4 +29,23 @@
     font-weight: 300;
 }
 
-/* Responsif
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    .countdown-container {
+        gap: 10px; /* Mengurangi jarak antar elemen */
+    }
+
+    .countdown-box {
+        padding: 15px;
+        min-width: 60px;
+        max-width: 100px;
+    }
+
+    .countdown-box span {
+        font-size: 1.5rem; /* Mengurangi ukuran teks */
+    }
+
+    .countdown-box small {
+        font-size: 0.8rem;
+    }
+}
