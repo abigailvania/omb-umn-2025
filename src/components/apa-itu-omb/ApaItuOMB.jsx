@@ -16,7 +16,7 @@ const ApaItuOMB = () => {
     const [isTransitioning, setIsTransitioning] = useState(true);
     const [sliderWidth, setSliderWidth] = useState(0);
     const sliderRef = useRef(null);
-    const interval = 3000; // Waktu per slide (ms)
+    const interval = 3000; 
 
     useEffect(() => {
         const updateSliderWidth = () => {
