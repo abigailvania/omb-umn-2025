@@ -22,7 +22,7 @@
 
 .OprecText {
     text-align: justify;
-    color: #ffffff;
+    color: #000000;
     margin: 0;
     width: 75%;
     background: white;
@@ -48,6 +48,7 @@
 
 .OprecDivisi {
     display: flex;
+    color: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -87,11 +88,6 @@
 
 .supergrafis img {
     width: 100%;
-}
-.ombak {
-    margin: 0;
-    padding: 0;
-    overflow: hidden; /* Pastikan tidak ada ekstra ruang */
 }
 
 .ombak img {
