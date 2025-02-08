@@ -57,30 +57,28 @@ const ApaItuOMB = () => {
             <div className="supergrafis z-0">
                 <img src={supergrafis} alt="supergrafis" />
             </div>
-            <div className="bagianApaituOMB">
-                <div className="apaituomb_slider z-1" ref={sliderRef}>
-                    <div
-                        className="apaituomb_slider_inner"
-                        style={{
-                            transform: `translateX(-${currentIndex * sliderWidth}px)`, 
-                            transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
-                        }}
-                    >
-                        {images.map((image, index) => (
-                            <img key={index} src={image} alt="OMB" className="apaituomb_image" />
-                        ))}
-                    </div>
+            <div className="apaituomb_slider z-1" ref={sliderRef}>
+                <div
+                    className="apaituomb_slider_inner"
+                    style={{
+                        transform: `translateX(-${currentIndex * sliderWidth}px)`, 
+                        transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
+                    }}
+                >
+                    {images.map((image, index) => (
+                        <img key={index} src={image} alt="OMB" className="apaituomb_image" />
+                    ))}
                 </div>
+            </div>
 
-                <div className="apaituomb_content">
-                    <h1>Apa itu OMB?</h1>
-                    <p>
-                        Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di
-                        <a href="https://www.umn.ac.id/en/home/" target="_blank" rel="noopener noreferrer"> Universitas Multimedia Nusantara</a> (UMN).
-                        Melalui serangkaian kegiatan yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan,
-                        dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
-                    </p>
-                </div>
+            <div className="apaituomb_content">
+                <h1>Apa itu OMB?</h1>
+                <p>
+                    Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di
+                    <a href="https://www.umn.ac.id/en/home/" target="_blank" rel="noopener noreferrer"> Universitas Multimedia Nusantara</a> (UMN).
+                    Melalui serangkaian kegiatan yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan,
+                    dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
+                </p>
             </div>
         </section>
     );
