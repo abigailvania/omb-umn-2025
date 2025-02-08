@@ -115,7 +115,8 @@
 }
 
 .logo-divisi {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     justify-items: center;
     align-items: center;
