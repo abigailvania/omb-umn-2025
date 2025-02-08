@@ -24,11 +24,11 @@ function Header() {
                             <div className="flex justify-center">
                                 <img src={logo} alt="Logo" className="h-[250px] md:h-[300px] w-auto z-5 object-contain" />                            </div>
                             <div className="flex justify-center align-center">
-                                <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[90px] md:h-[100px] w-auto object-contain" />                            </div>
+                                <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[80px] md:h-[100px] w-auto object-contain" />                            </div>
                         </div>
                     </div>
                     <div className="rightColumn">
-                        <div className="flex flex-col justify-center items-center text-center text-white -mt-24 md:mt-[20px] z-20">
+                        <div className="flex flex-col justify-center items-center text-center text-white -mt-10 md:mt-0 z-20">
                             <Countdown targetDate="2025-02-10T08:00:00" />
                             <p className="sambutan text-xl m-[15px] px-12 ">
                                 Pendaftaran kepanitiaan OMB UMN 2025 akan segera dibuka!

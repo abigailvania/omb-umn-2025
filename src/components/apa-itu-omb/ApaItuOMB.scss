@@ -11,6 +11,7 @@
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 60px;
 }
 
 .supergrafis {
@@ -82,7 +83,7 @@
     .apaituomb_section {
         flex-direction: column;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 130px;
         padding: 40px;
     }
     .apaituomb_slider {
@@ -107,7 +108,7 @@
 @media (max-width: 600px) {
     .apaituomb_section {
         padding: 20px;
-        margin-top: 70px;
+        margin-top: 150px;
     }
     .apaituomb_slider {
         aspect-ratio: 16 / 9;
