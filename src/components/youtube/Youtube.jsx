@@ -1,7 +1,7 @@
 import React from "react";
 import './Youtube.scss';
 
-import ombakterangtop from '../../images/ombak/Ombakterang_Top-crop.png';
+import ombakterangtop from '../../images/ombak/Ombakterang_Top.png';
 import ombaksantuydown from '../../images/ombak/Ombaksantuy_Down.png';
 import supergrafis from '../../images/supergrafis/supergrafis3.png';
 
