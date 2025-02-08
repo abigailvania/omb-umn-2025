@@ -8,7 +8,8 @@ import ContentDivisi from "./ContentDivisi";
 import GlassButton from "../button/Button.jsx";
 import ImageSlider from "../image-slider/image-slider.jsx";
 
-
+import ombak from "../../images/ombak/OMBAK3.png";
+import supergrafis from "../../images/supergrafis/SUP3.png";
 
 const DivisiCard = ({ divisi, onClick }) => {
     return (
@@ -33,9 +34,12 @@ function Oprec() {
         <>
             <section className="oprec pt-[300px]">
                 <div id="oprec-section" className="OprecText">
-                    {/* <div className="supergrafis1">
-                        <img src={supergrafis1} alt="supergrafis" />
-                    </div> */}
+                    <div className="supergrafis">
+                        <img src={supergrafis} alt="supergrafis" />
+                    </div>
+                    <div className="ombak">
+                        <img src={ombak} alt="ombak" />
+                    </div>
                     <div className="OprecHeader">
                         <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
                         <h1>Jangan lewatkan kesempatan ini!</h1>
@@ -52,20 +56,12 @@ function Oprec() {
                 </div>
                 <div className="OprecDivisi">
                     <div className="DivisiHeader">
-                        {/* <div className="ombak1">
-                            <img src={ombakterangtop} alt="ombak1" />
-                        </div> */}
+
                         <h1>Divisi</h1>
                         <h6>
                             Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!
                         </h6>
                         <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
-                        {/* <div className="ombak2">
-                            <img src={ombakterangdown} alt="ombak2" />
-                        </div> */}
-                        {/* <div className="supergrafis2 z-0">
-                            <img src={supergrafis2} alt="supergrafis" className="z-0" />
-                        </div> */}
                     </div>
                     <div className="logo-divisi z-10 ">
                             {ContentDivisi.slice(0, 9).map((divisi, index) => (
