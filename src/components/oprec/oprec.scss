@@ -67,6 +67,20 @@
         width: 100%;
         z-index: -1;
     }
+    .logo-divisi {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        gap: 20px;
+        width: 60%;
+        justify-content: center;
+    }
+    
+    .logo-divisi img {
+        width: 200px;
+        height: 200px;
+        margin: 0; 
+    }
 }
 
 @media (max-width: 1024px) {
@@ -116,20 +130,7 @@
     }
 }
 
-.logo-divisi {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    gap: 20px;
-    width: 60%;
-    justify-content: center;
-}
 
-.logo-divisi img {
-    width: 200px;
-    height: 200px;
-    margin: 0; 
-}
 
 @media (max-width: 1024px) {
     .logo-divisi {
