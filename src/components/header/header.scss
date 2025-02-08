@@ -64,7 +64,11 @@
   }
 
   @media (max-width: 768px) {
+    .headerSection{
+      max-width: 400px;;
+    }
     .headerContent {
+      padding-top: 1px;
       grid-template-columns: 1fr; // Stacks content vertically on smaller screens
     }
 

@@ -32,7 +32,7 @@ function Oprec() {
 
     return (
         <>
-            <section className="oprec">
+            <section className="oprec pt-[-100px]">
                 <div className="supergrafis pt-[-200px]">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
@@ -60,14 +60,14 @@ function Oprec() {
                         </h6>
                         <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
                     </div>
-                    <div className="logo-divisi z-10 ">
+                    <div className="logo-divisi z-10 mb-[50px]">
                             {ContentDivisi.slice(0, 9).map((divisi, index) => (
                                 <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                             ))}
 
                     </div>
                 </div>
-                <div className="ombak">
+                <div className="ombak mb-[-100px]">
                     <img src={ombak} alt="ombak" />
                 </div>
             </section>
