@@ -12,8 +12,8 @@ function Youtube() {
             <section className="YoutubeContainer mt-[-50px] z-0">
 
                 
-                <div className="Youtube mt-[50px]">
-                    <div className="YoutubeHeader">
+                <div className="Youtube">
+                    <div className="YoutubeHeader mt-[50px]">
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
