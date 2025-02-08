@@ -1,8 +1,8 @@
 import React from "react";
 import "./Footer.scss";
 
-import logo from "../../images/header-footer/logo.png";
-import tagline from "../../images/header-footer/tagline.png";
+import logo from "../../images/header-footer/hitam_noglow1080.png";
+import tagline from "../../images/header-footer/tagline-01.png";
 import email from "../../images/header-footer/email.png";
 import facebook from "../../images/header-footer/facebook.png";
 import insta from "../../images/header-footer/insta.png";
