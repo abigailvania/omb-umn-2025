@@ -98,6 +98,10 @@
     width: 100%;
 }
 
+.ombak {
+    margin-bottom: -90px;
+}
+
 .ombak img {
     width: 100%;
     position: relative;
@@ -128,9 +132,11 @@
     .logo-divisi .baris1{
         gap: -10px;
     }
-
     .OprecText {
         margin: 20px;
+    }
+    .ombak {
+        margin-bottom: -100px;
     }
 }
 
@@ -162,9 +168,10 @@
         margin: 10px 20px;
         width: 90%;
     }
+    .ombak {
+        margin-bottom: -125px;
+    }
 }
-
-
 
 @media (max-width: 1024px) {
     .logo-divisi {
