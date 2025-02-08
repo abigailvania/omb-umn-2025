@@ -65,20 +65,13 @@
 
   @media (max-width: 768px) {
     .headerContent {
-      grid-template-columns: 1fr; /* Menjadi satu kolom */
-      text-align: center;
+      padding-top: 1px;
+      grid-template-columns: 1fr; // Stacks content vertically on smaller screens
     }
-  
-    .leftColumn {
-      flex-direction: row; /* Mengubah tata letak ke horizontal */
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-  
-    .rightColumn {
-      margin-top: 20px; /* Memberi jarak antara kolom kiri dan kanan */
+
+    .headerContent .supergrafis {
+      width: 90%;
+      max-width: 400px;
     }
   }
-  
 }
