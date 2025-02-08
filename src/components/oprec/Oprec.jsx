@@ -19,7 +19,7 @@ const DivisiCard = ({ divisi, onClick }) => {
             <img
                 src={divisi.logoImg}
                 alt={divisi.name}
-                className="w-56 "
+                className="w-full max-w-[200px] h-auto"
             />
         </div>
     );
@@ -69,10 +69,10 @@ function Oprec() {
                         <img src={supergrafis2} alt="supergrafis" className="z-0" />
                     </div>
                 </div>
-                <div className="logo-divisi flex flex-col p-2 z-10">
-                        {ContentDivisi.slice(0, 9).map((divisi, index) => (
-                            <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
-                        ))}
+                <div className="logo-divisi">
+                    {ContentDivisi.slice(0, 9).map((divisi, index) => (
+                        <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
+                    ))}
                 </div>
             </section>
             {selectedDivisi && (

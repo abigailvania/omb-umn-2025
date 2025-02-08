@@ -115,38 +115,42 @@
 }
 
 .logo-divisi {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    padding: 20px;
 }
 
-
 .logo-divisi img {
-    width: 200px; 
-    height: 200px;
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
     object-fit: contain;
 }
 
 @media (max-width: 1024px) {
-    .logo-divisi .baris1,
-    .logo-divisi .baris2,
-    .logo-divisi .baris3 {
-        gap: 20px;
-}
-}
-@media (max-width: 600px) {
-    .logo-divisi .baris1,
-    .logo-divisi .baris2,
-    .logo-divisi .baris3 {
-        gap: 10px; 
+    .logo-divisi {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
     }
 
     .logo-divisi img {
-        width: 120px;
-        height: 120px;
+        max-width: 150px;
+        max-height: 150px;
     }
 }
 
+@media (max-width: 600px) {
+    .logo-divisi {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
 
+    .logo-divisi img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
