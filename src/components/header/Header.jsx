@@ -34,7 +34,7 @@ function Header() {
                                 Pendaftaran kepanitiaan OMB UMN 2025 akan segera dibuka!                            </p>
                             <GlassButton
                                 text="LIHAT DIVISI" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                                className="text-white max-w-[180px] mt-[30px]"
+                                className="text-white max-w-[180px] mt-[30px] z-3"
                             />
                         </div>
                     </div>
