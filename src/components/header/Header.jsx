@@ -1,8 +1,8 @@
 import React from "react";
 import "./header.scss";
 
-import logo from "../../images/header-footer/logo.png"
-import tagline from "../../images/header-footer/tagline.png"
+import logo from "../../images/header-footer/putih_glowterang.png"
+import tagline from "../../images/header-footer/tagline-01.png"
 
 import supergrafis from "../../images/supergrafis/supergrafis1.png"
 import ombakterangdown from "../../images/ombak/Ombakterang_Down.png"
