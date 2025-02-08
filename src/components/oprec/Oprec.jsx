@@ -36,7 +36,7 @@ function Oprec() {
                 <div className="supergrafis pt-[150px]">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
-                <div id="oprec-section" className="OprecText">
+                <div id="oprec-section" className="OprecText pt-[150px]">
                     <div className="OprecHeader">
                         <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
                         <h1>Jangan lewatkan kesempatan ini!</h1>
