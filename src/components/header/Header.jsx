@@ -27,7 +27,7 @@ function Header() {
                                 <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[50px] md:h-[100px] w-auto object-contain" />                            </div>
                         </div>
                     </div>
-                    <div className="rightColumn md:h-[100px] w-auto">
+                    <div className="rightColumn ">
                         <div className="flex flex-col justify-center items-center text-center text-white mt-[20px] z-20">
                             <Countdown targetDate="2025-02-10T08:00:00" />
                             <p className="text-xl m-[15px] px-12 ">
