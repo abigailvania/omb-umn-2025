@@ -4,12 +4,13 @@ import "./header.scss";
 import logo from "../../images/header-footer/putih_glowterang.png"
 import tagline from "../../images/header-footer/tagline-01.png"
 
+import ombak from "../../images/ombak/1.png"
 
 import GlassButton from "../button/Button.jsx";
 import Countdown from "../oprec/countdown/Countdown.jsx";
+import supergrafis from "../../images/supergrafis/supergrafis1.png"
 
-import supergrafis from "../../images/supergrafis/SUP1.png";
-import ombak from "../../images/ombak/OMBAK1.png";
+import supergrafis2 from "../../images/supergrafis/Frame 2.png"
 
 function Header() {
     return (
@@ -17,9 +18,9 @@ function Header() {
             <section id="home-section" className="headerSection">
                 <div className="headerContent">
                     <div className="leftColumn">
-                        <div className="supergrafis">
+                        {/* <div className="supergrafis">
                         <img src={supergrafis} alt="supergrafis" />
-                        </div>
+                    </div> */}
                         <div className="flex flex-col justify-center align-center">
                             <div className="flex justify-center">
                                 <img src={logo} alt="Logo" className="h-[300px] md:h-[400px] w-auto z-5 object-contain" />                            </div>
@@ -41,7 +42,7 @@ function Header() {
                 </div>
             </section>
             <div className="ombak">
-                <img src={ombak} alt="ombak" />
+                <img src={supergrafis2} alt="ombak" />
             </div>
         </>
     );
