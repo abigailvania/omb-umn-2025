@@ -54,7 +54,7 @@ function Oprec() {
                 <div className="OprecDivisi">
                     <div className="DivisiHeader">
 
-                        <h1>Divisi</h1>
+                        <h1>DIVISI</h1>
                         <h6>
                             Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!
                         </h6>
