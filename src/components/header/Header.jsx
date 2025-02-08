@@ -38,11 +38,11 @@ function Header() {
                             />
                         </div>
                     </div>
+                    <div className="ombak">
+                        <img src={ombak} alt="ombak" />
+                    </div>
                 </div>
             </section>
-            <div className="ombak">
-                <img src={ombak} alt="ombak" />
-            </div>
         </>
     );
 }
