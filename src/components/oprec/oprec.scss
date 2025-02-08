@@ -122,12 +122,10 @@
 }
 
 
-.logo-divisi .baris1,
-.logo-divisi .baris2,
-.logo-divisi .baris3 {
+.logo-divisi .baris1{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
     width: 100%; /* Pastikan setiap baris mengisi lebar penuh */
 }
 
@@ -138,9 +136,7 @@
 }
 
 @media (max-width: 1024px) {
-    .logo-divisi .baris1,
-    .logo-divisi .baris2,
-    .logo-divisi .baris3 {
+    .logo-divisi .baris1 {
         gap: 15px;
         justify-content: center; /* Pastikan logo rata tengah */
     }
