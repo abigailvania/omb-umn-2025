@@ -65,17 +65,22 @@ function Oprec() {
                         Yuk, jelajahi divisi-divisi yang ada di OMB UMN 2025 dan jadi bagian untuk mengukir sejarah baru!
                     </h6>
                     <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
-                    <div className="ombak2">
-                        <img src={ombakterangdown} alt="ombak2" />
+                    <div className="grid grid-cols-3 gap-6 mt-6">
+                        {divisions.map((divisi) => (
+                        <div
+                            key={divisi.id}
+                            className="flex flex-col items-center p-4 cursor-pointer w-[120px] md:w-[150px] lg:w-[180px]"
+                            onClick={() => onClick(divisi)}
+                        >
+                            <img
+                            src={divisi.image}
+                            alt={divisi.name}
+                            className="w-full h-auto shadow-lg rounded-full"
+                            />
+                            <p className="mt-2 text-center font-semibold text-sm">{divisi.name}</p>
+                        </div>
+                        ))}
                     </div>
-                    <div className="supergrafis2 z-0">
-                        <img src={supergrafis2} alt="supergrafis" className="z-0" />
-                    </div>
-                </div>
-                <div className="logo-divisi">
-                    {ContentDivisi.slice(0, 9).map((divisi, index) => (
-                        <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
-                    ))}
                 </div>
             </section>
             {selectedDivisi && (
