@@ -134,6 +134,7 @@
     .logo-divisi {
         grid-template-columns: repeat(3, 1fr); /* Tetap 3 kolom di tablet */
         gap: 10px;
+        padding: 50px;
     }
     .logo-divisi img {
         width: 120px;
