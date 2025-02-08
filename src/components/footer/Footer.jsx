@@ -36,7 +36,7 @@ function Footer() {
                         <p>Website: omb.umn.ac.id</p>
                     </div>
                 </div>
-                <div className="flex flex-col justify-between items-center mt-4">
+                <div className="flex flex-col justify-between items-center mt-4 mb-[50px]">
                     <div className="flex flex-row">
                         <a href=""> <img src={email} alt="email" className="w-[25px] mx-[10px]"/></a>
                         <a href="https://www.instagram.com/ombumn"> <img src={insta} alt="instagram" className="w-[25px] mx-[10px]" /></a>
