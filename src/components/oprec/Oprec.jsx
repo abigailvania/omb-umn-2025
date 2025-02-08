@@ -52,7 +52,7 @@ function Oprec() {
                 </div>
                 <Countdown targetDate="2025-02-15T23:59:00" />
             </section>
-            <section className="OprecDivisi">
+            <section className="OprecDivisi justify-center">
                 <div className="DivisiHeader">
                     <div className="ombak1">
                         <img src={ombakterangtop} alt="ombak1" />
