@@ -37,7 +37,7 @@ function Header() {
                         <GlassButton
                             text="LIHAT DIVISI"
                             onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                            className="text-white max-w-[180px] mt-[20px] mt-[30px]"
+                            className="text-white max-w-[180px] mt-[30px]"
                         />
                     </div>
                 </div>
