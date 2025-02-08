@@ -14,7 +14,7 @@ function Youtube() {
                 </div>
                 
                 <div className="Youtube">
-                    <div className="YoutubeHeader mt-[-200px]">
+                    <div className="YoutubeHeader mt-[150px]">
                         <h1>Kura-kura Matahari merangkai memori</h1>
                         <h1>Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
@@ -25,7 +25,7 @@ function Youtube() {
                                 referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                     </div>
                 </div>
-                <div className="ombak mt-[-150px]">
+                <div className="ombak mt-[-200px]">
                     <img src={ombak} alt="ombak" />
                 </div>
             </section>
