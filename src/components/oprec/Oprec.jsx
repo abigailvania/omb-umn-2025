@@ -67,7 +67,7 @@ function Oprec() {
 
                     </div>
                 </div>
-                <div className="ombak">
+                <div className="ombak mb-[-100px]">
                     <img src={ombak} alt="ombak" />
                 </div>
             </section>
