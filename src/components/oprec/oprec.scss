@@ -39,6 +39,7 @@
     color: white;
     border-radius: 10px;
     width: 100%;
+    align-items: center;
 
     .DivisiHeader {
         background: linear-gradient(to top right, 
@@ -71,36 +72,15 @@
         flex-wrap: wrap;
         margin: 0;
         gap: 20px;
-        justify-content: center;  /* Mengatur logo untuk terpusat secara horizontal */
-        align-items: center;  /* Mengatur logo untuk terpusat secara vertikal */
-        text-align: center;  /* Menjaga teks tetap terpusat */
-        width: 100%;  /* Memastikan elemen mengisi seluruh lebar kontainer */
-        height: 100vh; /* Menyediakan ruang vertikal penuh */
+        width: 60%;
+        justify-content: center;
     }
     
-    @media (max-width: 1024px) {
-        .logo-divisi {
-            justify-content: center;  /* Memusatkan logo di tablet */
-            gap: 10px;
-            padding: 10px;
-        }
-        .logo-divisi img {
-            width: 100px;
-            height: 100px;
-        }
+    .logo-divisi img {
+        width: 200px;
+        height: 200px;
+        margin: 0; 
     }
-    
-    @media (max-width: 600px) {
-        .logo-divisi {
-            justify-content: center;  /* Memusatkan logo di perangkat mobile */
-            gap: 5px; /* Menyesuaikan gap untuk ukuran layar lebih kecil */
-        }
-        .logo-divisi img {
-            width: 100px;
-            height: 100px;
-        }
-    }
-    
 }
 
 @media (max-width: 1024px) {
@@ -152,5 +132,27 @@
 
 
 
+@media (max-width: 1024px) {
+    .logo-divisi {
+        grid-template-columns: repeat(2, 1fr); /* Tetap 3 kolom di tablet */
+        gap: 10px;
+        padding: 10px;
+    }
+    .logo-divisi img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-divisi {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk mobile */
+        gap: 5px; /* Menyesuaikan gap untuk ukuran layar lebih kecil */
+    }
+    .logo-divisi img {
+        width: 100px;
+        height: 100px;
+    }
+}
 
 
