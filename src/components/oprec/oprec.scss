@@ -190,11 +190,7 @@
 
     .OprecText {
         width: 90%;
-        padding: 50px 30px;
-        margin: 90px 60px;
-    }
-    .ombak {
-        margin-bottom: -50px;
+        padding: 20px 10px;
     }
     .OprecDetail {
         padding: 10px 30px;
@@ -214,13 +210,13 @@
 }
 
 @media (max-width: 600px) {
-    .logo-divisi {
+    .OprecDivisi .logo-divisi {
         grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
+        gap: 25px;
     }
-    .logo-divisi img {
-        width: 100px;
-        height: 100px;
+    .OprecDivisi .logo-divisi img {
+        width: 120px;
+        height: 120px;
     }
     .countdown-close {
         width: 60%;
