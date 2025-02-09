@@ -111,7 +111,7 @@ function Oprec() {
                                         <GlassButton
                                             text="Daftar"   
                                             onClick={() => window.location.href = selectedDivisi.link}
-                                            className="text-white max-w-[180px]"
+                                            className="text-white max-w-[180px] mt-[20px]"
                                         />
 
                                 </div>
