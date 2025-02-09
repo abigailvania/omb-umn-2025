@@ -210,13 +210,17 @@
 }
 
 @media (max-width: 600px) {
-    .OprecDivisi.logo-divisi {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-    }
-    .OprecDivisi .logo-divisi img {
-        width: 150px;
-        height: 150px;
+    .OprecDivisi {
+        padding: 10px;
+
+        .logo-divisi {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+        .logo-divisi img {
+            width: 150px;
+            height: 150px;
+        }
     }
     .countdown-close {
         width: 60%;
