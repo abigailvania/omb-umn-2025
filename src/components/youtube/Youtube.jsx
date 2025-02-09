@@ -14,7 +14,7 @@ function Youtube() {
                 </div>
                 
                 <div className="Youtube">
-                    <div className="YoutubeHeader">
+                    <div className="YoutubeHeader mt-[50px]">
                         <h1>Kura-kura Matahari merangkai memori, <br />Selamat datang para pejuang Kura-kura Matahari!</h1>
                     </div>
                     <div className="YoutubeThumbnail ">
