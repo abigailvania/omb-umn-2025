@@ -92,7 +92,7 @@ function Oprec() {
                                             className="w-[120px] object-contain rounded-full shadow-md"
                                         />
                                     </div>
-                                    <div className="bg-gray-200 p-4 rounded-lg border w-[100px] max-w-sm">
+                                    <div className="bg-gray-200 p-4 rounded-lg border w-[200px] max-w-sm">
                                         {/* Bagian Logo */}
                                         <div className="flex">
                                             <p className="text-sm font-semibold w-16">Logo</p>
