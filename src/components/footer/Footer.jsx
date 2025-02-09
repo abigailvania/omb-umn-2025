@@ -12,7 +12,7 @@ function Footer() {
     return (
         <div className="footerSection">
             <div className="content">
-                <div className="flex flex-row justify-between items-center mt-50">
+                <div className="flex flex-row justify-between items-center mt-50 flexfooter">
                     <div className="flex-1 text-center order-2
                                     md:text-right md:order-1">
                         <p className="text-xl font-bold">Alamat</p>
@@ -20,7 +20,7 @@ function Footer() {
                         <p>Jl. Scientia Boulevard, Gading Serpong,</p>
                         <p>Tangerang Banten 15811, Indonesia.</p>
                     </div>
-                    <div className="flex-1 flex flex-col items-center order-first 
+                    <div className="flex-1 flex flex-col items-center order-first flexfooter
                                     -mt-[140px] md:mt-0 md:order-2">
                         <img src={logo} alt="Logo OMB UMN 2025" className="h-[200px] md:h-[270px] object-contain" />
                         <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[70px] -mt-[20px] object-contain" />
