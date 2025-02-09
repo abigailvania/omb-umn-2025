@@ -98,7 +98,7 @@ function Oprec() {
         </div>
 
         {/* Informasi Logo & Arti */}
-        <div className="bg-gray-200 p-4 rounded-lg border w-[200px] max-w-sm">
+        <div className="bg-gray-200 p-4 rounded-lg border w-[300px] max-w-sm">
             <div className="flex">
                 <div className="w-16 flex justify-between">
                     <p className="text-sm font-semibold">Logo</p>
