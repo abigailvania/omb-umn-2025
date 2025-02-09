@@ -29,9 +29,9 @@ function Header() {
                     </div>
                     <div className="rightColumn">
                         <div className="flex flex-col justify-center items-center text-center text-white -mt-10 md:mt-0 z-20">
-                            <Countdown targetDate="2025-02-10T08:00:00" />
+                            <Countdown targetDate="2025-02-16T12:00:00" />
                             <p className="sambutan text-xl m-[15px] px-12 ">
-                                Pendaftaran kepanitiaan OMB UMN 2025 akan segera dibuka!
+                                Pendaftaran Kepanitiaan OMB UMN 2025 Telah di Buka!
                             </p>
                             <GlassButton
                                 text="LIHAT DIVISI" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
