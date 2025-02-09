@@ -21,7 +21,7 @@ function Footer() {
                         <p>Tangerang Banten 15811, Indonesia.</p>
                     </div>
                     <div className="flex-1 flex flex-col items-center order-first flexfooter
-                                    -mt-[140px] md:mt-0 md:order-2">
+                                    -mt-[100px] md:mt-0 md:order-2">
                         <img src={logo} alt="Logo OMB UMN 2025" className="h-[200px] md:h-[270px] object-contain" />
                         <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[70px] -mt-[20px] object-contain" />
                     </div>
