@@ -96,16 +96,16 @@ function Oprec() {
                                         <div className="flex">
                                             <div className="w-16 flex justify-between">
                                                 <p className="text-sm font-semibold">Logo</p>
-                                                <p className="text-sm font-semibold">: </p>
+                                                <p className="text-sm font-semibold">:</p>
                                             </div>
                                             <p className="text-sm flex-1 text-left">{selectedDivisi.logo}</p>
                                         </div>
                                         <div className="flex items-start mt-1">
                                             <div className="w-16 flex justify-between">
                                                 <p className="text-sm font-semibold">Arti</p>
-                                                <p className="text-sm font-semibold">: </p>
+                                                <p className="text-sm font-semibold">:</p>
                                             </div>
-                                            <p className="text-sm flex-1 text-left whitespace-pre-line">{selectedDivisi.arti}</p>
+                                            <p className="text-sm flex-1 text-left whitespace-pre-line ml-[1px]">{selectedDivisi.arti}</p>
                                         </div>
                                     </div>
 
