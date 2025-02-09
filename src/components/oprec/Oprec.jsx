@@ -117,7 +117,7 @@ function Oprec() {
 
                                         {/* Tombol Daftar */}
                                         <div className="tombol-daftar mt-[20px]">
-                                            <button className="text-white w-[200px] h-[40px] shadow-[0px_4px_10px_rgba(0,0,0,0.6)]" onClick={() => window.location.href = selectedDivisi.link} > 
+                                            <button className="text-white w-[200px] h-[40px] shadow-[0px_4px_10px_rgba(0,0,0,0.6)] rounded-lg" onClick={() => window.location.href = selectedDivisi.link} > 
                                                 Daftar
                                             </button>
                                         </div>
