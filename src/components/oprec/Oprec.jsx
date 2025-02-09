@@ -36,7 +36,7 @@ function Oprec() {
                 <div className="supergrafis opacity-40">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
-                <div id="oprec-section" className="OprecText">
+                <div className="OprecText">
                     <div className="OprecHeader">
                         <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
                         <h1>Jangan lewatkan kesempatan ini!</h1>
@@ -53,7 +53,7 @@ function Oprec() {
                         <Countdown targetDate="2025-02-15T23:59:00" />
                     </div>
                 </div>
-                <div className="OprecDivisi">
+                <div id="oprec-section" className="OprecDivisi">
                     <div className="DivisiHeader">
 
                         <h1>DIVISI</h1>
