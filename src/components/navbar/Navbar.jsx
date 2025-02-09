@@ -38,11 +38,11 @@ const Navbar = () => {
                         document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
                     }}>Divisi</a></li>
                     <li>
-                <button
+                {/* <button
                     className="register-btn" onClick={(e) => {
                         document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
                     }}
-                >Daftar Sekarang</button>
+                >Daftar Sekarang</button> */}
 
                     </li>
                 </ul>
