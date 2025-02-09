@@ -98,7 +98,7 @@ function Oprec() {
                                         </div>
 
                                         {/* Informasi Logo & Arti */}
-                                        <div className="bg-gray-200 p-4 rounded-lg border w-[200px] max-w-sm">
+                                        <div className="bg-gray-200 p-4 rounded-lg border w-[200px] max-w-sm shadow-[0px_4px_10px_rgba(0,0,0,0.6)]">
                                             <div className="flex">
                                                 <div className="w-16 flex justify-between">
                                                     <p className="text-sm font-semibold">Logo</p>
@@ -130,7 +130,7 @@ function Oprec() {
                                     <div className="foto-divisi">
                                         <ImageSlider images={images} interval={3000} />
                                     </div>
-                                    <div className="bg-gray-200 p-4 mt-4 rounded-lg border w-full mb-[20px]">
+                                    <div className="bg-gray-200 p-4 mt-4 rounded-lg border w-full mb-[20px] shadow-[0px_4px_10px_rgba(0,0,0,0.6)]">
                                         <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
                                         <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
                                     </div>
