@@ -166,7 +166,7 @@
 
 @media (max-width: 600px) {
     .oprec {
-        margin-top: 85px;
+        margin-top: 0px;
     }
     .OprecHeader {
         font-size: 1.6rem;
@@ -190,6 +190,8 @@
 
     .OprecText {
         width: 90%;
+        padding: 50px 30px;
+        margin: 90px 60px;
     }
     .ombak {
         margin-bottom: -50px;
