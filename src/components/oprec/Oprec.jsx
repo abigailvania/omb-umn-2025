@@ -66,7 +66,7 @@ function Oprec() {
             
             <AnimatePresence>
                 {selectedDivisi && (
-                    <div id="modal-container" onClick={closeModal} className="fixed inset-0 flex items-center justify-center bg-black/50 z-1000">
+                    <div id="modal-container" onClick={closeModal} className="bg-gray-200 bg-opacity-75 fixed inset-0 flex items-center justify-center bg-black/50 z-1000">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
