@@ -210,13 +210,13 @@
 }
 
 @media (max-width: 600px) {
-    .logo-divisi {
+    .OprecDivisi.logo-divisi {
         grid-template-columns: repeat(2, 1fr);
         gap: 5px;
     }
     .OprecDivisi .logo-divisi img {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     .countdown-close {
         width: 60%;
