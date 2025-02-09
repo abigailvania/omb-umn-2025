@@ -107,12 +107,12 @@ function Oprec() {
                                             </div>
                                             <p className="text-sm flex-1 text-left whitespace-pre-line ml-[3px]">{selectedDivisi.arti}</p>
                                         </div>
+                                    </div>
                                         <GlassButton
                                             text="Daftar"   
                                             onClick={() => window.location.href = selectedDivisi.link}
                                             className="text-white max-w-[180px]"
                                         />
-                                    </div>
 
                                 </div>
                                 <div className="">
