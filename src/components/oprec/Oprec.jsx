@@ -107,22 +107,23 @@ function Oprec() {
                                             </div>
                                             <p className="text-sm flex-1 text-left whitespace-pre-line ml-[3px]">{selectedDivisi.arti}</p>
                                         </div>
+                                        <GlassButton
+                                            text="Daftar"   
+                                            onClick={() => window.location.href = selectedDivisi.link}
+                                            className="text-white max-w-[180px]"
+                                        />
                                     </div>
 
                                 </div>
                                 <div className="">
-                                    <div className="foto-divisi w-[500px]">
+                                    <div className="foto-divisi">
                                         <ImageSlider images={images} interval={3000} />
                                     </div>
                                     <div className="bg-gray-200 p-4 mt-4 rounded-lg border w-full mb-[20px]">
                                         <p className="text-sm text-justify">{selectedDivisi.deskripsi}</p>
                                         <p className="text-sm mt-2 text-justify">{selectedDivisi.tugas}</p>
                                     </div>
-                                    <GlassButton
-                                        text="Daftar"   
-                                        onClick={() => window.location.href = selectedDivisi.link}
-                                        className="text-white max-w-[180px]"
-                                    />
+
                                 </div>
                             </div>
                         </motion.div>
