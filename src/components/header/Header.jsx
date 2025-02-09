@@ -41,7 +41,7 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="ombak mt-50">
+                <div className="ombak">
                     <img src={ombak} alt="ombak" />
                 </div>
             </section>
