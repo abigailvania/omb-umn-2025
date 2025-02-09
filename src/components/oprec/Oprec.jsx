@@ -82,40 +82,50 @@ function Oprec() {
                             </button>
 
                             <div className="flex flex-col md:flex-row items-center text-center">
-                                <div className="flex flex-col items-center mx-4 w-full mb-4">
-                                    <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
-                                    <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
-                                    <div className="flex justify-center my-4">
-                                        <img
-                                            src={selectedDivisi.logoImg}
-                                            alt={selectedDivisi.name}
-                                            className="w-[120px] object-contain rounded-full shadow-md"
-                                        />
-                                    </div>
-                                    <div className="bg-gray-200 p-4 rounded-lg border w-[200px] max-w-sm">
-                                        <div className="flex">
-                                            <div className="w-16 flex justify-between">
-                                                <p className="text-sm font-semibold">Logo</p>
-                                                <p className="text-sm font-semibold">:</p>
-                                            </div>
-                                            <p className="text-sm flex-1 text-left ml-[3px]">{selectedDivisi.logo}</p>
-                                        </div>
-                                        <div className="flex items-start mt-1">
-                                            <div className="w-16 flex justify-between">
-                                                <p className="text-sm font-semibold">Arti</p>
-                                                <p className="text-sm font-semibold">:</p>
-                                            </div>
-                                            <p className="text-sm flex-1 text-left whitespace-pre-line ml-[3px]">{selectedDivisi.arti}</p>
-                                        </div>
-                                    </div>
-                                    <div className="tombol-daftar mt-[20px]">
-                                        <GlassButton
-                                            text="Daftar"   
-                                            onClick={() => window.location.href = selectedDivisi.link}
-                                            className="text-white max-w-[180px]"
-                                        />
-                                    </div>
-                                </div>
+                            <div className="flex flex-col md:flex-row items-start text-left mt-0">
+    <div className="flex flex-col items-start mx-4 w-full mb-0">
+        {/* Nama dan Nama */}
+        <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
+        <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
+
+        {/* Gambar Logo */}
+        <div className="flex justify-start my-4">
+            <img
+                src={selectedDivisi.logoImg}
+                alt={selectedDivisi.name}
+                className="w-[120px] object-contain rounded-full shadow-md"
+            />
+        </div>
+
+        {/* Informasi Logo & Arti */}
+        <div className="bg-gray-200 p-4 rounded-lg border w-[200px] max-w-sm">
+            <div className="flex">
+                <div className="w-16 flex justify-between">
+                    <p className="text-sm font-semibold">Logo</p>
+                    <p className="text-sm font-semibold">:</p>
+                </div>
+                <p className="text-sm flex-1 text-left ml-[3px]">{selectedDivisi.logo}</p>
+            </div>
+            <div className="flex items-start mt-1">
+                <div className="w-16 flex justify-between">
+                    <p className="text-sm font-semibold">Arti</p>
+                    <p className="text-sm font-semibold">:</p>
+                </div>
+                <p className="text-sm flex-1 text-left whitespace-pre-line ml-[3px]">{selectedDivisi.arti}</p>
+            </div>
+        </div>
+
+        {/* Tombol Daftar */}
+        <div className="tombol-daftar mt-[20px]">
+            <GlassButton
+                text="Daftar"
+                onClick={() => window.location.href = selectedDivisi.link}
+                className="text-white max-w-[180px]"
+            />
+        </div>
+    </div>
+</div>
+
                                 <div className="">
                                     <div className="foto-divisi">
                                         <ImageSlider images={images} interval={3000} />
