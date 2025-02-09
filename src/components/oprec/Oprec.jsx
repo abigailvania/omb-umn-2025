@@ -93,13 +93,16 @@ function Oprec() {
                                         />
                                     </div>
                                     <div className="bg-gray-200 p-4 rounded-lg border w-full max-w-sm">
+                                        {/* Bagian Logo */}
                                         <div className="flex">
                                             <p className="text-sm font-semibold w-16">Logo</p>
-                                            <p className="text-sm">: {selectedDivisi.logo}</p>
+                                            <p className="text-sm flex-1 text-left">: {selectedDivisi.logo}</p>
                                         </div>
+
+                                        {/* Bagian Arti */}
                                         <div className="flex items-start mt-1">
                                             <p className="text-sm font-semibold w-16">Arti</p>
-                                            <p className="text-sm whitespace-pre-line">: {selectedDivisi.arti}</p>
+                                            <p className="text-sm flex-1 text-left whitespace-pre-line">: {selectedDivisi.arti}</p>
                                         </div>
                                     </div>
                                 </div>
