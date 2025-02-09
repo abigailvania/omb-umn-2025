@@ -92,9 +92,15 @@ function Oprec() {
                                             className="w-[120px] object-contain rounded-full shadow-md"
                                         />
                                     </div>
-                                    <div className="bg-gray-200 p-2 rounded-lg border w-full">
-                                        <p className="text-sm">Logo: {selectedDivisi.logo}</p>
-                                        <p className="text-sm">Arti: {selectedDivisi.arti}</p>
+                                    <div className="bg-gray-200 p-4 rounded-lg border w-full max-w-sm">
+                                        <div className="flex">
+                                            <p className="text-sm font-semibold w-16">Logo</p>
+                                            <p className="text-sm">: {selectedDivisi.logo}</p>
+                                        </div>
+                                        <div className="flex items-start mt-1">
+                                            <p className="text-sm font-semibold w-16">Arti</p>
+                                            <p className="text-sm whitespace-pre-line">: {selectedDivisi.arti}</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="">
