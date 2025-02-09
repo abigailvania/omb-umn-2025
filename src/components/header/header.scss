@@ -59,8 +59,8 @@
     position: relative;
     width: 100%;
     height: auto;
-    z-index: 1;
-    bottom: -50px;
+    z-index: 20;
+    bottom: -150px;
   }
 
   @media (max-width: 768px) {
@@ -79,6 +79,21 @@
     }
     .sambutan {
       font-size: 1em;
+    }
+    .ombak img {
+      bottom: -110px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .ombak img {
+      bottom: -70px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .ombak img {
+      bottom: -50px;
     }
   }
 }

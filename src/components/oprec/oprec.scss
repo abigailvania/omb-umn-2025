@@ -47,6 +47,10 @@
     }
 }
 
+.OprecDetail {
+    padding: 90px 150px;
+}
+
 .OprecDivisi {
     display: flex;
     color: white;
@@ -62,6 +66,8 @@
         margin-top: -100px;
         margin-bottom: 50px;
         background-size: cover;
+        padding-left: 30px;
+        padding-right: 30px;
 
         h1 {
             font-size: 3.5rem;
@@ -133,10 +139,13 @@
         gap: -10px;
     }
     .OprecText {
-        margin: 20px;
+        margin-top: 100px;
     }
     .ombak {
         margin-bottom: -100px;
+    }
+    .OprecDetail {
+        padding: 50px 100px;
     }
 }
 
@@ -165,11 +174,13 @@
     }
 
     .OprecText {
-        margin: 10px 20px;
         width: 90%;
     }
     .ombak {
         margin-bottom: -125px;
+    }
+    .OprecDetail {
+        padding: 10px 30px;
     }
 }
 

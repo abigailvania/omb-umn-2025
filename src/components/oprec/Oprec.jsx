@@ -41,7 +41,7 @@ function Oprec() {
                         <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
                         <h1>Jangan lewatkan kesempatan ini!</h1>
                     </div>
-                    <div className="OprecText">
+                    <div className="OprecDetail">
                         <h2>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h2>
                         <p>
                             Pendaftaran terbuka bagi mahasiswa/i aktif seluruh program studi dari angkatan 2022, 2023 dan 2024
