@@ -101,7 +101,7 @@ function Oprec() {
 
                                         {/* Bagian Arti */}
                                         <div className="flex items-start mt-1">
-                                            <p className="text-sm font-semibold w-16">Arti :</p>
+                                            <p className="text-sm font-semibold w-16">Arti  :</p>
                                             <p className="text-sm flex-1 text-left whitespace-pre-line">{selectedDivisi.arti}</p>
                                         </div>
                                     </div>
