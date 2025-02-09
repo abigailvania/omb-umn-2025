@@ -49,22 +49,31 @@
 }
 
 .YoutubeThumbnail iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
     border-radius: 10px;
-    max-width: 80%;
-    z-index: 2;
 }
 
+
 @media (max-width: 768px) {
-    .YoutubeContainer {
-         height: 300px;
-    }
     .YoutubeHeader h1 {
         font-size: 1rem;
     }
 
     .YoutubeThumbnail iframe {
-        width: 80%;
+        width: 70%;
         height: auto;
         aspect-ratio: 16 / 9;
+    }
+
+    .ombak img {
+        margin-top: 150px;
+    }
+}
+
+@media (max-width: 600px){
+    .ombak img {
+        margin-top: 200px;
     }
 }
