@@ -107,7 +107,7 @@
 }
 
 @media (max-width: 600px) {
-    .apaituomb_section {
+    .apaituomb_section content{
         padding: 20px;
     }
     .apaituomb_slider {
@@ -121,10 +121,5 @@
     }
     .apaituomb_content p {
         font-size: 14px;
-    }
-    .supergrafis, .ombak {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
     }
 }
