@@ -111,7 +111,7 @@ function Oprec() {
 
                                 </div>
                                 <div className="">
-                                    <div className="foto-divisi">
+                                    <div className="foto-divisi w-[500px]">
                                         <ImageSlider images={images} interval={3000} />
                                     </div>
                                     <div className="bg-gray-200 p-4 mt-4 rounded-lg border w-full mb-[20px]">
