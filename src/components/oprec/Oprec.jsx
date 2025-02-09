@@ -82,7 +82,7 @@ function Oprec() {
                             </button>
 
                             <div className="flex flex-col md:flex-row items-center text-center">
-                                <div className="flex-row items-center mx-4 w-full mb-4">
+                                <div className="flex flex-col items-center mx-4 w-full mb-4">
                                     <h2 className="text-2xl font-bold">{selectedDivisi.name}</h2>
                                     <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
                                     <div className="flex justify-center my-4">
