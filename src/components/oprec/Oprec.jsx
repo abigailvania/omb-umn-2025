@@ -35,7 +35,7 @@ function Oprec() {
                 <div className="supergrafis opacity-40">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
-                <div className="OprecText">
+                <div className="OprecText shadow-[0px_10px_10px_rgba(0,0,0,0.6)]">
                     <div className="OprecHeader">
                         <h1>Kura-kura Matahari menyanyi dalam harmoni,</h1>
                         <h1>Jangan lewatkan kesempatan ini!</h1>
@@ -104,14 +104,14 @@ function Oprec() {
                                                     <p className="text-sm font-semibold">Logo</p>
                                                     <p className="text-sm font-semibold">:</p>
                                                 </div>
-                                                <p className="text-sm flex-1 text-left ml-[3px]">{selectedDivisi.logo}</p>
+                                                <p className="text-sm flex-1 text-left ml-[15px]">{selectedDivisi.logo}</p>
                                             </div>
                                             <div className="flex items-start mt-1">
                                                 <div className="w-16 flex justify-between">
                                                     <p className="text-sm font-semibold">Arti</p>
                                                     <p className="text-sm font-semibold">:</p>
                                                 </div>
-                                                <p className="text-sm flex-1 text-left whitespace-pre-line ml-[3px]">{selectedDivisi.arti}</p>
+                                                <p className="text-sm flex-1 text-left whitespace-pre-line ml-[15px]">{selectedDivisi.arti}</p>
                                             </div>
                                         </div>
 
@@ -124,8 +124,8 @@ function Oprec() {
                                     </div>
                                 </div>
 
-                                <div className="">
-                                    <div className="foto-divisi rounded-lg shadow-[0px_4px_10px_rgba(0,0,0,0.6)]">
+                                <div className="info-divisi">
+                                    <div className="foto-divisi rounded-lg">
                                         <ImageSlider images={images} interval={3000} />
                                     </div>
                                     <div className="bg-gray-200 p-4 mt-4 rounded-lg border w-full mb-[20px] shadow-[0px_4px_10px_rgba(0,0,0,0.6)]">

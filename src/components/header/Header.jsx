@@ -22,9 +22,9 @@ function Header() {
                         </div>
                         <div className="flex flex-col justify-center align-center">
                             <div className="flex justify-center">
-                                <img src={logo} alt="Logo" className="h-[250px] md:h-[300px] w-auto z-5 object-contain" />                            </div>
+                                <img src={logo} alt="Logo" className="h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] w-auto z-5 object-contain" />                            </div>
                             <div className="flex justify-center align-center">
-                                <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[80px] md:h-[100px] w-auto object-contain" />                            </div>
+                                <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[60px] sm:h-[80px] md:h-[100px] lg:h-[120px] w-auto object-contain" />                            </div>
                         </div>
                     </div>
                     <div className="rightColumn">

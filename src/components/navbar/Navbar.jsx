@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar ${showNavbar ? 'show' : ''}`}>
-            <div className="navbar-container">
+            <div className="navbar-container text-center">
                 <img src={logo} alt="Logo" className="navbar-logo" />
                 <ul className="navbar-menu">
                     <li><a href="#" onClick={(e) => {
