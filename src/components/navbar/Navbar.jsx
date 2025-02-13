@@ -43,22 +43,6 @@ const Navbar = () => {
               </a>
             </li>
             <li className="flex items-center">
-              <a
-                href="#"
-                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full"
-              >
-                Tentang OMB
-              </a>
-            </li>
-            <li className="flex items-center">
-              <a
-                href="#"
-                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full"
-              >
-                Divisi
-              </a>
-            </li>
-            <li className="flex items-center">
               <button
                 onClick={() => setDropdownOpen(prev => !prev)}
                 className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none"
