@@ -2,18 +2,16 @@ import React, { useState, useEffect } from 'react';
 import logo from "../../images/header-footer/logo.png";
 
 const Navbar = () => {
-  // Ubah default ke true untuk testing agar navbar selalu terlihat
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [showNavbar, setShowNavbar] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  // Jika ingin menggunakan efek scroll, aktifkan useEffect di bawah ini
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setShowNavbar(window.scrollY > 50);
-  //   };
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowNavbar(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
@@ -44,48 +42,47 @@ const Navbar = () => {
                 Home
               </a>
             </li>
-            <li className="flex items-center">
+            <li className="relative flex items-center">
               <button
                 onClick={() => setDropdownOpen(prev => !prev)}
-                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none"
+                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none cursor-pointer"
               >
                 More
               </button>
+              {dropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 bg-white shadow-md rounded-lg py-2 w-48 z-[910]">
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                      >
+                        Divisi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                      >
+                        Daftar Interview
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                      >
+                        Tentang OMB
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
             </li>
           </ul>
         </div>
       </nav>
-
-      {dropdownOpen && (
-        <div className="absolute top-[120px] left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-lg py-2 w-48 z-[910]">
-          <ul>
-            <li>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Divisi
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Daftar Interview
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-              >
-                Tentang OMB
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
     </>
   );
 };
