@@ -14,10 +14,10 @@ import ombak from "../../images/ombak/OMBAK1.png";
 function Header() {
     return (
         <>
-            <section id="home-section" className="headerSection ">
-                <div className="headerContent relative z-30 grid grid-cols-1 md:grid-cols-2 h-screen items-center text-white px-5 md:px-10">
-                    <div className="leftColumn flex flex-col items-center justify-center text-center md:text-left">
-                        <div className="supergrafis absolute left-1/2 transform -translate-x-1/2 w-screen h-full">
+            <section id="home-section" className="headerSection">
+                <div className="headerContent">
+                    <div className="leftColumn">
+                        <div className="supergrafis absolute z-0 opacity-40">
                             <img src={supergrafis} alt="supergrafis" className="z-0" />
                         </div>
                         <div className="flex flex-col justify-center align-center">
@@ -27,7 +27,7 @@ function Header() {
                                 <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[60px] sm:h-[80px] md:h-[100px] lg:h-[120px] w-auto object-contain" />                            </div>
                         </div>
                     </div>
-                    <div className="rightColumn flex flex-col items-center justify-center text-center">
+                    <div className="rightColumn">
                         <div className="flex flex-col justify-center items-center text-center text-white -mt-10 md:mt-0 z-20">
                             <Countdown targetDate="2025-02-15T23:59:00" />
                             <p className="sambutan text-xl m-[15px] px-12 ">
@@ -41,8 +41,8 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="ombak relative w-full bottom-[-200px] md:bottom-[-60px] sm:bottom-[-30px] xs:bottom-[-60px] z-20">
-                    <img src={ombak} alt="ombak sm:mb-[50px]" />
+                <div className="ombak">
+                    <img src={ombak} alt="ombak" />
                 </div>
             </section>
         </>
