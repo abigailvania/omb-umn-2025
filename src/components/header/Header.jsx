@@ -41,7 +41,7 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="ombak relative w-full bottom-[-200px] md:bottom-[-110px] sm:bottom-[-30px] xs:bottom-[-60px] z-20">
+                <div className="ombak relative w-full bottom-[-200px] md:bottom-[-60px] sm:bottom-[-30px] xs:bottom-[-60px] z-20">
                     <img src={ombak} alt="ombak" />
                 </div>
             </section>
