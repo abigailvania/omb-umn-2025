@@ -50,7 +50,7 @@ const Navbar = () => {
                 More
               </button>
               {dropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 bg-white shadow-md rounded-lg py-2 w-48 z-[910]">
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-md rounded-lg py-2 z-[910] w-[90vw] max-w-[300px] md:w-48">
                   <ul>
                     <li>
                       <a
