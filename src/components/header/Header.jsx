@@ -14,7 +14,7 @@ import ombak from "../../images/ombak/OMBAK1.png";
 function Header() {
     return (
         <>
-            <section id="home-section" className="headerSection relative sm:w-100 md:w-100 lg:w-100">
+            <section id="home-section" className="headerSection relative w-100 sm:w-100 md:w-100 lg:w-100">
                 <div className="headerContent">
                     <div className="leftColumn">
                         <div className="supergrafis absolute z-0 opacity-40">
