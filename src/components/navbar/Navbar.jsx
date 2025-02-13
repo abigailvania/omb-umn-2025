@@ -43,43 +43,43 @@ const Navbar = () => {
               </a>
             </li>
             <li className="relative flex items-center">
-              <button
-                onClick={() => setDropdownOpen(prev => !prev)}
-                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none cursor-pointer"
-              >
-                More
-              </button>
-              {dropdownOpen && (
-                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 bg-white shadow-md rounded-lg py-2 z-[910] w-[90vw] max-w-[300px] md:w-48">
-                  <ul>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                      >
-                        Divisi
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                      >
-                        Daftar Interview
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                      >
-                        Tentang OMB
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </li>
+                <button
+                    onClick={() => setDropdownOpen((prev) => !prev)}
+                    className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none cursor-pointer"
+                >
+                    More
+                </button>
+                {dropdownOpen && (
+                    <div className="absolute top-full right-0 mt-2 bg-white shadow-md rounded-lg py-2 z-[910] w-[90vw] max-w-[300px] md:w-48">
+                    <ul className="text-right">
+                        <li>
+                        <a
+                            href="#"
+                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                        >
+                            Divisi
+                        </a>
+                        </li>
+                        <li>
+                        <a
+                            href="#"
+                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                        >
+                            Daftar Interview
+                        </a>
+                        </li>
+                        <li>
+                        <a
+                            href="#"
+                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                        >
+                            Tentang OMB
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                )}
+                </li>
           </ul>
         </div>
       </nav>
