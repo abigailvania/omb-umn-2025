@@ -41,7 +41,7 @@ function Header() {
                         </div>
                     </div>
                 </div>
-                <div className="ombak sm:bottom-[-60px] ">
+                <div className="ombak sm:bottom-[-50px] ">
                     <img src={ombak} alt="ombak" className=""/>
                 </div>
             </section>
