@@ -1,8 +1,10 @@
 .headerSection {
+  // position: relative;
+  // width: 100%;
   background: url('../../images/header-footer/gif.gif');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
 
   &::before {
     content: "";
@@ -17,68 +19,82 @@
     opacity: 0.8;
     z-index: 1;
   }
-
-  .headerContent {
-    position: relative;
-    z-index: 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr; // Two equal columns
-    padding: 40px 20px;
-    color: white;
-    height: 100vh; // Ensures the content takes the full height of the screen
-    align-items: center;
-
-    .leftColumn {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .rightColumn {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .supergrafis, .ombak {
-      position: absolute;
-      width: 100vw;
-      height: 100%;
-      left: 50%;
-      transform: translateX(-50%);
-      object-fit: cover;
-    }
-
-  }
-  .ombak img{
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: 20;
-    bottom: -200px;
-  }
-
-  @media (max-width: 768px) {
-    .headerSection{
-      max-width: 400px;
-      margin-bottom: -100px;
-    }
-    .headerContent {
-      padding-top: 1px;
-      grid-template-columns: 1fr; // Stacks content vertically on smaller screens
-    }
-
-    .headerContent .supergrafis {
-      width: 90%;
-      max-width: 400px;
-    }
-    .sambutan {
-      font-size: 1em;
-    }
-
-  }
-
 }
+  // .headerContent {
+  //   position: relative;
+  //   z-index: 3;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr; // Two equal columns
+  //   padding: 40px 20px;
+  //   color: white;
+  //   height: 100vh; // Ensures the content takes the full height of the screen
+  //   align-items: center;
+
+  //   .leftColumn {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: center;
+  //   }
+
+  //   .rightColumn {
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     text-align: center;
+  //   }
+
+  //   .supergrafis, .ombak {
+  //     position: absolute;
+  //     width: 100vw;
+  //     height: 100%;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     object-fit: cover;
+  //   }
+
+  // }
+  // .ombak img{
+  //   position: relative;
+  //   width: 100%;
+  //   height: auto;
+  //   z-index: 20;
+  //   bottom: -200px;
+  // }
+
+  // @media (max-width: 768px) {
+  //   .headerSection{
+  //     max-width: 400px;
+  //     margin-bottom: -100px;
+  //   }
+  //   .headerContent {
+  //     padding-top: 1px;
+  //     grid-template-columns: 1fr; // Stacks content vertically on smaller screens
+  //   }
+
+  //   .headerContent .supergrafis {
+  //     width: 90%;
+  //     max-width: 400px;
+  //   }
+  //   .sambutan {
+  //     font-size: 1em;
+  //   }
+  //   .ombak img {
+  //     bottom: -110px;
+  //   }
+  // }
+
+  // @media (max-width: 600px) {
+  //   .ombak img {
+  //     bottom: -80px;
+  //   }
+
+  // }
+
+  // @media (max-width: 400px) {
+  //   .ombak img {
+  //     bottom: -60px;
+  //   }
+  // }
+
