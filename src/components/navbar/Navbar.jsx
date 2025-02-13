@@ -17,18 +17,18 @@ const Navbar = () => {
     <>
       <nav
         className={`
-          fixed top-0 left-1/2 transform -translate-x-1/2
-          w-[90%] md:w-4/5
-          py-2.5 px-[15px]
-          text-white
-          bg-[rgba(30,125,135,0.25)]
-          backdrop-blur-[10px]
-          shadow-[0_4px_8px_rgba(0,0,0,0.2)]
-          rounded-[20px]
-          flex justify-center items-center
-          transition-opacity duration-500 ease-in-out
-          z-[900] mt-[15px]
-          ${showNavbar ? 'opacity-100' : 'opacity-0'}
+            fixed top-0 left-1/2 transform -translate-x-1/2
+            w-[90%] md:w-4/5
+            py-2.5 px-[15px]
+            text-white
+            bg-[rgba(30,125,135,0.25)]
+            backdrop-blur-[10px]
+            shadow-[0_4px_8px_rgba(0,0,0,0.2)]
+            rounded-[20px]
+            flex justify-center items-center
+            transition-opacity duration-500 ease-in-out
+            z-[900] mt-[15px]
+            ${showNavbar ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
         `}
       >
         <div className="flex w-full items-center justify-between">
