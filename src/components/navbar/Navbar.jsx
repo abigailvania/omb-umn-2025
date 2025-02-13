@@ -1,95 +1,107 @@
 import React, { useState, useEffect } from 'react';
-import './Navbar.scss';
-import logo from "../../images/header-footer/logo.png"
+import logo from "../../images/header-footer/logo.png";
 
 const Navbar = () => {
-    const [showNavbar, setShowNavbar] = useState(false);
-    const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setShowNavbar(true);
-            } else {
-                setShowNavbar(false);
-            }
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowNavbar(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+  return (
+    <>
+      <nav
+        className={`
+          fixed top-0 left-1/2 transform -translate-x-1/2
+          w-[90%] md:w-4/5
+          py-2.5 px-[15px]
+          text-white
+          bg-[rgba(30,125,135,0.25)]
+          backdrop-blur-[10px]
+          shadow-[0_4px_8px_rgba(0,0,0,0.2)]
+          rounded-[20px]
+          flex justify-center items-center
+          transition-opacity duration-500 ease-in-out
+          z-[900] mt-[15px]
+          ${showNavbar ? 'opacity-100' : 'opacity-0'}
+        `}
+      >
+        <div className="flex w-full items-center justify-between">
+          <img src={logo} alt="Logo" className="h-[80px] m-0 p-0" />
+          <ul className="list-none flex gap-[15px] md:gap-[30px] p-0 m-0">
+            <li className="flex items-center">
+              <a
+                href="#"
+                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full"
+              >
+                Home
+              </a>
+            </li>
+            <li className="flex items-center">
+              <a
+                href="#"
+                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full"
+              >
+                Tentang OMB
+              </a>
+            </li>
+            <li className="flex items-center">
+              <a
+                href="#"
+                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full"
+              >
+                Divisi
+              </a>
+            </li>
+            <li className="flex items-center">
+              <button
+                onClick={() => setDropdownOpen(prev => !prev)}
+                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none"
+              >
+                More
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-    return (
-        <nav className={`navbar ${showNavbar ? 'show' : ''}`}>
-            <div className="navbar-container text-center">
-                <img src={logo} alt="Logo" className="navbar-logo" />
-                <ul className="navbar-menu">
-                    <li>
-                        <a
-                            href="#"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                document.getElementById("home-section")?.scrollIntoView({ behavior: "smooth" });
-                            }}
-                        >
-                            Home
-                        </a>
-                    </li>
-                    <li 
-                        className="dropdown"
-                        onMouseEnter={() => setDropdownOpen(true)}
-                        onMouseLeave={() => setDropdownOpen(false)}
-                    >
-                        <button 
-                            className="dropdown-toggle" 
-                            onClick={() => setDropdownOpen(!dropdownOpen)}
-                        >
-                            More ▼
-                        </button>
-                        <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
-                            <li>
-                                <a 
-                                    href="#"
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        document.getElementById("oprec-section")?.scrollIntoView({ behavior: "smooth" });
-                                    }}
-                                >
-                                    Divisi
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="#"
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        document.getElementById("interview-section")?.scrollIntoView({ behavior: "smooth" });
-                                    }}
-                                >
-                                    Daftar Interview
-                                </a>
-                            </li>
-                            <li>
-                                <a 
-                                    href="#"
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        document.getElementById("tentang-omb")?.scrollIntoView({ behavior: "smooth" });
-                                    }}
-                                >
-                                    Tentang OMB
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    );
+      {dropdownOpen && (
+        <div className="absolute top-[120px] left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-lg py-2 w-48 z-[910]">
+          <ul>
+            <li>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >
+                Divisi
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >
+                Daftar Interview
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+              >
+                Tentang OMB
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Navbar;
