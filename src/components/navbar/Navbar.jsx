@@ -31,7 +31,7 @@ const Navbar = () => {
           ${showNavbar ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
         `}
       >
-        <div className="flex w-full items-center justify-between mx-[20px]">
+        <div className="flex w-full items-center justify-between mx-[30px]">
           <img src={logo} alt="Logo" className="h-[80px] m-0 p-0" />
           <ul className="list-none flex gap-[15px] md:gap-[30px] p-0 m-0">
             <li className="flex items-center">
