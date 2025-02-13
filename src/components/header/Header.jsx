@@ -14,7 +14,7 @@ import ombak from "../../images/ombak/OMBAK1.png";
 function Header() {
     return (
         <>
-            <section id="home-section" className="headerSection relative w-full bg-cover bg-center bg-no-repeat">
+            <section id="home-section" className="headerSection ">
                 <div className="headerContent relative z-30 grid grid-cols-1 md:grid-cols-2 h-screen items-center text-white px-5 md:px-10">
                     <div className="leftColumn flex flex-col items-center justify-center text-center md:text-left">
                         <div className="supergrafis absolute left-1/2 transform -translate-x-1/2 w-screen h-full">
