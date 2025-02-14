@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/header-footer/logo.png";
 
-const Navbar = () => {
+const Navbar2 = () => {
     const [showNavbar, setShowNavbar] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -53,4 +53,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navbar2;

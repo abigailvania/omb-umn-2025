@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./pages/landing";
 import Interview from "./pages/interview";
 // import HalamanError from "./pages/halamanerror";
-import Navbar from "../components/Navbar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
