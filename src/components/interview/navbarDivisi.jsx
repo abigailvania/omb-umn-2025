@@ -5,7 +5,7 @@ function NavbarDivisi() {
     const [selectedDivisi, setSelectedDivisi] = useState(null);
 
     return (
-        <div>
+        <div className="z-900">
             <div>
                 {listInterview.map((divisi, index) => (
                     <button
