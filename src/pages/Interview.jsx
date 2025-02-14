@@ -1,10 +1,16 @@
+import React from "react";
+import Navbar from "../components/navbar/Navbar";
+// import ApaItuOMB from "../components/apa-itu-omb/ApaItuOMB";
+
+import Footer from "../components/footer/Footer";
+
 const Interview = () => {
-    return (
-      <div className="min-h-screen flex items-center justify-center text-center">
-        <h1 className="text-3xl font-bold">Halaman Interview</h1>
-      </div>
-    );
-  };
-  
-  export default Interview;
-  
+  return (
+    <>
+      <Navbar />
+      <Footer />
+    </>
+  );
+};
+
+export default Interview;
