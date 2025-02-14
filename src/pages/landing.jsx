@@ -13,18 +13,9 @@ function App() {
     <Router>
       <Header />
       <Navbar />
-      
-      <Routes>
-        <Route path="/" element={
-          <>
             <ApaItuOMB />
             <Youtube />
             <Oprec />
-          </>
-        } />
-        <Route path="/interview" element={<Interview />} />
-      </Routes>
-
       <Footer />
     </Router>
   );
