@@ -10,7 +10,6 @@ function NavbarDivisi() {
                 {listInterview.map((divisi, index) => (
                     <button
                         key={index}
-                        onClick={() => setSelectedDivisi(divisi)}
                     >
                         {divisi.divisi}
                     </button>
