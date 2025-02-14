@@ -1,7 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Landing from "./pages/Landing.jsx";
 import Interview from "./pages/Interview.jsx";
-// import HalamanError from "./pages/halamanerror";
 import Navbar from "./components/navbar/Navbar";
 
 function App() {
@@ -9,9 +8,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-      <Route path="/" element={<Landing />} />
-      <Route path="/interview" element={<Interview />} />
-        {/* <Route path="*" element={<HalamanError />} /> */}
+        <Route path="/" element={<Landing />} />
+        <Route path="/interview" element={<Interview />} />
+        <Route path="*" element={<Navigate to="/" />} /> {/* Redirect ke Landing */}
       </Routes>
     </Router>
   );
