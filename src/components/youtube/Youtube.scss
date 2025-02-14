@@ -1,5 +1,5 @@
 .YoutubeContainer {
-    background: url('../../src/images/gradien/gradienYoutube.png');
+    background: url('../../images/gradien/gradienYoutube.png');
     width: 100%;
     background-size: cover;
     position: relative;
@@ -73,6 +73,9 @@
 }
 
 @media (max-width: 600px){
+    .Youtube {
+        margin-top: -30px;
+    }
     .ombak img {
         margin-top: 200px;
     }

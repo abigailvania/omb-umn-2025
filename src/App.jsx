@@ -1,25 +1,20 @@
-import { useState } from 'react'
-
-import Header from './components/header/Header'
-import ApaItuOMB from './components/apa-itu-omb/ApaItuOMB'
-import Youtube from './components/youtube/Youtube'
-import Oprec from './components/oprec/Oprec'
-import Footer from './components/footer/Footer'
-import Navbar from './components/navbar/Navbar'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./pages/landing";
+import Interview from "./pages/interview";
+// import HalamanError from "./pages/halamanerror";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Header />
+    <Router>
       <Navbar />
-      <ApaItuOMB />
-      <Youtube />
-      <Oprec />
-      <Footer />
-    </>
-  )
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/interview" element={<Interview />} />
+        {/* <Route path="*" element={<HalamanError />} /> */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
