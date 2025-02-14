@@ -37,51 +37,51 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="h-[80px] m-0 p-0" />
           <ul className="list-none flex gap-[15px] md:gap-[30px] p-0 m-0">
             <li className="flex items-center">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="relative flex items-center">
-                <button
-                    onClick={() => setDropdownOpen((prev) => !prev)}
-                    className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none cursor-pointer"
-                >
-                    More
-                </button>
-                {dropdownOpen && (
-                    <div className="absolute top-full right-0 mt-2 bg-white shadow-md rounded-lg py-1 z-[910] max-w-[300px] md:w-48">
-                    <ul className="text-right">
-                        <li>
-                        <a
-                            href="#"
-                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                        >
-                            Divisi
-                        </a>
-                        </li>
-                        <li>
-                        <a
-                            href="/interview"
-                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                        >
-                            Daftar Interview
-                        </a>
-                        </li>
-                        <li>
-                        <a
-                            href="#"
-                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                        >
-                            Tentang OMB
-                        </a>
-                        </li>
-                    </ul>
-                    </div>
-                )}
-                </li>
+              <button
+                onClick={() => setDropdownOpen((prev) => !prev)}
+                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none cursor-pointer"
+              >
+                More
+              </button>
+              {dropdownOpen && (
+                <div className="absolute top-full right-0 mt-2 bg-white shadow-md rounded-lg py-1 z-[910] max-w-[300px] md:w-48">
+                  <ul className="text-right">
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                      >
+                        Divisi
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/interview"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                      >
+                        Daftar Interview
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                      >
+                        Tentang OMB
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </li>
           </ul>
         </div>
       </nav>

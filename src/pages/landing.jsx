@@ -1,9 +1,9 @@
 import React from "react";
-import Header from "../components/header/Header";
-import ApaItuOMB from "../components/apa-itu-omb/ApaItuOMB";
-import Youtube from "../components/youtube/Youtube";
-import Oprec from "../components/oprec/Oprec";
-import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header.jsx";
+import ApaItuOMB from "../components/apa-itu-omb/ApaItuOMB.jsx";
+import Youtube from "../components/youtube/Youtube.jsx";
+import Oprec from "../components/oprec/Oprec.jsx";
+import Footer from "../components/footer/Footer.jsx";
 
 const Landing = () => {
   return (
