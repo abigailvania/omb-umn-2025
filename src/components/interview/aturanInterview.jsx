@@ -4,11 +4,10 @@ function Peraturan() {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        setIsOpen(true); // Modal muncul saat halaman dibuka
+        setIsOpen(true);
     }, []);
 
-    if (!isOpen) return null; // Jangan render jika modal sudah ditutup
-
+    if (!isOpen) return null;
     return (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/40 backdrop-blur-lg z-1000">
             <div className="bg-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-xl shadow-xl w-[90%] sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-xl relative">
