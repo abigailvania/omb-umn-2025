@@ -26,12 +26,14 @@ const Navbar2 = () => {
           w-[90%] md:w-4/5
           py-2.5 px-[15px]
           text-white
-          shadow-[0_4px_8px_rgba(0,0,0,0.2)]
           rounded-[20px]
           flex justify-center items-center
           transition-all duration-500 ease-in-out
           z-[900] mt-[15px]
-          ${scrolled ? 'bg-[rgba(30,125,135,0.25)] backdrop-blur-[10px]' : 'bg-transparent'}
+          ${scrolled 
+            ? 'bg-[rgba(30,125,135,0.25)] backdrop-blur-[10px] shadow-md' 
+            : 'bg-transparent border-b border-black/20'
+          }
         `}
       >
         <div className="flex w-full items-center justify-between mx-[30px]">
