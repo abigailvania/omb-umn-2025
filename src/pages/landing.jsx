@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "./src/components/header/Header";
+import Header from "../components/header/Header";
 import ApaItuOMB from "./src/components/apa-itu-omb/ApaItuOMB";
 import Youtube from "./src/components/youtube/Youtube";
 import Oprec from "./src/components/oprec/Oprec";
