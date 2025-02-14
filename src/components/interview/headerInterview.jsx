@@ -1,8 +1,8 @@
 import React from "react";
 
-function headerInterview() {
+function HeaderInterview() {
     return (
         <h1>LIST DIVISI</h1>
     )
 }
-export default headerInterview;
+export default HeaderInterview;
