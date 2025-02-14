@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+
 import logo from "../../images/header-footer/logo.png";
 
 const Navbar2 = () => {
@@ -17,40 +18,79 @@ const Navbar2 = () => {
         };
     }, []);
 
-    return (
-        <nav className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 
-                ${showNavbar ? "bg-white shadow-lg backdrop-blur-md" : "bg-transparent shadow-md shadow-black/5"}`}>
-            <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-                <img src={logo} alt="Logo" className="h-12" />
-                
-                <ul className="flex space-x-6 text-gray-700 font-medium relative">
-                    <li><Link to="/" className="hover:text-blue-500">Home</Link></li>
-                    <li><Link to="/interview" className="hover:text-blue-500">Interview</Link></li>
-
-                    <li className="relative">
-                        <button
-                            onClick={() => setDropdownOpen(!dropdownOpen)}
-                            onMouseEnter={() => setDropdownOpen(true)}
-                            onMouseLeave={() => setDropdownOpen(false)}
-                            className="hover:text-blue-500 transition-colors"
+  return (
+    <>
+      <nav
+        className={`
+          fixed top-0 left-1/2 transform -translate-x-1/2
+          w-[90%] md:w-4/5
+          py-2.5 px-[15px]
+          text-white
+          bg-[rgba(30,125,135,0.25)]
+          backdrop-blur-[10px]
+          shadow-[0_4px_8px_rgba(0,0,0,0.2)]
+          rounded-[20px]
+          flex justify-center items-center
+          transition-opacity duration-500 ease-in-out
+          z-[900] mt-[15px]
+          ${showNavbar ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
+        `}
+      >
+        <div className="flex w-full items-center justify-between mx-[30px]">
+          <img src={logo} alt="Logo" className="h-[80px] m-0 p-0" />
+          <ul className="list-none flex gap-[15px] md:gap-[30px] p-0 m-0">
+            <li className="flex items-center">
+              <a
+                href="#"
+                className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full"
+              >
+                Home
+              </a>
+            </li>
+            <li className="relative flex items-center">
+                <button
+                    onClick={() => setDropdownOpen((prev) => !prev)}
+                    className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full focus:outline-none cursor-pointer"
+                >
+                    More ▼
+                </button>
+                {dropdownOpen && (
+                    <div className="absolute top-full right-0 mt-2 bg-white shadow-md rounded-lg py-1 z-[910] max-w-[300px] md:w-48">
+                    <ul className="text-right">
+                        <li>
+                        <a
+                            href="#"
+                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                         >
-                            More ▼
-                        </button>
-
-                        <ul className={`absolute left-0 mt-2 w-48 bg-white shadow-md rounded-lg overflow-hidden transition-opacity duration-300
-                            ${dropdownOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}
-                            onMouseEnter={() => setDropdownOpen(true)}
-                            onMouseLeave={() => setDropdownOpen(false)}
+                            Divisi
+                        </a>
+                        </li>
+                        <li>
+                        <a
+                            href="/interview"
+                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                         >
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Divisi</a></li>
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Daftar Interview</a></li>
-                            <li><a href="#" className="block px-4 py-2 hover:bg-gray-100">Tentang OMB</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    );
+                            Daftar Interview
+                        </a>
+                        </li>
+                        <li>
+                        <a
+                            href="#"
+                            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                        >
+                            Tentang OMB
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                )}
+                </li>
+          </ul>
+        </div>
+      </nav>
+    </>
+  );
 };
 
 export default Navbar2;
+
