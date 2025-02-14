@@ -6,7 +6,6 @@ import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/interview" element={<Interview />} />
