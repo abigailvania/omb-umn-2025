@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import logo from "../../images/header-footer/logo.png";
 
 const Navbar2 = () => {
-    const [showNavbar, setShowNavbar] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            setShowNavbar(window.scrollY > 50);
+            setScrolled(window.scrollY > 50);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -26,14 +26,12 @@ const Navbar2 = () => {
           w-[90%] md:w-4/5
           py-2.5 px-[15px]
           text-white
-          bg-[rgba(30,125,135,0.25)]
-          backdrop-blur-[10px]
           shadow-[0_4px_8px_rgba(0,0,0,0.2)]
           rounded-[20px]
           flex justify-center items-center
-          transition-opacity duration-500 ease-in-out
+          transition-all duration-500 ease-in-out
           z-[900] mt-[15px]
-          ${showNavbar ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}
+          ${scrolled ? 'bg-[rgba(30,125,135,0.25)] backdrop-blur-[10px]' : 'bg-transparent'}
         `}
       >
         <div className="flex w-full items-center justify-between mx-[30px]">
@@ -93,4 +91,3 @@ const Navbar2 = () => {
 };
 
 export default Navbar2;
-
