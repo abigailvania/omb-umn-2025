@@ -6,20 +6,24 @@ const InterviewPage = () => {
 
   return (
     <div className="p-4">
-      {/* Header Section */}
       <div className="mt-[140px] text-center">
         <h1 className="text-2xl font-bold">Daftar Peserta Interview</h1>
         <p className="text-lg">Mohon Memperhatikan Tanggal dan Waktu interview</p>
       </div>
       
-      {/* Navbar Section */}
       <nav className="flex flex-wrap gap-2 p-4 rounded-lg shadow-md mt-6">
         {listInterview.map((divisi, index) => (
             <button
-            key={index}
-            className={`px-4 py-2 text-white rounded-lg transition`}
-            style={{
-                backgroundColor: selectedDivisi === divisi ? divisi.color : "#a0a0a0",
+                key={index}
+                className={`relative px-10 py-4 rounded-full text-white font-bold 
+                    bg-[rgba(30,125,135,0.25)] backdrop-blur-sm shadow-[0_4px_10px_rgba(0,0,0,0.6)] 
+                    overflow-hidden cursor-pointer transition-all duration-300 ease-in-out border-none outline-none 
+                    hover:bg-[rgba(30,125,135,0.4)] hover:shadow-[0_6px_15px_rgba(0,0,0,0.6)] 
+                    before:content-[''] before:absolute before:top-[-50%] before:left-[-50%] 
+                    before:w-[200%] before:h-[200%] before:bg-[radial-gradient(circle,rgba(255,255,255,0.3)_10%,transparent_50%)] 
+                    before:opacity-0 before:transition-opacity before:duration-300 hover:before:opacity-100`}
+                style={{
+                backgroundColor: selectedDivisi === divisi ? divisi.color : "rgba(30,125,135,0.25)",
             }}
             onMouseEnter={(e) => (e.target.style.backgroundColor = divisi.color)}
             onMouseLeave={(e) =>
@@ -33,8 +37,6 @@ const InterviewPage = () => {
         ))}
         </nav>
 
-
-      {/* Selected Division Section */}
       {selectedDivisi && (
         <div className="flex flex-col items-center w-full md:w-2/3 mx-auto mt-6">
           <div className="flex items-center gap-4 mb-6">
