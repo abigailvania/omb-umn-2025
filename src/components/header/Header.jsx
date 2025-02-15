@@ -29,7 +29,9 @@ function Header() {
                     </div>
                     <div className="rightColumn">
                         <div className="flex flex-col justify-center items-center text-center text-white -mt-10 md:mt-0 z-20">
-                            <Countdown targetDate="2025-02-15T23:59:00" />
+                            <div className="mb-[20px]">
+                                <Countdown targetDate="2025-02-15T23:59:00" />
+                            </div>
 
                             <GlassButton
                                 text="DAFTAR SEKARANG!" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
