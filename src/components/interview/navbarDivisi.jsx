@@ -20,33 +20,36 @@ const NavbarDivisi = () => {
       </nav>
 
       {selectedDivisi && (
-        <div className="mt-4 p-6 border rounded-lg shadow-lg bg-white w-full md:w-2/3 mx-auto">
-          <h2 className="text-2xl font-bold text-center">{selectedDivisi.divisi}</h2>
-          
-          <div className="text-center text-lg font-semibold mt-2">
-            <p>Tanggal: {selectedDay}</p>
-          </div>
+        <div className="">
+            <h2 className="text-2xl font-bold text-center">{selectedDivisi.divisi}</h2>
 
-          <div className="text-center mt-4">
-            <label className="mr-2 font-semibold">Pilih Hari:</label>
-            <select
-              className="border p-2 rounded"
-              onChange={(e) => setSelectedDay(e.target.value)}
-              value={selectedDay}
-            >
-              {Object.keys(selectedDivisi.jadwal).map((hari, index) => (
-                <option key={index} value={hari}>{hari}</option>
+          <div className="mt-4 p-6 border rounded-lg shadow-lg bg-white w-full md:w-2/3 mx-auto">
+            
+            <div className="text-center text-lg font-semibold mt-2">
+              <p>Tanggal: {selectedDay}</p>
+            </div>
+
+            <div className="text-center mt-4">
+              <label className="mr-2 font-semibold">Pilih Hari:</label>
+              <select
+                className="border p-2 rounded"
+                onChange={(e) => setSelectedDay(e.target.value)}
+                value={selectedDay}
+                >
+                {Object.keys(selectedDivisi.jadwal).map((hari, index) => (
+                  <option key={index} value={hari}>{hari}</option>
+                ))}
+              </select>
+            </div>
+
+            <ul className="mt-4 text-center">
+              {selectedDivisi.jadwal[selectedDay].map((peserta, index) => (
+                <li key={index} className="py-2 border-b last:border-none">
+                  {peserta.nama} - {peserta.nim}
+                </li>
               ))}
-            </select>
+            </ul>
           </div>
-
-          <ul className="mt-4 text-center">
-            {selectedDivisi.jadwal[selectedDay].map((peserta, index) => (
-              <li key={index} className="py-2 border-b last:border-none">
-                {peserta.nama} - {peserta.jam}
-              </li>
-            ))}
-          </ul>
         </div>
       )}
     </div>
