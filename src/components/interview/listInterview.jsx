@@ -281,7 +281,7 @@ const listInterview = [
         logoDivisi: Perlengkapan,
         color: "#9D09DB",
         jadwal: {
-            hari1: [
+            "Senin, 17 Februari 2025 (C1002)": [
                 {nama: "Vallent Liem", nim: "00000097273"},
                 {nama: "Muhammad Irfan Rizky Nasution", nim: "00000110639"},
                 {nama: "Farrel", nim: "00000099012"},
