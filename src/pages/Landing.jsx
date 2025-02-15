@@ -18,7 +18,7 @@ const Landing = () => {
             <section id="oprec-section">
                 <Oprec />
             </section>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 };
