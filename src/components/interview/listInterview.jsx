@@ -17,7 +17,7 @@ const listInterview = [
         divisi: "GYANA",
         nama: "PIC",
         logoDivisi: Pic,
-        color: "#FE829C";
+        color: "#FE829C",
         jadwal: {
             hari1: [
                 {nama:"Ardel Toti Febyriyan Tanis", nim:"00000125172"},
