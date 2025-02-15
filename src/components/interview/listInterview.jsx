@@ -78,6 +78,7 @@ const listInterview = [
         divisi: "ARUTALA",
         nama: "Acara",
         logoDivisi: Acara,
+        color: "#D6002E",
         jadwal: {
             hari1: [
                 {nama: " a ", nim: " b "},
@@ -92,6 +93,7 @@ const listInterview = [
         divisi: "ARUNIKA",
         nama: "Dokumentasi",
         logoDivisi: Dokumentasi,
+        color: "#F6740D",
         jadwal: {
             hari1: [
                 {nama: " a ", nim: " b "},
@@ -106,6 +108,7 @@ const listInterview = [
         divisi: "SAMHITA",
         nama: "Website",
         logoDivisi: Website,
+        color: "#F7CD1C",
         jadwal: {
             hari1: [
                 {nama: "Dylan Ervian", nim: "00000075730"},
@@ -122,6 +125,7 @@ const listInterview = [
         divisi: "WISTARA",
         nama: "Public Relations",
         logoDivisi: Pr,
+        color: "#999DA0",
         jadwal: {
             hari1: [
                 {nama: " a ", nim: " b "},
@@ -137,6 +141,7 @@ const listInterview = [
         divisi: "REKHA",
         nama: "Desain",
         logoDivisi: Desain,
+        color: "#4ED2D8",
         jadwal: {
             hari1: [
                 {nama: "Padma Natalie Tanarya", nim: "00000105805"},
@@ -150,6 +155,7 @@ const listInterview = [
         divisi: "ABHISEVA",
         nama: "Keamanan",
         logoDivisi: Keamanan,
+        color: "#000000",
         jadwal: {
             hari1: [
                 {nama: "Pierre E.S Moningka", nim: "00000128411"},
@@ -178,6 +184,7 @@ const listInterview = [
         divisi: "BHARANA",
         nama: "Perlengkapan",
         logoDivisi: Perlengkapan,
+        color: "#9D09DB",
         jadwal: {
             hari1: [
                 {nama: "Vallent Liem", nim: "00000097273"},
@@ -215,6 +222,7 @@ const listInterview = [
         divisi: "KAYANA",
         nama: "Konsumsi",
         logoDivisi: Konsumsi,
+        color: "#C67F4F",
         jadwal: {
             hari1: [
                 {nama: " a ", nim: " b "},
