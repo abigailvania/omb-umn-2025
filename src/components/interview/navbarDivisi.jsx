@@ -38,9 +38,10 @@ const NavbarDivisi = () => {
 
                 <ul className="mt-4 text-center">
                   {pesertaList.map((peserta, idx) => (
-                    <li key={idx} className="py-2 border-b last:border-none">
-                      {peserta.nama} - {peserta.nim}
-                    </li>
+                  <li key={idx} className="py-2 border-b last:border-none flex justify-between">
+                    <span className="text-left">{peserta.nama}</span>
+                    <span className="text-right">{peserta.nim}</span>
+                  </li>
                   ))}
                 </ul>
               </div>
