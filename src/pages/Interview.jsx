@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar2";
-import HeaderInterview from "../components/interview/headerInterview";
+import HalamanInterview from "../components/interview/HalamanInterview";
 import Peraturan from "../components/interview/aturanInterview";
-import NavbarDivisi from "../components/interview/navbarDivisi";
 import Footer from "../components/footer/Footer";
 
 const Interview = () => {
@@ -18,8 +17,7 @@ const Interview = () => {
     <div style={backgroundStyle}>
       <Peraturan />
       <Navbar />
-      <HeaderInterview />
-      <NavbarDivisi />
+      <HalamanInterview />
       <Footer />
     </div>
   );
