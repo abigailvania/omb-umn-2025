@@ -81,11 +81,10 @@ const listInterview = [
         color: "#D6002E",
         jadwal: {
             ATURAN: [
-                {nama: "1. ", nim: "HAIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"},
-                {nama: " a ", nim: " b "},
-                {nama: " a ", nim: " b "},
-                {nama: " a ", nim: " b "},
-                {nama: " a ", nim: " b "},
+                {nama: "1.", nim: "WAJIB menghadiri pertemuan perdana tepat waktu (minimal 15 menit sebelum waktu yang dicantumkan)."},
+                {nama: "2.", nim: "WAJIB berpakaian rapi dan sopan."},
+                {nama: "3.", nim: "WAJIB membawa alat tulis dan buku catatan."},
+                {nama: "4.", nim: "DILARANG memberitahukan isi dalam forum kepada pihak lain yang tidak bersangkutan"},
             ],
             hari1: [
                 {nama: " a ", nim: " b "},
