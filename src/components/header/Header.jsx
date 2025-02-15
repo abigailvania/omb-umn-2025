@@ -33,14 +33,14 @@ function Header() {
                                 <Countdown targetDate="2025-02-15T23:59:00" />
                             </div>
 
+                            <p className="sambutan text-xl m-[15px] px-12 ">
+                                Pendaftaran Kepanitiaan OMB UMN 2025 telah dibuka!
+                            </p>
                             <GlassButton
                                 text="DAFTAR SEKARANG!" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                                 className="text-white max-w-[180px] mt-[30px] z-10"
 
                             />
-                            <p className="sambutan text-xl m-[15px] px-12 ">
-                                Pendaftaran Kepanitiaan OMB UMN 2025 telah dibuka!
-                            </p>
                             <GlassButton
                                 text="DAFTAR SEKARANG!" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                                 className="text-white max-w-[180px] mt-[30px] z-10"
