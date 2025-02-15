@@ -52,8 +52,9 @@ const ApaItuOMB = () => {
     return (
         <section
         id="tentang-omb"
-        className="flex items-center justify-center w-full h-screen py-0 px-10 mt-16 relative bg-white rounded-br-3xl rounded-bl-3xl shadow-2xl border border-gray-300 z-10"
+        className="grid grid-cols-1 md:grid-cols-2 items-center w-full h-screen py-0 px-10 mt-16 relative bg-white rounded-br-3xl rounded-bl-3xl shadow-2xl border border-gray-300 z-10"
         >
+
             <div className="relative flex-shrink-0 w-full max-w-md lg:max-w-lg overflow-hidden rounded-2xl aspect-video" ref={sliderRef}>
                 <div
                     className="flex w-full transition-transform duration-700 ease-in-out"
