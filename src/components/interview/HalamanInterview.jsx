@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import listInterview from "./listInterview";
 import bgImage from "../../images/gradien/gradien2.png";
 import ombak from "../../images/ombak/OMBAK4.png";
+import Footer from "../components/footer/Footer";
 
 const InterviewPage = () => {
     const [selectedDivisi, setSelectedDivisi] = useState(null);
@@ -110,7 +111,9 @@ const InterviewPage = () => {
         <div className="ombak absolute bottom-[-10px] w-full">
             <img src={ombak} alt="ombak" className="w-full relative block p-0 z-1000" />
         </div>
+        <Footer />
       </div>
+      
     );
   };
   
