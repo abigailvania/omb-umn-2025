@@ -20,33 +20,33 @@ const NavbarDivisi = () => {
       </nav>
 
       {selectedDivisi && (
-        <div className="mt-4 p-6 border rounded-lg shadow-lg bg-white w-full md:w-2/3 mx-auto">
-          <h2 className="text-2xl font-bold text-center">{selectedDivisi.divisi}</h2>
-          
-          <div className="text-center text-lg font-semibold mt-2">
-            <p>Tanggal: {selectedDay}</p>
+        <div className="flex flex-col items-center w-full md:w-2/3 mx-auto">
+          <div className="flex items-center gap-4 mb-6">
+            <img src={selectedDivisi.logoDivisi} alt={selectedDivisi.divisi} className="w-[120px] md:w-[200px]" />
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#16667C]">{selectedDivisi.divisi}</h2>
+              <p className="text-xl md:text-2xl font-bold text-black">{selectedDivisi.nama}</p>
+            </div>  
           </div>
 
-          <div className="text-center mt-4">
-            <label className="mr-2 font-semibold">Pilih Hari:</label>
-            <select
-              className="border p-2 rounded"
-              onChange={(e) => setSelectedDay(e.target.value)}
-              value={selectedDay}
-            >
-              {Object.keys(selectedDivisi.jadwal).map((hari, index) => (
-                <option key={index} value={hari}>{hari}</option>
-              ))}
-            </select>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            {Object.entries(selectedDivisi.jadwal).map(([hari, pesertaList], index) => (
+              <div key={index} className="p-6 border rounded-lg shadow-lg bg-white">
+                <div className="text-center text-lg font-semibold">
+                  <p className="text-[#16667C]">{hari}</p>
+                </div>
 
-          <ul className="mt-4 text-center">
-            {selectedDivisi.jadwal[selectedDay].map((peserta, index) => (
-              <li key={index} className="py-2 border-b last:border-none">
-                {peserta.nama} - {peserta.jam}
-              </li>
+                <ul className="mt-4 text-center">
+                  {pesertaList.map((peserta, idx) => (
+                  <li key={idx} className="py-2 border-b last:border-none flex justify-between">
+                    <span className="text-left">{peserta.nama}</span>
+                    <span className="text-right">{peserta.nim}</span>
+                  </li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </div>
