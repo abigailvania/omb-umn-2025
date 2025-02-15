@@ -75,10 +75,11 @@ const InterviewPage = () => {
                       {isSpecialDivisi && index === 0 && (
                         <div className="p-6 mb-6 border rounded-lg shadow-lg bg-[#f0f0f0]">
                           <div className="text-left text-lg font-semibold">
-                            <p className="text-[#16667C]">Pemberitahuan Khusus</p>
-                            <p>
-                              Ini adalah divisi khusus, silakan perhatikan jadwal dan informasi lainnya.
-                            </p>
+                            <p className="text-[#16667C]">Peraturan!</p>
+                            <p>1. WAJIB menghadiri pertemuan perdana tepat waktu (minimal 15 menit sebelum waktu yang dicantumkan).</p>
+                            <p>2. WAJIB berpakaian rapi dan sopan.</p>
+                            <p>3. WAJIB membawa alat tulis dan buku catatan.</p>
+                            <p>4. DILARANG memberitahukan isi dalam forum kepada pihak lain yang tidak bersangkutan</p>
                           </div>
                         </div>
                       )}
