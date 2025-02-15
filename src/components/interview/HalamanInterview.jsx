@@ -13,7 +13,7 @@ const InterviewPage = () => {
       </div>
       
       {/* Navbar Section */}
-      <nav className="flex flex-wrap gap-2 bg-gray-200 p-4 rounded-lg shadow-md mt-6">
+      <nav className="flex flex-wrap gap-2 p-4 rounded-lg shadow-md mt-6">
         {listInterview.map((divisi, index) => (
           <button
             key={index}
