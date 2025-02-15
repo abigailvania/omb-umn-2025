@@ -41,7 +41,7 @@ const InterviewPage = () => {
         </nav>
 
         {selectedDivisi && (
-            <div className="flex flex-col items-center w-full md:w-2/3 mx-auto mt-6 p-[90px] sm:p-[10px]">
+            <div className="flex flex-col items-center w-full md:w-2/3 mx-auto mt-6 p-[10px] sm:p-[10px]">
             <div className="flex items-center gap-4 mb-6">
               <img
                 src={selectedDivisi.logoDivisi}
