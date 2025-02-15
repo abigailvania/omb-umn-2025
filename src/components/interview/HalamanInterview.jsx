@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 import listInterview from "./listInterview";
 
-const halamanInterview = () => {
+const InterviewPage = () => {
   const [selectedDivisi, setSelectedDivisi] = useState(null);
 
   return (
     <div className="p-4">
+      {/* Header Section */}
       <div className="mt-[140px] text-center">
         <h1 className="text-2xl font-bold">Daftar Peserta Interview</h1>
         <p className="text-lg">Mohon Memperhatikan Tanggal dan Waktu interview</p>
       </div>
       
-      <nav className="flex flex-wrap items-center gap-2 p-4 rounded-lg shadow-md mt-6">
+      {/* Navbar Section */}
+      <nav className="flex flex-wrap gap-2 bg-gray-200 p-4 rounded-lg shadow-md mt-6">
         {listInterview.map((divisi, index) => (
           <button
             key={index}
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition"
+            className={`px-4 py-2 text-white rounded-lg transition ${
+              selectedDivisi === divisi ? divisi.color : "bg-gray-500"
+            } hover:${divisi.color}`}
             onClick={() => setSelectedDivisi(divisi)}
           >
             {divisi.divisi}
@@ -23,6 +27,7 @@ const halamanInterview = () => {
         ))}
       </nav>
 
+      {/* Selected Division Section */}
       {selectedDivisi && (
         <div className="flex flex-col items-center w-full md:w-2/3 mx-auto mt-6">
           <div className="flex items-center gap-4 mb-6">
@@ -56,4 +61,4 @@ const halamanInterview = () => {
   );
 };
 
-export default halamanInterview;
+export default InterviewPage;
