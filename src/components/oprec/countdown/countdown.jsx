@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import "./Countdown.scss";
+import React, { useState, useEffect } from 'react';
 
 const Countdown = ({ targetDate }) => {
     const calculateTimeLeft = () => {
@@ -18,30 +17,18 @@ const Countdown = ({ targetDate }) => {
     const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setTimeLeft(calculateTimeLeft());
-        }, 1000);
+        const timer = setInterval(() => setTimeLeft(calculateTimeLeft()), 1000);
         return () => clearInterval(timer);
     }, [targetDate]);
 
     return (
-        <div className="countdown-container">
-            <div className="countdown-box">
-                <span>{timeLeft.days}</span>
-                <small>Hari</small>
-            </div>
-            <div className="countdown-box">
-                <span>{timeLeft.hours}</span>
-                <small>Jam</small>
-            </div>
-            <div className="countdown-box">
-                <span>{timeLeft.minutes}</span>
-                <small>Menit</small>
-            </div>
-            <div className="countdown-box">
-                <span>{timeLeft.seconds}</span>
-                <small>Detik</small>
-            </div>
+        <div className="flex justify-center gap-2 md:gap-5 mt-2 flex-wrap">
+            {[['Hari', timeLeft.days], ['Jam', timeLeft.hours], ['Menit', timeLeft.minutes], ['Detik', timeLeft.seconds]].map(([label, value]) => (
+                <div key={label} className="bg-white text-[#1E7D87] p-3 md:p-5 rounded-lg text-center shadow-md flex-1 min-w-[60px] md:min-w-[80px] max-w-[100px] md:max-w-[120px]">
+                    <span className="block text-2xl md:text-3xl font-semibold">{value}</span>
+                    <small className="text-sm md:text-base font-light capitalize">{label}</small>
+                </div>
+            ))}
         </div>
     );
 };
