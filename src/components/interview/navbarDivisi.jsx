@@ -20,15 +20,15 @@ const NavbarDivisi = () => {
       </nav>
 
       {selectedDivisi && (
-        <div className="flex items-center">
-          <img src={selectedDivisi.logoDivisi} alt={selectedDivisi.divisi} className="w-[120px] md:w-[200px]" />
-
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#16667C]">{selectedDivisi.divisi}</h2>
-            <p className="text-xl md:text-2xl font-bold text-black">{selectedDivisi.nama}</p>
-          </div>          
-          <div className="mt-4 p-6 border rounded-lg shadow-lg bg-white w-full md:w-2/3 mx-auto">
-            
+        <div className="flex flex-col items-center w-full md:w-2/3 mx-auto">
+          <div className="flex items-center gap-4 mb-6">
+            <img src={selectedDivisi.logoDivisi} alt={selectedDivisi.divisi} className="w-[120px] md:w-[200px]" />
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#16667C]">{selectedDivisi.divisi}</h2>
+              <p className="text-xl md:text-2xl font-bold text-black">{selectedDivisi.nama}</p>
+            </div>  
+          </div>
+          <div className="p-6 border rounded-lg shadow-lg bg-white w-full">
             <div className="text-center text-lg font-semibold mt-2">
               <p>Tanggal: {selectedDay}</p>
             </div>
@@ -39,7 +39,7 @@ const NavbarDivisi = () => {
                 className="border p-2 rounded"
                 onChange={(e) => setSelectedDay(e.target.value)}
                 value={selectedDay}
-                >
+              >
                 {Object.keys(selectedDivisi.jadwal).map((hari, index) => (
                   <option key={index} value={hari}>{hari}</option>
                 ))}
@@ -56,6 +56,7 @@ const NavbarDivisi = () => {
           </div>
         </div>
       )}
+
     </div>
   );
 };
