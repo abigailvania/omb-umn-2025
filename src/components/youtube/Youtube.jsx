@@ -1,6 +1,4 @@
 import React from "react";
-import './Youtube.scss';
-
 import supergrafis from '../../images/supergrafis/SUP2.png';
 import ombak from '../../images/ombak/OMBAK2.png';
 
