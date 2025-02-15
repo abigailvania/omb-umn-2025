@@ -53,7 +53,7 @@ function Oprec() {
                         <h1>DIVISI</h1>
                         <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
                     </div>
-                    <div className="logo-divisi z-10 mb-[220px]">
+                    <div className="logo-divisi z-10 mb-[320px]">
                         {ContentDivisi.slice(0, 9).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
