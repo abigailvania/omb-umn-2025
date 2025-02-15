@@ -109,7 +109,7 @@ const InterviewPage = () => {
             </div>
           )}
         <div className="ombak absolute bottom-[-10px] w-full">
-            <img src={ombak} alt="ombak" className="w-full relative block p-0 z-1000" />
+            <img src={ombak} alt="ombak" className="w-full relative block p-0 z-900" />
         </div>
         <Footer />
       </div>

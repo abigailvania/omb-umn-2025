@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar/Navbar2";
 import HalamanInterview from "../components/interview/HalamanInterview";
 import Peraturan from "../components/interview/aturanInterview";
-
+import Footer from "../components/footer/Footer";
 
 const Interview = () => {
   const backgroundStyle = {
@@ -18,7 +18,7 @@ const Interview = () => {
       <Peraturan />
       <Navbar />
       <HalamanInterview />
-
+      <Footer />
     </div>
   );
 };

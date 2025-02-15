@@ -9,7 +9,7 @@ function Peraturan() {
 
     if (!isOpen) return null;
     return (
-        <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/40 backdrop-blur-lg z-1000">
+        <div className="fixed inset-0 flex items-center justify-center z-1000 bg-black/40 backdrop-blur-lg z-1000">
             <div className="bg-white p-6 sm:p-8 md:p-10 lg:p-12 rounded-xl shadow-xl w-[90%] sm:w-3/4 md:w-2/3 lg:w-1/2 max-w-xl relative">
                 <div className="text-center border-b pb-3">
                     <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-red-600">
