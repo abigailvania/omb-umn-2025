@@ -19,7 +19,7 @@ const listInterview = [
         logoDivisi: Pic,
         color: "#FE829C",
         jadwal: {
-            "Senin,": [
+            hari1: [
                 {nama: "Ardel Toti Febyriyan Tanis", nim: "00000125172"},
                 {nama: "Sebastian Benaya", nim: "00000124636"},
                 {nama: "Rafella Natasha Djaja", nim: "00000114588"},
