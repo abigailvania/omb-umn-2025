@@ -15,6 +15,7 @@ import Medis from "../../images/logo-divisi/Ring_Sadina.png"
 const listInterview = [
     {
         divisi: "GYANA",
+        nama: "PIC",
         logoDivisi: Pic,
         jadwal: {
             hari1: [
@@ -64,6 +65,7 @@ const listInterview = [
     },
     {
         divisi: "ARUTALA",
+        nama: "Acara",
         logoDivisi: Acara,
         jadwal: {
             hari1: [
@@ -113,6 +115,7 @@ const listInterview = [
     },
     {
         divisi: "ARUNIKA",
+        nama: "Dokumentasi",
         logoDivisi: Dokumentasi,
         jadwal: {
             hari1: [
@@ -162,6 +165,7 @@ const listInterview = [
     },
     {
         divisi: "SAMHITA",
+        nama: "Website",
         logoDivisi: Website,
         jadwal: {
             hari1: [
@@ -211,6 +215,7 @@ const listInterview = [
     },
     {
         divisi: "WISTARA",
+        nama: "Public Relations",
         logoDivisi: Pr,
         jadwal: {
             hari1: [
@@ -260,6 +265,7 @@ const listInterview = [
     },
     {
         divisi: "REKHA",
+        nama: "Desain",
         logoDivisi: Desain,
         jadwal: {
             hari1: [
@@ -309,6 +315,7 @@ const listInterview = [
     },
     {
         divisi: "ABHISEVA",
+        nama: "Keamanan",
         logoDivisi: Keamanan,
         jadwal: {
             hari1: [
@@ -358,6 +365,7 @@ const listInterview = [
     },
     {
         divisi: "BHARANA",
+        nama: "Perlengkapan",
         logoDivisi: Perlengkapan,
         jadwal: {
             hari1: [
@@ -407,6 +415,7 @@ const listInterview = [
     },
     {
         divisi: "KAYANA",
+        nama: "Konsumsi",
         logoDivisi: Konsumsi,
         jadwal: {
             hari1: [
