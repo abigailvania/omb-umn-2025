@@ -49,11 +49,11 @@ const InterviewPage = () => {
                   </p>
                 </div>
               </div>
-              
+
               <input
                 type="text"
                 placeholder="Cari nama..."
-                className="p-2 border border-gray-300 rounded-md mb-4 w-full"
+                className="p-2 border border-black-300 rounded-md mb-4 w-full"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
