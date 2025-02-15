@@ -50,10 +50,11 @@ const ApaItuOMB = () => {
     }, [isTransitioning]);
 
     return (
-        <section 
-            id="tentang-omb" 
-            className="flex flex-col lg:flex-row items-center justify-center w-full h-screen px-10 lg:px-16 py-10 mt-16 bg-white rounded-br-[75px] rounded-bl-[75px] shadow-lg relative"
+        <section
+        id="tentang-omb"
+        className="flex items-center justify-center w-full h-screen py-0 px-10 mt-16 relative bg-white rounded-br-3xl rounded-bl-3xl shadow-xl z-10"
         >
+
             <div className="relative flex-shrink-0 w-full max-w-md lg:max-w-lg overflow-hidden rounded-2xl aspect-video" ref={sliderRef}>
                 <div
                     className="flex w-full transition-transform duration-700 ease-in-out"
