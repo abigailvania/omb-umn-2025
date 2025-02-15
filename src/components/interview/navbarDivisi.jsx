@@ -22,7 +22,7 @@ const NavbarDivisi = () => {
       {selectedDivisi && (
         <div className="">
             <h2 className="text-2xl font-bold text-center">{selectedDivisi.divisi}</h2>
-          <img src={selectedDivisi.logoDivisi} alt={selectedDivisi.divisi} />
+          <img src={selectedDivisi.logoDivisi} alt={selectedDivisi.divisi} className="w-[200px]"/>
           <div className="mt-4 p-6 border rounded-lg shadow-lg bg-white w-full md:w-2/3 mx-auto">
             
             <div className="text-center text-lg font-semibold mt-2">
