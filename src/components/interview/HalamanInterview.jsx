@@ -15,17 +15,24 @@ const InterviewPage = () => {
       {/* Navbar Section */}
       <nav className="flex flex-wrap gap-2 p-4 rounded-lg shadow-md mt-6">
         {listInterview.map((divisi, index) => (
-          <button
+            <button
             key={index}
-            className={`px-4 py-2 text-white rounded-lg transition ${
-              selectedDivisi === divisi ? divisi.color : "bg-gray-500"
-            } hover:${divisi.color}`}
+            className={`px-4 py-2 text-white rounded-lg transition`}
+            style={{
+                backgroundColor: selectedDivisi === divisi ? divisi.color : "#a0a0a0",
+            }}
+            onMouseEnter={(e) => (e.target.style.backgroundColor = divisi.color)}
+            onMouseLeave={(e) =>
+                (e.target.style.backgroundColor =
+                selectedDivisi === divisi ? divisi.color : "#a0a0a0")
+            }
             onClick={() => setSelectedDivisi(divisi)}
-          >
+            >
             {divisi.divisi}
-          </button>
+            </button>
         ))}
-      </nav>
+        </nav>
+
 
       {/* Selected Division Section */}
       {selectedDivisi && (
