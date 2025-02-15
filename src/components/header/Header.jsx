@@ -41,7 +41,7 @@ function Header() {
                                 />
                             <div className="mt-[20px]">
                             <GlassButton
-                                text="LIHAT HASIL BATCH 1" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
+                                text="LIHAT HASIL BATCH 1" onClick={() => navigate("/interview")}
                                 className="text-white max-w-[180px] mt-[30px] z-10"
 
                             />
