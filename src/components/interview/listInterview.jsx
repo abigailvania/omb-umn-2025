@@ -145,7 +145,7 @@ const listInterview = [
                 {nama: "Enna Fiesta", nim: "00000068431"},
                 {nama: "Revo Alexandre", nim: "00000079025"},
             ],
-            hari1: [
+            hari2: [
                 {nama: "Sean Edmund Rukmana", nim: "00000106509"},
                 {nama: "Gilbert Valerian Liman", nim: "0000010809"},
                 {nama: "Marcello Hannan Elias", nim: "00000106270"},
@@ -153,7 +153,7 @@ const listInterview = [
                 {nama: "Evi Febriyanti", nim: "00000067370"},
                 {nama: "Meysa Event Jong", nim: "00000095376"},
             ],
-            hari1: [
+            hari3: [
                 {nama: "Steven Nathanael Surya Kennard", nim: "00000092946"},
                 {nama: "Justin Han Theodore", nim: "00000103776"},
                 {nama: "Peter Jonathan Tedjakusuma Boyfala", nim: "00000088992"},
@@ -176,7 +176,7 @@ const listInterview = [
                 {nama: "Kelvin Sutadi", nim: "00000089625"},
                 {nama: "Naomi Patricia Leandru", nim: "00000113941"},
             ],
-            hari1: [
+            hari2: [
                 {nama: "Jeremy Marvel", nim: "00000088987"},
                 {nama: "Jennifer Maria Daniella Kastilong", nim: "00000106205"},
                 {nama: "Gregorius Gigih Susetyantara", nim: "00000097022"},
@@ -200,7 +200,7 @@ const listInterview = [
                 {nama: "Michelle Clarissa", nim: "00000082733"},
                 {nama: "William Kwok", nim: "00000082480"}
             ],
-            hari1: [
+            hari2: [
                 {nama: "Maria Jovenathania Amaeldiasta Wattimury", nim: "00000119472"},
                 {nama: "Paramitha Irgina Sugianto", nim: "00000108235"},
                 {nama: "El Fide Glory Nafiri Atmodjo", nim: "00000106801"},
@@ -210,7 +210,7 @@ const listInterview = [
                 {nama: "Michelle Clarissa", nim: "00000082733"},
                 {nama: "William Kwok", nim: "00000082480"}
             ],
-            hari1: [
+            hari3: [
                 {nama: "Maria Jovenathania Amaeldiasta Wattimury", nim: "00000119472"},
                 {nama: "Paramitha Irgina Sugianto", nim: "00000108235"},
                 {nama: "El Fide Glory Nafiri Atmodjo", nim: "00000106801"},
@@ -329,7 +329,7 @@ const listInterview = [
                 {nama: "Darell Timothy Prawita", nim: "00000120805"},
                 {nama: "Sultan Malik Ibrahim", nim: "00000133592"},
             ],
-            hari1: [
+            hari2: [
                 {nama: "Jessica Audrey", nim: "00000113287"},
                 {nama: "Sharon Putri Kiathama", nim: "00000090447"},
                 {nama: "Rahel Christine Genovia Philip", nim: "00000117846"},
@@ -339,7 +339,7 @@ const listInterview = [
                 {nama: "Julio Gayus Vidianto", nim: "00000092454"},
                 {nama: "Vincentinus Darrel Wilson", nim: "00000125330"},
             ],
-            hari1: [
+            hari3: [
                 {nama: "Samantha Felicia L", nim: "00000133983"},
                 {nama: "Theofilius Martuado Arilo Rajagukguk", nim: "00000107586"},
                 {nama: "Geoffrey Raditya Kawinda", nim: "00000107663"},
