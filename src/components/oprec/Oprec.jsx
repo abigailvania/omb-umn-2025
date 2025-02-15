@@ -32,7 +32,7 @@ function Oprec() {
     return (
         <>
             <section className="oprec">
-                <div className="supergrafis absolute z-1 opacity-40">
+                <div className="supergrafis opacity-40">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
                 <div className="OprecText shadow-[0px_10px_10px_rgba(0,0,0,0.6)]">
@@ -53,15 +53,15 @@ function Oprec() {
                         <h1>DIVISI</h1>
                         <h6>Klik divisi untuk melihat informasi lebih lanjut.</h6>
                     </div>
-                    <div className="logo-divisi z-10">
+                    <div className="logo-divisi z-10 mb-[100px]">
                         {ContentDivisi.slice(0, 9).map((divisi, index) => (
                             <DivisiCard key={index} divisi={divisi} onClick={setSelectedDivisi} />
                         ))}
                     </div>
                 </div>
-                {/* <div className="ombak absolute bottom-[-10px] w-full">
-                    <img src={ombak} alt="ombak" className="w-full relative block p-0 z-900" />
-                </div> */}
+                <div className="ombak">
+                    <img src={ombak} alt="ombak" />
+                </div>
             </section>
             
             <AnimatePresence>
