@@ -107,13 +107,13 @@ const listInterview = [
         logoDivisi: Website,
         jadwal: {
             hari1: [
-                {nama: "Dylan Ervian", nim: "75730"},
-                {nama: "Darryl Cornelius Setiawan", nim: "98874"},
-                {nama: "Surya Novensky Tinus", nim: "108624"},
-                {nama: "Kelvin Sutadi", nim: "89625"},
-                {nama: "Naomi Patricia Leandru", nim: "113941"},
-                {nama: "Jeremy Marvel", nim: "88987"},
-                {nama: "Jennifer Maria Daniella Kastilong", nim: "106205"}
+                {nama: "Dylan Ervian", nim: "00000075730"},
+                {nama: "Darryl Cornelius Setiawan", nim: "00000098874"},
+                {nama: "Surya Novensky Tinus", nim: "00000108624"},
+                {nama: "Kelvin Sutadi", nim: "00000089625"},
+                {nama: "Naomi Patricia Leandru", nim: "00000113941"},
+                {nama: "Jeremy Marvel", nim: "00000088987"},
+                {nama: "Jennifer Maria Daniella Kastilong", nim: "00000106205"}
             ],
         }
     },
@@ -138,9 +138,9 @@ const listInterview = [
         logoDivisi: Desain,
         jadwal: {
             hari1: [
-                {nama: "Padma Natalie Tanarya", nim: "105805"},
-                {nama: "Candy Aurielle Surjana", nim: "108740"},
-                {nama: "Nadine Antoni", nim: "105832"}
+                {nama: "Padma Natalie Tanarya", nim: "00000105805"},
+                {nama: "Candy Aurielle Surjana", nim: "00000108740"},
+                {nama: "Nadine Antoni", nim: "00000105832"}
             ],
 
         }
@@ -179,34 +179,34 @@ const listInterview = [
         logoDivisi: Perlengkapan,
         jadwal: {
             hari1: [
-                {nama: "Vallent Liem", nim: "97273"},
-                {nama: "Muhammad Irfan Rizky Nasution", nim: "110639"},
-                {nama: "Farrel", nim: "99012"},
-                {nama: "Louis Jonathan", nim: "93996"},
-                {nama: "Muhamad Altha Rasjid", nim: "136220"},
-                {nama: "Maddava Arya Changgasukha", nim: "93678"},
+                {nama: "Vallent Liem", nim: "00000097273"},
+                {nama: "Muhammad Irfan Rizky Nasution", nim: "00000110639"},
+                {nama: "Farrel", nim: "00000099012"},
+                {nama: "Louis Jonathan", nim: "00000093996"},
+                {nama: "Muhamad Altha Rasjid", nim: "00000136220"},
+                {nama: "Maddava Arya Changgasukha", nim: "00000093678"},
             ],
             hari2: [
-                {nama: "Benedictus Agsel Prihanto", nim: "106221"},
-                {nama: "Calvin Khuang", nim: "83647"},
-                {nama: "Richi Michael Ng", nim: "97211"},
-                {nama: "Ariel Bravery", nim: "95287"},
-                {nama: "I Made Ariadne Bayanaka", nim: "113156"},
-                {nama: "Bisma Putra Aryasatya", nim: "88494"},
+                {nama: "Benedictus Agsel Prihanto", nim: "00000106221"},
+                {nama: "Calvin Khuang", nim: "00000083647"},
+                {nama: "Richi Michael Ng", nim: "00000097211"},
+                {nama: "Ariel Bravery", nim: "00000095287"},
+                {nama: "I Made Ariadne Bayanaka", nim: "00000113156"},
+                {nama: "Bisma Putra Aryasatya", nim: "00000088494"},
             ],
             hari3: [
-                {nama: "Kevin Thenggano Wijaya", nim: "100980"},
-                {nama: "Antonius William", nim: "127236"},
-                {nama: "Muhammad Shanolaf Malik", nim: "113244"},
-                {nama: "Allissa Handini Wilanda", nim: "112692"},
-                {nama: "Keane Amadeus Emmanuele Siento", nim: "89637"},
+                {nama: "Kevin Thenggano Wijaya", nim: "00000100980"},
+                {nama: "Antonius William", nim: "00000127236"},
+                {nama: "Muhammad Shanolaf Malik", nim: "00000113244"},
+                {nama: "Allissa Handini Wilanda", nim: "00000112692"},
+                {nama: "Keane Amadeus Emmanuele Siento", nim: "00000089637"},
             ],
             hari4: [
-                {nama: "Gabriel Stanza October", nim: "115749"},
-                {nama: "Jessica Clairine", nim: "121971"},
-                {nama: "Sean Rizkiardy Oktosera", nim: "107931"},
-                {nama: "Christellin Hasugian", nim: "126830"},
-                {nama: "Yoel Beny Christian", nim: "104698"}
+                {nama: "Gabriel Stanza October", nim: "00000115749"},
+                {nama: "Jessica Clairine", nim: "00000121971"},
+                {nama: "Sean Rizkiardy Oktosera", nim: "00000107931"},
+                {nama: "Christellin Hasugian", nim: "00000126830"},
+                {nama: "Yoel Beny Christian", nim: "00000104698"}
             ],
         }
     },
