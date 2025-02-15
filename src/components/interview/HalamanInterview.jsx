@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import listInterview from "./listInterview";
 import bgImage from "../../images/gradien/gradien2.png";
+import ombak from "../../images/ombak/OMBAK4.png";
 
 const InterviewPage = () => {
     const [selectedDivisi, setSelectedDivisi] = useState(null);
