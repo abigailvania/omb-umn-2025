@@ -14,6 +14,8 @@ import supergrafis from "../../images/supergrafis/SUP1.png";
 import ombak from "../../images/ombak/OMBAK1.png";
 
 function Header() {
+    const navigate = useNavigate();
+
     return (
         <>
             <section id="home-section" className="headerSection">
