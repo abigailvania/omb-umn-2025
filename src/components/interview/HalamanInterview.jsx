@@ -31,7 +31,7 @@ const InterviewPage = () => {
                 bg-[rgba(30,125,135,0.25)] backdrop-blur-sm shadow-[0_4px_10px_rgba(0,0,0,0.6)] 
                 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out border-none outline-none 
                 hover:bg-[rgba(30,125,135,0.4)] hover:shadow-[0_6px_15px_rgba(0,0,0,0.6)]
-                w-full md:w-auto `}
+                w-[100px] md:w-auto `}
             style={{
                 backgroundColor: selectedDivisi === divisi ? divisi.color : "rgba(30,125,135,0.25)",
             }}
