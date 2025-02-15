@@ -17,9 +17,13 @@ function Peraturan() {
                     </h1>
                 </div>
                 <div className="mt-4 space-y-2 text-gray-700 text-sm sm:text-base md:text-lg">
-                    <p>1. </p>
-                    <p>2. </p>
-                    <p>3. </p>
+                    <p>1. Peserta wawancara wajib hadir tepat waktu sesuai dengan jadwal yang ditentukan.</p>
+                    <p>2. Peserta wajib berpakaian sesuai dengan peraturan kampus.</p>
+                    <p>3. Isi nama masing-masing pada kertas “Daftar Urutan Wawancara.”</p>
+                    <p>4. Peserta wawancara akan dipanggil masuk berurutan sesuai urutan yang tertulis.</p>
+                    <p>5. Selama menunggu sesi wawancara masing-masing, dipersilakan menunggu di lorong depan ruang wawancara dan menjaga ketenangan agar tidak mengganggu sesi wawancara di dalam ruang kelas.</p>
+                    <p>6. Dilarang makan dan minum (kecuali jika dipersilakan) selama sesi wawancara berlangsung.</p>
+                    <p>7. Dilarang menyebarkan isi wawancara kepada pihak mana pun (terutama ke sesama peserta wawancara OMB UMN 2025).</p>
                 </div>
 
                 <div className="mt-6 flex justify-center">

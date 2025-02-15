@@ -15,7 +15,7 @@ const InterviewPage = () => {
           style={{ backgroundImage: `url(${bgImage})` }}>
           <div className="text-center">
             <h1 className="text-2xl font-bold">Daftar Peserta Interview</h1>
-            <p className="text-lg">Mohon Memperhatikan Tanggal dan Waktu interview</p>
+            <p className="text-lg">Selamat, kamu lolos ke tahap wawancara!</p>
           </div>
   
           <nav className="flex justify-center flex-wrap items-center gap-2 p-4 ">
