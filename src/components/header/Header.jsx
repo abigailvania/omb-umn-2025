@@ -39,7 +39,7 @@ function Header() {
                                     className="text-white max-w-[180px] mt-[30px] z-10"
     
                                 />
-                            <div className="mb-[20px]">
+                            <div className="mt-[20px]">
                             <GlassButton
                                 text="DAFTAR SEKARANG!" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                                 className="text-white max-w-[180px] mt-[30px] z-10"
