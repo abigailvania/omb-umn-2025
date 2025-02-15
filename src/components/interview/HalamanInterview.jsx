@@ -58,7 +58,7 @@ const InterviewPage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 w-full">
               {Object.entries(selectedDivisi.jadwal).map(([hari, pesertaList], index) => (
                 <div key={index} className="p-6 border rounded-lg shadow-lg bg-white">
                   <div className="text-center text-lg font-semibold">
