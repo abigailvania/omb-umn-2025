@@ -41,7 +41,7 @@ const InterviewPage = () => {
         </nav>
 
         {selectedDivisi && (
-          <div className="flex flex-col items-center w-full md:w-2/3 mx-auto mt-6">
+          <div className="flex flex-col items-center w-full md:w-2/3 mx-auto mt-6 sm:p-[10px]">
             <div className="flex items-center gap-4 mb-6">
               <img
                 src={selectedDivisi.logoDivisi}
@@ -58,7 +58,7 @@ const InterviewPage = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 w-full sm:w-90">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 w-full">
               {Object.entries(selectedDivisi.jadwal).map(([hari, pesertaList], index) => (
                 <div key={index} className="p-6 border rounded-lg shadow-lg bg-white">
                   <div className="text-center text-lg font-semibold">
