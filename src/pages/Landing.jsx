@@ -9,8 +9,8 @@ import Navbar from "../components/navbar/Navbar.jsx";
 const Landing = () => {
     return (
         <>
-            <Header />
             <Navbar />
+            <Header />
             <section id="tentang-omb">
                 <ApaItuOMB />
             </section>
@@ -18,7 +18,7 @@ const Landing = () => {
             <section id="oprec-section">
                 <Oprec />
             </section>
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 };
