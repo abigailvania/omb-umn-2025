@@ -11,9 +11,13 @@ const Landing = () => {
         <>
             <Navbar />
             <Header />
-            <ApaItuOMB />
+            <section id="tentang-omb">
+                <ApaItuOMB />
+            </section>
             <Youtube />
-            <Oprec />
+            <section id="oprec-section">
+                <Oprec />
+            </section>
             <Footer />
         </>
     );
