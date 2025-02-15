@@ -6,10 +6,10 @@ const InterviewPage = () => {
   const [selectedDivisi, setSelectedDivisi] = useState(null);
 
   return (
-    <div className="h-full w-full relative bg-cover bg-center bg-no-repeat" 
+    <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px]" 
         style={{ backgroundImage: `url(${bgImage})` }}
     >
-        <div className="mt-[140px] text-center">
+        <div className="text-center">
           <h1 className="text-2xl font-bold">Daftar Peserta Interview</h1>
           <p className="text-lg">Mohon Memperhatikan Tanggal dan Waktu interview</p>
         </div>
