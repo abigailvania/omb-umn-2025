@@ -18,6 +18,7 @@ const Interview = () => {
       <Peraturan />
       <Navbar />
       <HalamanInterview />
+      <Footer />
     </div>
   );
 };
