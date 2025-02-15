@@ -9,7 +9,6 @@ const InterviewPage = () => {
 
   const specialDivisi = "ARUTALA";
 
-  // Set default selectedDivisi to the first divisi in listInterview
   useEffect(() => {
     if (listInterview.length > 0) {
       setSelectedDivisi(listInterview[0]);
