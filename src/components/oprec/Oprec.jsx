@@ -59,9 +59,9 @@ function Oprec() {
                         ))}
                     </div>
                 </div>
-                <div className="ombak absolute bottom-[-10px] w-full">
+                {/* <div className="ombak absolute bottom-[-10px] w-full">
                     <img src={ombak} alt="ombak" className="w-full relative block p-0 z-900" />
-                </div>
+                </div> */}
             </section>
             
             <AnimatePresence>
