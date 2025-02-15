@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Landing from "./pages/Landing.jsx";
 import Interview from "./pages/interview.jsx";
-import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (

@@ -40,12 +40,12 @@ const Navbar2 = () => {
           <img src={logo} alt="Logo" className="h-[80px] m-0 p-0" />
           <ul className="list-none flex gap-[15px] md:gap-[30px] p-0 m-0">
             <li className="flex items-center">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="no-underline text-[16px] md:text-[20px] text-white font-bold flex items-center h-full"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="relative flex items-center">
                 <button
