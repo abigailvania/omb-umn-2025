@@ -80,6 +80,13 @@ const listInterview = [
         logoDivisi: Acara,
         color: "#D6002E",
         jadwal: {
+            ATURAN: [
+                {nama: "1. ", nim: "HAIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"},
+                {nama: " a ", nim: " b "},
+                {nama: " a ", nim: " b "},
+                {nama: " a ", nim: " b "},
+                {nama: " a ", nim: " b "},
+            ],
             hari1: [
                 {nama: " a ", nim: " b "},
                 {nama: " a ", nim: " b "},
