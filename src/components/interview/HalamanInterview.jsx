@@ -58,6 +58,14 @@ const InterviewPage = () => {
               </div>
             </div>
 
+            <input
+                type="text"
+                placeholder="Cari nama..."
+                className="p-2 border border-gray-300 rounded-md mb-4 w-full"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+            />
+
             <div className="grid grid-cols-1 md:grid-cols-1 gap-6 w-full">
               {Object.entries(selectedDivisi.jadwal).map(([hari, pesertaList], index) => (
                 <div key={index} className="p-6 border rounded-lg shadow-lg bg-white">
