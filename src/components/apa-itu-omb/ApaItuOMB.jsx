@@ -1,12 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './ApaItuOMB.scss';
-
 import foto1 from '../../assets/images/foto-1.jpg';
 import foto2 from '../../assets/images/foto-2.jpg';
 import foto3 from '../../assets/images/foto-3.jpg';
 import foto4 from '../../assets/images/foto-4.jpg';
 import foto5 from '../../assets/images/foto-5.jpg';
-
 
 const ApaItuOMB = () => {
     const originalImages = [foto1, foto2, foto3, foto4, foto5];
@@ -53,26 +50,29 @@ const ApaItuOMB = () => {
     }, [isTransitioning]);
 
     return (
-        <section id="tentang-omb" className="flex items-center justify-center w-full h-screen py-0 px-[40px] mt-[60px] relative bg-white rounded-br-[75px] rounded-bl-[75px] shadow-[0px_10px_10px_rgba(0,0,0,0.5)] z-1">
-            <div className="apaituomb_slider z-1" ref={sliderRef}>
+        <section 
+            id="tentang-omb" 
+            className="flex flex-col lg:flex-row items-center justify-center w-full h-screen px-10 lg:px-16 py-10 mt-16 bg-white rounded-br-[75px] rounded-bl-[75px] shadow-lg relative"
+        >
+            <div className="relative flex-shrink-0 w-full max-w-md lg:max-w-lg overflow-hidden rounded-2xl aspect-video" ref={sliderRef}>
                 <div
-                    className="apaituomb_slider_inner"
+                    className="flex w-full transition-transform duration-700 ease-in-out"
                     style={{
                         transform: `translateX(-${currentIndex * sliderWidth}px)`, 
                         transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
                     }}
                 >
                     {images.map((image, index) => (
-                        <img key={index} src={image} alt="OMB" className="apaituomb_image" />
+                        <img key={index} src={image} alt="OMB" className="w-full h-full object-cover" />
                     ))}
                 </div>
             </div>
 
-            <div className="apaituomb_content">
-                <h1>Apa itu OMB?</h1>
-                <p>
+            <div className="mt-8 lg:mt-0 lg:ml-12 max-w-lg text-center lg:text-left">
+                <h1 className="text-2xl lg:text-3xl font-bold text-[#1E7D87] mb-4">Apa itu OMB?</h1>
+                <p className="text-base lg:text-lg text-gray-700 leading-relaxed">
                     Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di
-                    <a href="https://www.umn.ac.id/en/home/" target="_blank" rel="noopener noreferrer"> Universitas Multimedia Nusantara</a> (UMN).
+                    <a href="https://www.umn.ac.id/en/home/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline"> Universitas Multimedia Nusantara</a> (UMN).
                     Melalui serangkaian kegiatan yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan,
                     dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
                 </p>
