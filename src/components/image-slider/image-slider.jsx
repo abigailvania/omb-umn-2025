@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './image-slider.scss';
 
 const ImageSlider = ({ images, interval = 2000 }) => {
     const extendedImages = [...images, images[0]];
@@ -39,16 +38,13 @@ const ImageSlider = ({ images, interval = 2000 }) => {
     }, [isTransitioning, currentIndex]);
 
     return (
-        <div className="image-slider" ref={sliderRef}>
+        <div className="flex-none md:w-full md:h-[250px] overflow-hidden relative rounded-[10px] aspect-[16/9] mx-auto" ref={sliderRef}>
             <div
-                className="image-slider-inner"
-                style={{
-                    transform: `translateX(-${currentIndex * sliderWidth}px)`,
-                    transition: isTransitioning ? 'transform 0.7s ease-in-out' : 'none',
-                }}
+                className={`flex w-full ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
+                style={{ transform: `translateX(-${currentIndex * sliderWidth}px)` }}
             >
                 {extendedImages.map((image, index) => (
-                    <img key={index} src={image} alt="Slide" className="slider-image" />
+                    <img key={index} src={image} alt="Slide" className="flex-none w-full h-full object-cover transition-opacity duration-500 ease-in-out" />
                 ))}
             </div>
         </div>
