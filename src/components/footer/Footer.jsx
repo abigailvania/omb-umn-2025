@@ -10,7 +10,7 @@ import line from "../../images/header-footer/line.png";
 
 function Footer() {
     return (
-        <div className="footerSection">
+        <div className="footerSection relative w-full bg-[url('/foto-footer-1.png')]">
             <div className="content">
                 <div className="flex flex-row justify-between items-center mt-50 flexfooter">
                     <div className="flex-1 text-center order-2
