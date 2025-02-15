@@ -27,11 +27,11 @@ const InterviewPage = () => {
         {listInterview.map((divisi, index) => (
             <button
             key={index}
-            className={`relative px-10 py-4 rounded-full text-white font-bold 
+            className={`relative px-4 py-2 rounded-full text-white font-bold 
                 bg-[rgba(30,125,135,0.25)] backdrop-blur-sm shadow-[0_4px_10px_rgba(0,0,0,0.6)] 
                 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out border-none outline-none 
                 hover:bg-[rgba(30,125,135,0.4)] hover:shadow-[0_6px_15px_rgba(0,0,0,0.6)]
-                w-full sm:w-auto md:w-[200px]`} 
+                w-full sm:w-[150px] md:w-[200px]`} 
             style={{
                 backgroundColor: selectedDivisi === divisi ? divisi.color : "rgba(30,125,135,0.25)",
             }}
@@ -41,6 +41,7 @@ const InterviewPage = () => {
             </button>
         ))}
         </nav>
+
 
 
 
