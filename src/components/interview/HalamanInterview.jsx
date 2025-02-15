@@ -10,7 +10,7 @@ const InterviewPage = () => {
     const specialDivisi = "ARUTALA";
   
     return (
-      <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px] pb-[100px]" 
+      <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px] pb-[100px] mb-[100px]" 
           style={{ backgroundImage: `url(${bgImage})` }}>
           <div className="text-center">
             <h1 className="text-2xl font-bold">Daftar Peserta Interview</h1>
