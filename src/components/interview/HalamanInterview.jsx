@@ -14,7 +14,7 @@ const InterviewPage = () => {
           <p className="text-lg">Mohon Memperhatikan Tanggal dan Waktu interview</p>
         </div>
 
-        <nav className="flex justify-center flex-wrap items-center gap-2 p-4 rounded-lg shadow-md mt-6">
+        <nav className="flex justify-center flex-wrap items-center gap-2 p-4 ">
           {listInterview.map((divisi, index) => (
             <button
               key={index}
