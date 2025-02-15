@@ -9,8 +9,8 @@ import Navbar from "../components/navbar/Navbar.jsx";
 const Landing = () => {
     return (
         <>
-            <Navbar />
             <Header />
+            <Navbar />
             <section id="tentang-omb">
                 <ApaItuOMB />
             </section>
