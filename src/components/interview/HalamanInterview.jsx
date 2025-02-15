@@ -25,21 +25,23 @@ const InterviewPage = () => {
 
       <nav className="flex justify-center flex-wrap items-center gap-2 p-4 Z-901">
         {listInterview.map((divisi, index) => (
-          <button
+            <button
             key={index}
             className={`relative px-10 py-4 rounded-full text-white font-bold 
                 bg-[rgba(30,125,135,0.25)] backdrop-blur-sm shadow-[0_4px_10px_rgba(0,0,0,0.6)] 
                 overflow-hidden cursor-pointer transition-all duration-300 ease-in-out border-none outline-none 
-                hover:bg-[rgba(30,125,135,0.4)] hover:shadow-[0_6px_15px_rgba(0,0,0,0.6)]`}
+                hover:bg-[rgba(30,125,135,0.4)] hover:shadow-[0_6px_15px_rgba(0,0,0,0.6)]
+                w-full md:w-auto flex-grow`}
             style={{
-              backgroundColor: selectedDivisi === divisi ? divisi.color : "rgba(30,125,135,0.25)",
+                backgroundColor: selectedDivisi === divisi ? divisi.color : "rgba(30,125,135,0.25)",
             }}
             onClick={() => setSelectedDivisi(divisi)}
-          >
+            >
             {divisi.divisi}
-          </button>
+            </button>
         ))}
-      </nav>
+        </nav>
+
 
       {selectedDivisi && (
         <div className="flex flex-col items-center w-full md:w-2/3 mx-auto mt-6 p-[10px]">
