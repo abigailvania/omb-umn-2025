@@ -7,7 +7,7 @@ const InterviewPage = () => {
   const [selectedDivisi, setSelectedDivisi] = useState(null);
 
   return (
-    <div className="relative w-full h-screen bg-cover bg-center bg-no-repeat" 
+    <div className="mt-0 relative w-full h-screen bg-cover bg-center bg-no-repeat" 
         style={{ backgroundImage: `url(${bgImage})` }}
     >
         <div className="mt-[140px] text-center">
