@@ -28,35 +28,26 @@ const NavbarDivisi = () => {
               <p className="text-xl md:text-2xl font-bold text-black">{selectedDivisi.nama}</p>
             </div>  
           </div>
-          <div className="p-6 border rounded-lg shadow-lg bg-white w-full">
-            <div className="text-center text-lg font-semibold mt-2">
-              <p>Tanggal: {selectedDay}</p>
-            </div>
 
-            <div className="text-center mt-4">
-              <label className="mr-2 font-semibold">Pilih Hari:</label>
-              <select
-                className="border p-2 rounded"
-                onChange={(e) => setSelectedDay(e.target.value)}
-                value={selectedDay}
-              >
-                {Object.keys(selectedDivisi.jadwal).map((hari, index) => (
-                  <option key={index} value={hari}>{hari}</option>
-                ))}
-              </select>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+            {Object.entries(selectedDivisi.jadwal).map(([hari, pesertaList], index) => (
+              <div key={index} className="p-6 border rounded-lg shadow-lg bg-white">
+                <div className="text-center text-lg font-semibold">
+                  <p className="text-[#16667C]">{hari}</p>
+                </div>
 
-            <ul className="mt-4 text-center">
-              {selectedDivisi.jadwal[selectedDay].map((peserta, index) => (
-                <li key={index} className="py-2 border-b last:border-none">
-                  {peserta.nama} - {peserta.nim}
-                </li>
-              ))}
-            </ul>
+                <ul className="mt-4 text-center">
+                  {pesertaList.map((peserta, idx) => (
+                    <li key={idx} className="py-2 border-b last:border-none">
+                      {peserta.nama} - {peserta.nim}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       )}
-
     </div>
   );
 };
