@@ -32,7 +32,7 @@ function Oprec() {
     return (
         <>
             <section className="oprec">
-                <div className="supergrafis opacity-40">
+                <div className="supergrafis absolute z-1 opacity-40">
                     <img src={supergrafis} alt="supergrafis" />
                 </div>
                 <div className="OprecText shadow-[0px_10px_10px_rgba(0,0,0,0.6)]">
