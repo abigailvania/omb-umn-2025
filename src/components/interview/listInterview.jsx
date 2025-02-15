@@ -19,7 +19,7 @@ const listInterview = [
         logoDivisi: Pic,
         color: "#FE829C",
         jadwal: {
-            hari1: [
+            "Senin, 17 Februari 2025 (C1002)": [
                 {nama: "Ardel Toti Febyriyan Tanis", nim: "00000125172"},
                 {nama: "Sebastian Benaya", nim: "00000124636"},
                 {nama: "Rafella Natasha Djaja", nim: "00000114588"},
@@ -33,6 +33,9 @@ const listInterview = [
                 {nama: "Syalendra Putra Aditama", nim: "00000124898"},
                 {nama: "Anaya Putri Adriani", nim: "00000126898"},
                 {nama: "Alexander Briant", nim: "00000099774"},
+                
+            ],
+            "Senin, 17 Februari 2025 (C1001)": [
                 {nama: "Aurelia Levina Wiggins", nim: "00000106844"},
                 {nama: "Julio Michael Putra Kwary", nim: "00000115692"},
                 {nama: "Aditya Gautama Thendy", nim: "00000127938"},
@@ -47,7 +50,7 @@ const listInterview = [
                 {nama: "Peter Huang", nim: "00000136319"},
                 {nama: "Edward Wijaya", nim: "00000095999"},
             ],
-            hari2: [
+            "Selasa, 18 Februari 2025 (D1201)": [
                 {nama: "Musa Louis Gerrit Parera", nim: "00000108677"},
                 {nama: "Davina Audria Antoni", nim: "00000100708"},
                 {nama: "Fayola", nim: "00000113703"},
@@ -63,6 +66,9 @@ const listInterview = [
                 {nama: "Aline Fayola Linardo", nim: "00000115665"},
                 {nama: "Yehezkiel Natanael", nim: "00000079871"},
                 {nama: "Chintia Calysta", nim: "00000117946"},
+            ],
+            "Selasa, 18 Februari 2025 (D1202)": [
+
                 {nama: "Maria Miracolosa Hanalaura", nim: "00000108345"},
                 {nama: "Angel", nim: "00000117621"},
                 {nama: "BK Ditha Olivia", nim: "00000118218"},
@@ -75,7 +81,7 @@ const listInterview = [
                 {nama: "Lady Serenity", nim: "00000116174"},
                 {nama: "Sherina Miawati Akasah", nim: "00000114447"},
             ],
-            hari3: [
+            "Rabu, 19 Februari 2025 (D1601)": [
                 {nama: "Michelle Liu", nim: "00000108447"},
                 {nama: "Harlan Johanes Parjuangan Tambunan", nim: "00000135596"},
                 {nama: "Aldrian Putra Pratama", nim: "00000121626"},
@@ -89,6 +95,8 @@ const listInterview = [
                 {nama: "Aiman Elhamy Ajmal", nim: "00000127334"},
                 {nama: "Talitha Syifa Azzahra", nim: "00000133423"},
                 {nama: "Eunike Fernanda", nim: "00000113509"},
+            ],
+            "Rabu, 19 Februari 2025 (D1602)": [
                 {nama: "Lysia Callysta Dharmawan", nim: "00000124423"},
                 {nama: "Lauren Maidelin", nim: "00000111150"},
                 {nama: "Rheznandya Reyhan Abtiansyah", nim: "00000087590"},
@@ -112,7 +120,7 @@ const listInterview = [
         color: "#D6002E",
         jadwal: {
 
-            hari1: [
+            "Senin, 17 Februari 2025 (C1007)": [
                 {nama: "Angelia Monika", nim: "00000120842"},
                 {nama: "Isabel Audrey Wijaya", nim: "00000120868"},
                 {nama: "Dennis Aaron", nim: "0000079897"},
@@ -121,7 +129,7 @@ const listInterview = [
                 {nama: "Princess Sabrina Hadiwidjaja", nim: "0000107435"},
                 {nama: "Illiona Hartanto", nim: "00000111230"},
                 {nama: "Tamara Putri Salwa", nim: "0000130035"},
-                {nama: "Marvella Charissa Chuaca", nim: "0000100819"},
+                {nama: "Marvella Charisa Chuaca", nim: "0000100819"},
                 {nama: "Calista Daniela Hartono", nim: "0000076924"},
                 {nama: "Ivy Aurelie Grazia", nim: "0000111895"},
                 {nama: "Ignatius Pranata Saptosiwi", nim: "0000114009"},
@@ -137,7 +145,7 @@ const listInterview = [
         logoDivisi: Dokumentasi,
         color: "#F6740D",
         jadwal: {
-            hari1: [
+            "Rabu, 19 Februari 2025 (D1606)": [
                 {nama: "Nathaniel Taslim", nim: "00000116440"},
                 {nama: "Hana Kristalia Sekar Melati", nim: "00000105508"},
                 {nama: "Timotius Harry Mercubuwono", nim: "00000069026"},
@@ -145,7 +153,7 @@ const listInterview = [
                 {nama: "Enna Fiesta", nim: "00000068431"},
                 {nama: "Revo Alexandre", nim: "00000079025"},
             ],
-            hari2: [
+            "Kamis, 20 Februari 2025 (D1206)": [
                 {nama: "Sean Edmund Rukmana", nim: "00000106509"},
                 {nama: "Gilbert Valerian Liman", nim: "0000010809"},
                 {nama: "Marcello Hannan Elias", nim: "00000106270"},
@@ -153,7 +161,7 @@ const listInterview = [
                 {nama: "Evi Febriyanti", nim: "00000067370"},
                 {nama: "Meysa Event Jong", nim: "00000095376"},
             ],
-            hari3: [
+            "Jumat, 21 Februari 2025 (D1206)": [
                 {nama: "Steven Nathanael Surya Kennard", nim: "00000092946"},
                 {nama: "Justin Han Theodore", nim: "00000103776"},
                 {nama: "Peter Jonathan Tedjakusuma Boyfala", nim: "00000088992"},
@@ -169,14 +177,14 @@ const listInterview = [
         logoDivisi: Website,
         color: "#F7CD1C",
         jadwal: {
-            hari1: [
+            "Senin, 17 Februari 2025 (C1004)": [
                 {nama: "Dylan Ervian", nim: "00000075730"},
                 {nama: "Darryl Cornelius Setiawan", nim: "00000098874"},
                 {nama: "Surya Novensky Tinus", nim: "00000108624"},
                 {nama: "Kelvin Sutadi", nim: "00000089625"},
                 {nama: "Naomi Patricia Leandru", nim: "00000113941"},
             ],
-            hari2: [
+            "Senin, 24 Februari 2025 (D1204)": [
                 {nama: "Jeremy Marvel", nim: "00000088987"},
                 {nama: "Jennifer Maria Daniella Kastilong", nim: "00000106205"},
                 {nama: "Gregorius Gigih Susetyantara", nim: "00000097022"},
@@ -190,7 +198,7 @@ const listInterview = [
         logoDivisi: Pr,
         color: "#999DA0",
         jadwal: {
-            hari1: [
+            "Senin, 17 Februari 2025 (C1012)": [
                 {nama: "Maria Jovenathania Amaeldiasta Wattimury", nim: "00000119472"},
                 {nama: "Paramitha Irgina Sugianto", nim: "00000108235"},
                 {nama: "El Fide Glory Nafiri Atmodjo", nim: "00000106801"},
@@ -200,7 +208,7 @@ const listInterview = [
                 {nama: "Michelle Clarissa", nim: "00000082733"},
                 {nama: "William Kwok", nim: "00000082480"}
             ],
-            hari2: [
+            "Rabu, 19 Februari 2025 (D1612)": [
                 {nama: "Maria Jovenathania Amaeldiasta Wattimury", nim: "00000119472"},
                 {nama: "Paramitha Irgina Sugianto", nim: "00000108235"},
                 {nama: "El Fide Glory Nafiri Atmodjo", nim: "00000106801"},
@@ -210,7 +218,7 @@ const listInterview = [
                 {nama: "Michelle Clarissa", nim: "00000082733"},
                 {nama: "William Kwok", nim: "00000082480"}
             ],
-            hari3: [
+            "Kamis, 20 Februari 2025 (D1212)": [
                 {nama: "Maria Jovenathania Amaeldiasta Wattimury", nim: "00000119472"},
                 {nama: "Paramitha Irgina Sugianto", nim: "00000108235"},
                 {nama: "El Fide Glory Nafiri Atmodjo", nim: "00000106801"},
@@ -229,7 +237,7 @@ const listInterview = [
         logoDivisi: Desain,
         color: "#4ED2D8",
         jadwal: {
-            hari1: [
+            "Selasa, 18 Februari 2025 (D1205)": [
                 {nama: "Padma Natalie Tanarya", nim: "105805 17.30-17.50"},
                 {nama: "Candy Aurielle Surjana", nim: "108740 17.50-18.10"},
                 {nama: "Nadine Antoni", nim: "105832 18.10-18.30"},
@@ -246,7 +254,7 @@ const listInterview = [
         logoDivisi: Keamanan,
         color: "#000000",
         jadwal: {
-            hari1: [
+            "Selasa, 18 Februari 2025 (D1208)": [
                 {nama: "Pierre E.S Moningka", nim: "00000128411"},
                 {nama: "Yohanna Mariam Walmsley", nim: "00000129380"},
                 {nama: "Eugenia Audrey", nim: "00000131734"},
@@ -260,12 +268,12 @@ const listInterview = [
                 {nama: "Hasna Hana Maritza", nim: "00000136305"},
                 {nama: "Beatrice Graciela Hadi", nim: "00000112045"},
             ],
-            hari2: [
+            "Kamis, 20 Februari 2025 (D1208)": [
                 {nama: "Teresia Tamba", nim: "00000112017"},
                 {nama: "Frederick Kristian Putra", nim: "00000116234"},
                 {nama: "Jeanette Aprilia Ongah", nim: "00000092425"},
                 {nama: "Mochamad Rifky Fauzan", nim: "00000126061"},
-                {nama: "Katharine Rianti Meawa Pode", nim: "00000122441"},
+                {nama: "Katharie Rianti Meawa Pode", nim: "00000122441"},
                 {nama: "Danysah Salma Yusuf", nim: "00000136427"},
                 {nama: "Angelica Victoria Cassandra", nim: "00000077048"},
                 {nama: "Alula Faiza Aisyah", nim: "00000114075"},
@@ -281,7 +289,7 @@ const listInterview = [
         logoDivisi: Perlengkapan,
         color: "#9D09DB",
         jadwal: {
-            "Senin, 17 Februari 2025 (C1002)": [
+            "Rabu, 19 Februari 2025 (D1611)": [
                 {nama: "Vallent Liem", nim: "00000097273"},
                 {nama: "Muhammad Irfan Rizky Nasution", nim: "00000110639"},
                 {nama: "Farrel", nim: "00000099012"},
@@ -289,7 +297,7 @@ const listInterview = [
                 {nama: "Muhamad Altha Rasjid", nim: "00000136220"},
                 {nama: "Maddava Arya Changgasukha", nim: "00000093678"},
             ],
-            hari2: [
+            "Kamis, 20 Februari 2025 (D1211)": [
                 {nama: "Benedictus Agsel Prihanto", nim: "00000106221"},
                 {nama: "Calvin Khuang", nim: "00000083647"},
                 {nama: "Richi Michael Ng", nim: "00000097211"},
@@ -297,14 +305,14 @@ const listInterview = [
                 {nama: "I Made Ariadne Bayanaka", nim: "00000113156"},
                 {nama: "Bisma Putra Aryasatya", nim: "00000088494"},
             ],
-            hari3: [
+            "Kamis, 27 Februari 2025 (D1211)": [
                 {nama: "Kevin Thenggano Wijaya", nim: "00000100980"},
                 {nama: "Antonius William", nim: "00000127236"},
                 {nama: "Muhammad Shanolaf Malik", nim: "00000113244"},
                 {nama: "Allissa Handini Wilanda", nim: "00000112692"},
                 {nama: "Keane Amadeus Emmanuele Siento", nim: "00000089637"},
             ],
-            hari4: [
+            "Jumat, 28 Februari 2025 (D1611)": [
                 {nama: "Gabriel Stanza October", nim: "00000115749"},
                 {nama: "Jessica Clairine", nim: "00000121971"},
                 {nama: "Sean Rizkiardy Oktosera", nim: "00000107931"},
@@ -320,7 +328,7 @@ const listInterview = [
         logoDivisi: Konsumsi,
         color: "#C67F4F",
         jadwal: {
-            hari1: [
+            "Senin, 17 Februari 2025 (C1010)": [
                 {nama: "Joy Rockniel Abadi", nim: "00000069233"},
                 {nama: "Faila Sofia Amanda Putri", nim: "00000118064"},
                 {nama: "Nabilah Zahran", nim: "00000087480"},
@@ -329,7 +337,7 @@ const listInterview = [
                 {nama: "Darell Timothy Prawita", nim: "00000120805"},
                 {nama: "Sultan Malik Ibrahim", nim: "00000133592"},
             ],
-            hari2: [
+            "Rabu, 19 Februari 2025 (D1610)": [
                 {nama: "Jessica Audrey", nim: "00000113287"},
                 {nama: "Sharon Putri Kiathama", nim: "00000090447"},
                 {nama: "Rahel Christine Genovia Philip", nim: "00000117846"},
@@ -339,7 +347,7 @@ const listInterview = [
                 {nama: "Julio Gayus Vidianto", nim: "00000092454"},
                 {nama: "Vincentinus Darrel Wilson", nim: "00000125330"},
             ],
-            hari3: [
+            "Selasa, 25 Februari 2025 (D1210)": [
                 {nama: "Samantha Felicia L", nim: "00000133983"},
                 {nama: "Theofilius Martuado Arilo Rajagukguk", nim: "00000107586"},
                 {nama: "Geoffrey Raditya Kawinda", nim: "00000107663"},
@@ -347,7 +355,7 @@ const listInterview = [
                 {nama: "Muhammad Raffaldy", nim: "00000106377"},
                 {nama: "Ghenaya Putri Islamy", nim: "00000136559"},
             ],
-            hari1: [
+            "Rabu, 26 Februari 2025 (D1210)": [
                 {nama: "Salma Maliha Khairriya Jannah", nim: "00000115917"},
                 {nama: "Felicia Kumalasari", nim: "00000127327"}
             ],
