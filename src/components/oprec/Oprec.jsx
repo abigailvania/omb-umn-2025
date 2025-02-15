@@ -84,11 +84,9 @@ function Oprec() {
                             <div className="flex flex-col md:flex-row items-center text-center">
                                 <div className="flex flex-col md:flex-row items-start text-left mt-0">
                                     <div className="detail-divisi flex flex-col items-start mx-4 w-full mb-0">
-                                        {/* Nama dan Nama */}
                                         <h2 className="judul text-2xl font-bold">{selectedDivisi.name}</h2>
                                         <h3 className="text-lg font-semibold">{selectedDivisi.nama}</h3>
 
-                                        {/* Gambar Logo */}
                                         <div className="flex justify-start my-4">
                                             <img
                                                 src={selectedDivisi.logoImg}
@@ -97,7 +95,6 @@ function Oprec() {
                                             />
                                         </div>
 
-                                        {/* Informasi Logo & Arti */}
                                         <div className="bg-gray-200 p-4 rounded-lg border w-[200px] max-w-sm shadow-[0px_4px_10px_rgba(0,0,0,0.6)]">
                                             <div className="flex">
                                                 <div className="w-16 flex justify-between">
@@ -115,7 +112,6 @@ function Oprec() {
                                             </div>
                                         </div>
 
-                                        {/* Tombol Daftar */}
                                         <div className="tombol-daftar mt-[20px] rounded-lg mb-[15px]">
                                             <button className="text-white w-[200px] h-[40px] shadow-[0px_4px_10px_rgba(0,0,0,0.6)] rounded-lg" onClick={() => window.location.href = selectedDivisi.link} > 
                                                 Daftar
