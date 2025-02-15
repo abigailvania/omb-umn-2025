@@ -1,3 +1,7 @@
+import React, { useState } from "react";
+import listInterview from "./listInterview";
+import bgImage from "../../images/gradien/gradien2.png";
+
 const InterviewPage = () => {
     const [selectedDivisi, setSelectedDivisi] = useState(null);
     const [searchTerm, setSearchTerm] = useState("");
@@ -105,3 +109,5 @@ const InterviewPage = () => {
     );
   };
   
+
+export default InterviewPage;
