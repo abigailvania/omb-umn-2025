@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "../components/navbar/Navbar2";
 import HeaderInterview from "../components/interview/headerInterview";
 import Peraturan from "../components/interview/aturanInterview";
 import NavbarDivisi from "../components/interview/navbarDivisi";
