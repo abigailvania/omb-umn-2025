@@ -9,6 +9,8 @@ import Navbar from "../components/navbar/Navbar.jsx";
 const Landing = () => {
     return (
         <>
+        <div className="max-w-full">
+
             <Navbar />
             <Header />
             <section id="tentang-omb">
@@ -19,6 +21,7 @@ const Landing = () => {
                 <Oprec />
             </section>
             <Footer />
+        </div>
         </>
     );
 };
