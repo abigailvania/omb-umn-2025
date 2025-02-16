@@ -74,7 +74,7 @@ const ApaItuOMB = () => {
                 <h1 className="text-2xl lg:text-3xl font-bold text-[#1E7D87] mb-4">Apa itu OMB?</h1>
                 <p className="text-base lg:text-lg text-gray-700 leading-relaxed">
                     Orientasi Mahasiswa Baru (OMB) merupakan proses seremonial penyambutan mahasiswa baru di
-                    <a href="https://www.umn.ac.id/en/home/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline"> Universitas Multimedia Nusantara</a> (UMN).
+                    <a href="https://www.umn.ac.id/en/home/" target="_blank" rel="noopener noreferrer" className="text-blue-600"> Universitas Multimedia Nusantara</a> (UMN).
                     Melalui serangkaian kegiatan yang bertujuan membantu mahasiswa baru beradaptasi di lingkungan perkuliahan,
                     dengan memberikan informasi dan menanamkan nilai-nilai penting yang menjadi bekal untuk menjalani proses perkuliahan.
                 </p>
