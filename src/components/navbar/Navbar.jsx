@@ -58,30 +58,30 @@ const Navbar = () => {
                 {dropdownOpen && (
                   <div className="absolute top-full right-0 mt-2 bg-white shadow-md rounded-lg py-1 z-[910] max-w-[300px] md:w-48">
                     <ul className="text-right">
-                      <li>
-                        <Link
-                          to="/#oprec-section"
-                          className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                        >
-                          Divisi
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/interview"
-                          className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                        >
-                          Daftar Interview
-                        </Link>
-                      </li>
-                      <li>
-                        <Link
-                          to="/#tentang-omb"
-                          className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
-                        >
-                          Tentang OMB
-                        </Link>
-                      </li>
+                    <li>
+                      <Link
+                        to="/#oprec-section"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-b border-gray-300"
+                      >
+                        Divisi
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/interview"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-b border-gray-300"
+                      >
+                        Daftar Interview
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/#tentang-omb"
+                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100 border-b border-gray-300"
+                      >
+                        Tentang OMB
+                      </Link>
+                    </li>
                     </ul>
                   </div>
                 )}

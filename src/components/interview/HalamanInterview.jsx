@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import listInterview from "./listInterview";
-import bgImage from "../../images/gradien/gradien2.png";
+import bgImage from "../../images/gradien/gradien-foto.png";
 import ombak from "../../images/ombak/OMBAK4.png";
 
 const InterviewPage = () => {
@@ -16,14 +16,14 @@ const InterviewPage = () => {
   }, []);
 
   return (
-    <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px] pb-[200px]" 
+    <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px] pb-[200px] " 
          style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="text-center">
-        <h1 className="text-2xl font-bold">Daftar Peserta Interview</h1>
-        <p className="text-lg">Selamat, kamu lolos ke tahap wawancara!</p>
+        <h1 className="text-5xl font-bold">Daftar Peserta Interview</h1>
+        <p className="text-2xl">Selamat, kamu lolos ke tahap wawancara!</p>
       </div>
 
-      <nav className="flex justify-center flex-wrap items-center gap-2 p-4 Z-901">
+      <nav className="flex justify-center flex-wrap items-center gap-5 p-4 Z-901 md:px-[200px]">
         {listInterview.map((divisi, index) => (
             <button
             key={index}
@@ -98,6 +98,7 @@ const InterviewPage = () => {
                   <div className="p-6 border rounded-lg shadow-lg bg-white">
                     <div className="text-center text-lg font-semibold">
                       <p className="text-[#16667C]">{hari}</p>
+                      <p className="text-[#000000]">{selectedDivisi.jam}</p>
                     </div>
                     <ul className="mt-4 text-center">
                       {filteredPeserta.map((peserta, idx) => (
@@ -105,8 +106,9 @@ const InterviewPage = () => {
                           key={idx}
                           className="py-2 border-b last:border-none flex justify-between"
                         >
-                          <span className="text-left">{peserta.nama}</span>
-                          <span className="text-right">{peserta.nim}</span>
+                          <span className="text-left flex-1">{peserta.nama}</span>
+                          <span className="w-24 text-center">{peserta.jam}</span>
+                          <span className="text-right flex-1">{peserta.nim}</span>
                         </li>
                       ))}
                     </ul>
