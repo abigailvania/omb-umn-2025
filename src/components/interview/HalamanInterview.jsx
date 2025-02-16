@@ -13,6 +13,7 @@ const InterviewPage = () => {
     if (listInterview.length > 0) {
       setSelectedDivisi(listInterview[0]);
     }
+    window.scrollTo(0, 0);
   }, []);
 
   return (
