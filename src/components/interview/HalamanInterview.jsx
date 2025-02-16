@@ -23,7 +23,7 @@ const InterviewPage = () => {
         <p className="text-lg">Selamat, kamu lolos ke tahap wawancara!</p>
       </div>
 
-      <nav className="flex justify-center flex-wrap items-center gap-4 p-4 Z-901">
+      <nav className="flex justify-center flex-wrap items-center gap-5 p-4 Z-901">
         {listInterview.map((divisi, index) => (
             <button
             key={index}
