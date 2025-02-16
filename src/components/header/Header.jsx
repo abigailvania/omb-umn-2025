@@ -41,13 +41,11 @@ function Header() {
                                 <GlassButton
                                     text="DAFTAR SEKARANG!" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                                     className="text-white max-w-[180px] mt-[30px] z-200"
-    
                                 />
                             <div className="mt-[20px]">
                             <GlassButton
-                                text="LIHAT HASIL BATCH 1" onClick={() => navigate("/interview")}
+                                text={<span>LIHAT HASIL <span className="italic">BATCH 1</span></span>} onClick={() => navigate("/interview")}
                                 className="text-white max-w-[180px] mt-[30px] z-200"
-
                             />
                             </div>
                         </div>
