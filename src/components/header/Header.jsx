@@ -18,7 +18,10 @@ function Header() {
 
     return (
         <>
-            <section id="home-section" className="headerSection">
+            <section id="home-section"
+                className="headerSection relative bg-[url('/gif.gif')] bg-cover bg-center bg-no-repeat 
+                                md:w-full before:absolute before:top-0 before:left-0 before:w-full before:h-full 
+                                before:bg-[url('/gradien1.png')] before:bg-cover before:bg-center before:opacity-80 before:z-1">
                 <div className="headerContent">
                     <div className="leftColumn">
                         <div className="supergrafis absolute z-0 opacity-40">
@@ -26,35 +29,37 @@ function Header() {
                         </div>
                         <div className="flex flex-col justify-center align-center">
                             <div className="flex justify-center">
-                                <img src={logo} alt="Logo" className="h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] w-auto z-5 object-contain" />                            </div>
+                                <img src={logo} alt="Logo" className="h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] w-auto z-5 object-contain" />
+                            </div>
                             <div className="flex justify-center align-center">
-                                <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[60px] sm:h-[80px] md:h-[100px] lg:h-[120px] w-auto object-contain" />                            </div>
+                                <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[60px] sm:h-[80px] md:h-[100px] lg:h-[120px] w-auto object-contain" />
+                            </div>
                         </div>
                     </div>
                     <div className="rightColumn">
                         <div className="flex flex-col justify-center items-center text-center text-white -mt-10 md:mt-0 z-20">
-                                <Countdown targetDate="2025-02-15T23:59:00" />
+                            <Countdown targetDate="2025-02-15T23:59:00" />
 
-                            <p className="sambutan text-xl m-[15px] px-12 ">
+                            <p className="text-xl m-[15px] px-12 ">
                                 Pendaftaran Kepanitiaan OMB UMN 2025 telah dibuka!
                             </p>
-                                <GlassButton
-                                    text="DAFTAR SEKARANG!" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                                    className="text-white max-w-[180px] mt-[30px] z-10"
-    
-                                />
-                            <div className="mt-[20px]">
                             <GlassButton
-                                text="LIHAT HASIL BATCH 1" onClick={() => navigate("/interview")}
+                                text="DAFTAR SEKARANG!" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                                 className="text-white max-w-[180px] mt-[30px] z-10"
 
                             />
+                            <div className="mt-[20px]">
+                                <GlassButton
+                                    text="LIHAT HASIL BATCH 1" onClick={() => navigate("/interview")}
+                                    className="text-white max-w-[180px] mt-[30px] z-10"
+
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="ombak">
-                    <img src={ombak} alt="ombak" />
+                <div className="ombak absolute w-screen h-full z-100 left-1/2 transform -translate-x-1/2 object-cover">
+                    <img src={ombak} alt="ombak" className="relative w-full -bottom-[350px] xs:-bottom-[285px] sm:-bottom-[265px] md:bottom-[84px] lg:bottom-[112px]" />
                 </div>
             </section>
         </>

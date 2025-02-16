@@ -1,24 +1,7 @@
 .headerSection {
-  position: relative;
-  width: 100%;
-  background: url('../../images/header-footer/gif.gif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('../../images/gradien/gradien1.png');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
-    z-index: 1;
-  }
 
   .headerContent {
     position: relative;
@@ -45,7 +28,7 @@
       text-align: center;
     }
 
-    .supergrafis, .ombak {
+    .supergrafis {
       position: absolute;
       width: 100vw;
       height: 100%;
@@ -55,19 +38,9 @@
     }
 
   }
-  .ombak img{
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: 20;
-    bottom: -200px;
-  }
 
   @media (max-width: 768px) {
-    .headerSection{
-      max-width: 400px;
-      margin-bottom: -100px;
-    }
+
     .headerContent {
       padding-top: 1px;
       grid-template-columns: 1fr; // Stacks content vertically on smaller screens
@@ -76,25 +49,6 @@
     .headerContent .supergrafis {
       width: 90%;
       max-width: 400px;
-    }
-    .sambutan {
-      font-size: 1em;
-    }
-    .ombak img {
-      bottom: -110px;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .ombak img {
-      bottom: -80px;
-    }
-
-  }
-
-  @media (max-width: 400px) {
-    .ombak img {
-      bottom: -60px;
     }
   }
 }
