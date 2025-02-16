@@ -35,7 +35,7 @@ function Header() {
                         <div className="flex flex-col justify-center items-center text-center text-white -mt-10 md:mt-0 z-20">
                                 <Countdown targetDate="2025-02-22T23:59:00" />
 
-                            <p className="text-xl m-[15px] px-12 ">
+                            <p className="text-xl m-[10px] px-8 ">
                                 Pendaftaran Kepanitiaan OMB UMN 2025 telah dibuka!
                             </p>
                                 <GlassButton
