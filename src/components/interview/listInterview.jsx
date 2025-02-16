@@ -119,6 +119,7 @@ const listInterview = [
         nama: "Acara",
         logoDivisi: Acara,
         color: "#D6002E",
+        jam: "17.30 - Selesai",
         jadwal: {
 
             "Senin, 17 Februari 2025 (C1007)": [
