@@ -11,17 +11,17 @@ function Footer() {
         <div className="relative w-full bg-[url('/foto-footer-1.png')] bg-cover">
             <div className="relative z-2 -mt-[5px] p-2 sm: lg:p-5 text-white text-center">
                 <div className="flex flex-col md:flex-row justify-between items-center mt-5">
-                    <div className="flex-1 text-center md:text-right mb-5 md:mb-0 order-1 md:order-2">
+                    <div className="flex-1 text-center md:text-right mb-5 md:mb-0 order-2 md:order-1">
                         <p className="text-xl font-bold">Alamat</p>
                         <p>Universitas Multimedia Nusantara</p>
                         <p>Jl. Scientia Boulevard, Gading Serpong,</p>
                         <p>Tangerang Banten 15811, Indonesia.</p>
                     </div>
-                    <div className="flex-1 flex flex-col items-center mb-5 md:mb-0 order-0 md:order-1">
+                    <div className="flex-1 flex flex-col items-center mb-5 md:mb-0 order-1 md:order-2">
                         <img src={logo} alt="Logo OMB UMN 2025" className="h-[200px] md:h-[270px] object-contain" />
                         <img src={tagline} alt="Tagline OMB UMN 2025" className="h-[70px] mt-[-20px] object-contain" />
                     </div>
-                    <div className="flex-1 text-center md:text-left mt-[10px]">
+                    <div className="flex-1 text-center md:text-left md:mt-0 order-3">
                         <p className="text-xl font-bold">Pranala</p>
                         <p>YouTube: @ombumn</p>
                         <p>Spotify: Swara Bestari</p>
