@@ -41,7 +41,7 @@ function Oprec() {
                         <h1>Jangan lewatkan kesempatan ini!</h1>
                     </div>
                     <div className="OprecDetail">
-                        <h2>Siapkah kamu menjadi bagian dari OMB UMN 2025?</h2>
+                        <h2>Kesempatan menjadi bagian dari kepanitiaan OMB UMN 2025 masih terbuka!</h2>
                         <p>Pendaftaran terbuka dari 17 Februari 2025 pukul 08.00 WIB sampai 22 Februari 2025 pukul 23.59 WIB.</p>
                     </div>
                     <div className="countdown-close">

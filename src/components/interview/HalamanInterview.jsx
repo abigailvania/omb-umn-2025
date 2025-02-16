@@ -91,7 +91,7 @@ const InterviewPage = () => {
                         <p>1. WAJIB menghadiri pertemuan perdana tepat waktu (minimal 15 menit sebelum waktu yang dicantumkan).</p>
                         <p>2. WAJIB berpakaian rapi dan sopan.</p>
                         <p>3. WAJIB membawa alat tulis dan buku catatan.</p>
-                        <p>4. DILARANG memberitahukan isi dalam forum kepada pihak lain yang tidak bersangkutan</p>
+                        <p>4. DILARANG memberitahukan isi dalam forum kepada pihak lain yang tidak bersangkutan.</p>
                       </div>
                     </div>
                   )}
