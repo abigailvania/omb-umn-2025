@@ -39,7 +39,7 @@ function Header() {
                                 Pendaftaran Kepanitiaan OMB UMN 2025 telah dibuka!
                             </p>
                                 <GlassButton
-                                    text="DAFTAR SEKARANG!" onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
+                                    text={<span>DAFTAR <span className="italic">BATCH 2</span></span>} onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
                                     className="text-white max-w-[180px] mt-[30px] z-200"
                                 />
                             <div className="mt-[20px]">
