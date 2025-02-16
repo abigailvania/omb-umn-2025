@@ -9,7 +9,7 @@ import Navbar from "../components/navbar/Navbar.jsx";
 const Landing = () => {
     return (
         <>
-        <div className="max-w-full">
+        <div className="max-w-full overflow-x-hidden">
 
             <Navbar />
             <Header />
