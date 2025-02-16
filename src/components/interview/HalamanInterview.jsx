@@ -98,7 +98,7 @@ const InterviewPage = () => {
                   <div className="p-6 border rounded-lg shadow-lg bg-white">
                     <div className="text-center text-lg font-semibold">
                       <p className="text-[#16667C]">{hari}</p>
-                      <p>{peserta.jam}</p>
+                      <p className="text-[#000000]">{jam}</p>
                     </div>
                     <ul className="mt-4 text-center">
                       {filteredPeserta.map((peserta, idx) => (

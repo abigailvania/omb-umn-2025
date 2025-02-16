@@ -198,9 +198,10 @@ const listInterview = [
         nama: "Public Relations",
         logoDivisi: Pr,
         color: "#999DA0",
+        jam: "17.30-22.00",
         jadwal: {
             "Senin, 17 Februari 2025 (C1012)": [
-                {jam: "17.30-22.00"},
+                
                 {nama: "Maria Jovenathania Amaeldiasta Wattimury", nim: "00000119472"},
                 {nama: "Paramitha Irgina Sugianto", nim: "00000108235"},
                 {nama: "El Fide Glory Nafiri Atmodjo", nim: "00000106801"},
