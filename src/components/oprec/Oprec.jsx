@@ -59,8 +59,8 @@ function Oprec() {
                         ))}
                     </div>
                 </div>
-                <div className="ombak w-full">
-                    <img src={ombak} alt="ombak" className="w-full z-1000"/>
+                <div className="ombak w-100">
+                    <img src={ombak} alt="ombak" className="w-100 z-1000"/>
                 </div>
             </section>
             
