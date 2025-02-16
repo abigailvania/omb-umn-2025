@@ -16,14 +16,14 @@ const InterviewPage = () => {
   }, []);
 
   return (
-    <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px] pb-[200px] md:px-[200px]" 
+    <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px] pb-[200px] " 
          style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="text-center">
         <h1 className="text-5xl font-bold">Daftar Peserta Interview</h1>
         <p className="text-2xl">Selamat, kamu lolos ke tahap wawancara!</p>
       </div>
 
-      <nav className="flex justify-center flex-wrap items-center gap-5 p-4 Z-901">
+      <nav className="flex justify-center flex-wrap items-center gap-5 p-4 Z-901 md:px-[200px]">
         {listInterview.map((divisi, index) => (
             <button
             key={index}
@@ -119,8 +119,8 @@ const InterviewPage = () => {
           </div>
         </div>
       )}
-      <div className="ombak absolute bottom-[-10px] w-full px-0">
-        <img src={ombak} alt="ombak" className="w-full relative block p-0 z-900 px-0" />
+      <div className="ombak absolute bottom-[-10px] w-full">
+        <img src={ombak} alt="ombak" className="w-full relative block p-0 z-900" />
       </div>
     </div>
   );
