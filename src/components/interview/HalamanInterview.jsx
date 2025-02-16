@@ -16,7 +16,7 @@ const InterviewPage = () => {
   }, []);
 
   return (
-    <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px] pb-[200px]" 
+    <div className="h-full w-full relative bg-cover bg-center bg-no-repeat pt-[140px] pb-[200px] md:py-[200px]" 
          style={{ backgroundImage: `url(${bgImage})` }}>
       <div className="text-center">
         <h1 className="text-2xl font-bold">Daftar Peserta Interview</h1>
