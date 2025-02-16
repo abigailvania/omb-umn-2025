@@ -107,9 +107,9 @@ const InterviewPage = () => {
                           key={idx}
                           className="py-2 border-b last:border-none flex justify-between"
                         >
-                          <span className="text-left">{peserta.nama}</span>
-                          <span className="text-right">{peserta.jam}</span>
-                          <span className="text-right">{peserta.nim}</span>
+                          <span className="text-left flex-1">{peserta.nama}</span>
+                          <span className="w-24 text-center">{peserta.jam}</span>
+                          <span className="text-right flex-1">{peserta.nim}</span>
                         </li>
                       ))}
                     </ul>
