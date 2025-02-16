@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import listInterview from "./listInterview";
-import bgImage from "../../images/gradien/gradien2.png";
+import bgImage from "../../images/gradien/gradien-foto.png";
 import ombak from "../../images/ombak/OMBAK4.png";
 
 const InterviewPage = () => {
