@@ -204,11 +204,9 @@ const listInterview = [
         jam: "17.30-22.00",
         jadwal: {
             "Senin, 17 Februari 2025 (C1012)": [
-                
                 {nama: "Maria Jovenathania Amaeldiasta Wattimury", nim: "00000119472"},
                 {nama: "Paramitha Irgina Sugianto", nim: "00000108235"},
                 {nama: "El Fide Glory Nafiri Atmodjo", nim: "00000106801"},
-
             ],
             "Rabu, 19 Februari 2025 (D1612)": [
                 {nama: "Cecilia Margaretha Christie", nim: "00000071675"},
@@ -232,12 +230,12 @@ const listInterview = [
         color: "#4ED2D8",
         jadwal: {
             "Selasa, 18 Februari 2025 (D1205)": [
-                {nama: "Padma Natalie Tanarya", nim: "00000105805  |  17.30-17.50"},
-                {nama: "Candy Aurielle Surjana", nim: "00000108740  |  17.50-18.10"},
-                {nama: "Nadine Antoni", nim: "00000105832  |  18.10-18.30"},
-                {nama: "Ivana Novaria", nim: "00000111097  |  18.30-18.50"},
-                {nama: "Catherine Olivia", nim: "00000106589  |  18.50-19.10"},
-                {nama: "Ivy Aurelie Grazia", nim: "00000111895  |  19.10-19.30"}
+                {nama: "Padma Natalie Tanarya", nim: "00000105805", jam: "17.30-17.50"},
+                {nama: "Candy Aurielle Surjana", nim: "00000108740", jam: "17.50-18.10"},
+                {nama: "Nadine Antoni", nim: "00000105832", jam: "18.10-18.30"},
+                {nama: "Ivana Novaria", nim: "00000111097", jam: "18.30-18.50"},
+                {nama: "Catherine Olivia", nim: "00000106589", jam: "18.50-19.10"},
+                {nama: "Ivy Aurelie Grazia", nim: "00000111895", jam: "19.10-19.30"}
             ],
 
         }
