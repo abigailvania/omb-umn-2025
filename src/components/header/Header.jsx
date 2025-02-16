@@ -18,7 +18,7 @@ function Header() {
 
     return (
         <>
-            <section id="home-section" className="headerSection ">
+            <section id="home-section" className="headerSection max-w-full">
                 <div className="headerContent">
                     <div className="leftColumn">
                         <div className="supergrafis absolute z-0 opacity-40">
