@@ -227,12 +227,12 @@ const listInterview = [
         color: "#4ED2D8",
         jadwal: {
             "Selasa, 18 Februari 2025 (D1205)": [
-                {nama: "Padma Natalie Tanarya", nim: "00000105805 17.30-17.50"},
-                {nama: "Candy Aurielle Surjana", nim: "00000108740 17.50-18.10"},
-                {nama: "Nadine Antoni", nim: "00000105832 18.10-18.30"},
-                {nama: "Ivana Novaria", nim: "00000111097 18.30-18.50"},
-                {nama: "Catherine Olivia", nim: "00000106589 18.50-19.10"},
-                {nama: "Ivy Aurelie Grazia", nim: "00000111895 19.10-19.30"}
+                {nama: "Padma Natalie Tanarya", nim: "00000105805  |  17.30-17.50"},
+                {nama: "Candy Aurielle Surjana", nim: "00000108740  |  17.50-18.10"},
+                {nama: "Nadine Antoni", nim: "00000105832  |  18.10-18.30"},
+                {nama: "Ivana Novaria", nim: "00000111097  |  18.30-18.50"},
+                {nama: "Catherine Olivia", nim: "00000106589  |  18.50-19.10"},
+                {nama: "Ivy Aurelie Grazia", nim: "00000111895  |  19.10-19.30"}
             ],
 
         }
