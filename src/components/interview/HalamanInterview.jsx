@@ -70,6 +70,7 @@ const InterviewPage = () => {
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
+          <p>Note : perizinan</p>
 
           <div className="grid grid-cols-1 md:grid-cols-1 gap-6 w-full">
             {Object.entries(selectedDivisi.jadwal).map(([hari, pesertaList], index) => {

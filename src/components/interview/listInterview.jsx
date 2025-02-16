@@ -18,6 +18,7 @@ const listInterview = [
         nama: "PIC",
         logoDivisi: Pic,
         color: "#FE829C",
+        jam: "17.30-22.00",
         jadwal: {
             "Senin, 17 Februari 2025 (C1002)": [
                 {nama: "Ardel Toti Febyriyan Tanis", nim: "00000125172"},
@@ -144,6 +145,7 @@ const listInterview = [
         nama: "Dokumentasi",
         logoDivisi: Dokumentasi,
         color: "#F6740D",
+        jam: "17.30-22.00",
         jadwal: {
             "Rabu, 19 Februari 2025 (D1606)": [
                 {nama: "Nathaniel Taslim", nim: "00000116440"},
@@ -177,6 +179,7 @@ const listInterview = [
         nama: "Website",
         logoDivisi: Website,
         color: "#F7CD1C",
+        jam: "17.30-22.00",
         jadwal: {
             "Senin, 17 Februari 2025 (C1004)": [
                 {nama: "Dylan Ervian", nim: "00000075730"},
@@ -244,6 +247,7 @@ const listInterview = [
         nama: "Keamanan",
         logoDivisi: Keamanan,
         color: "#000000",
+        jam: "17.30-22.00",
         jadwal: {
             "Selasa, 18 Februari 2025 (D1208)": [
                 {nama: "Pierre E.S Moningka", nim: "00000128411"},
@@ -281,6 +285,7 @@ const listInterview = [
         nama: "Perlengkapan",
         logoDivisi: Perlengkapan,
         color: "#9D09DB",
+        jam: "17.30-22.00",
         jadwal: {
             "Rabu, 19 Februari 2025 (D1611)": [
                 {nama: "Vallent Liem", nim: "00000097273"},
@@ -320,6 +325,7 @@ const listInterview = [
         nama: "Konsumsi",
         logoDivisi: Konsumsi,
         color: "#C67F4F",
+        jam: "17.30-22.00",
         jadwal: {
             "Senin, 17 Februari 2025 (C1010)": [
                 {nama: "Joy Rockniel Abadi", nim: "00000069233"},
