@@ -40,20 +40,20 @@ function Header() {
                             </p>
                                 <GlassButton
                                     text={<span>DAFTAR <span className="italic">BATCH 2</span></span>} onClick={() => document.getElementById("oprec-section").scrollIntoView({ behavior: "smooth" })}
-                                    className="text-white max-w-[180px] mt-[30px] z-200"
+                                    className="text-white max-w-[180px] mt-[30px] z-20 relative"
                                 />
                             <div className="mt-[20px]">
                             <GlassButton
                                 text={<span>LIHAT HASIL <span className="italic">BATCH 1</span></span>} onClick={() => navigate("/interview")}
-                                className="text-white max-w-[180px] mt-[30px] z-200"
+                                className="text-white max-w-[180px] mt-[30px] z-20 relative"
                             />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="ombak absolute w-full h-full z-100 left-1/2 transform -translate-x-1/2 object-cover">
-                    <img src={ombak} alt="ombak" className="relative w-full -bottom-[350px] xs:-bottom-[285px] 
-                    sm:-bottom-[265px] @min-[768px]:bottom-[84px] md:bottom-[84px] lg:bottom-[112px]" />
+                <div className="ombak absolute w-full h-full z-2 left-1/2 transform -translate-x-1/2 ">
+                    <img src={ombak} alt="ombak" className=" relative w-full bottom-[-350px] xs:-bottom-[280px] 
+                    sm:-bottom-[65px] @min-[768px]:bottom-[84px] md:bottom-[84px] lg:bottom-[112px]" />
                 </div>
             </section>
         </>
