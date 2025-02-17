@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import "./oprec.scss";
 import Countdown from "./countdown/Countdown.jsx";
@@ -7,6 +8,7 @@ import GlassButton from "../button/Button.jsx";
 import ImageSlider from "../image-slider/image-slider.jsx";
 import ombak from "../../images/ombak/OMBAK4.png";
 import supergrafis from "../../images/supergrafis/SUP3.png";
+
 
 const DivisiCard = ({ divisi, onClick }) => {
     return (
@@ -17,6 +19,7 @@ const DivisiCard = ({ divisi, onClick }) => {
 };
 
 function Oprec() {
+    // const navigate = useNavigate();
     const [selectedDivisi, setSelectedDivisi] = useState(null);
 
     const images = selectedDivisi
@@ -113,10 +116,15 @@ function Oprec() {
                                         </div>
 
                                         <div className="tombol-daftar mt-[20px] rounded-lg mb-[15px]">
-                                            <button className="text-white w-[200px] h-[40px] shadow-[0px_4px_10px_rgba(0,0,0,0.6)] rounded-lg" onClick={() => window.open(selectedDivisi.link, '_blank', 'noopener,noreferrer')}> 
+                                            <button className="text-white w-[200px] h-[40px] shadow-[0px_4px_10px_rgba(0,0,0,0.6)] rounded-lg cursor-pointer" onClick={() => window.location.href = selectedDivisi.link} > 
                                                 Daftar
                                             </button>
                                         </div>
+                                        {/* <div className="tombol-daftar  rounded-lg mb-[15px]">
+                                        <button className="text-white w-[200px] h-[40px] shadow-[0px_4px_10px_rgba(0,0,0,0.6)] rounded-lg cursor-pointer" onClick={() => navigate("/interview")} > 
+                                                Hasil Interview
+                                            </button>
+                                        </div> */}
                                     </div>
                                 </div>
 
